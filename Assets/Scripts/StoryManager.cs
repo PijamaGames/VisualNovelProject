@@ -18,6 +18,7 @@ public class StoryManager : MonoBehaviour
     Story inkStory;
     DialogController dialogController;
     AnswerController answerController;
+    bool autoMode = false;
 
     void Start()
     {
@@ -25,6 +26,14 @@ public class StoryManager : MonoBehaviour
         dialogController = dialogPanel.GetComponentInChildren<DialogController>();
         answerController = answersPanel.GetComponentInChildren<AnswerController>();
         ContinueStory();
+    }
+    public void SetAutoMode(bool active)
+    {
+        autoMode = active;
+        if (!autoMode)
+        {
+            StopCoroutine("JumpToNextDialogCoroutine");
+        }
     }
 
     private void SetDialogVisibility(bool visible)
@@ -52,18 +61,57 @@ public class StoryManager : MonoBehaviour
         inkStory.Continue();
         SetDialogVisibility(true);
         SetAnswersVisibility(false);
-        SetContinueButtonVisibility(false);
+        SetContinueButtonVisibility(true);
         
         dialogController.SetDialog(inkStory.currentText);
     }
 
-    public void CheckChoices()
+    public void OnContinueButton()
+    {
+        if (dialogController.finishedTyping)
+        {
+            if (autoMode)
+            {
+                StopCoroutine("JumpToNextDialogCoroutine");
+            }
+            ContinueStory();
+            
+        } else
+        {
+            dialogController.ForceFinish();
+        }
+    }
+
+    public void OnFinishedTyping()
+    {
+        bool hasChoice = CheckChoices();
+        SetContinueButtonVisibility(!hasChoice);
+        if (!hasChoice && autoMode)
+        {
+            StartCoroutine("JumpToNextDialogCoroutine");
+        }
+    }
+
+    IEnumerator JumpToNextDialogCoroutine()
+    {
+        yield return new WaitForSeconds((4-GameManager.autoModeSpeed));
+        ContinueStory();
+    }
+
+    private bool CheckChoices()
     {
         int answerCount = inkStory.currentChoices.Count;
-        SetContinueButtonVisibility(answerCount <= 0);
+        
         SetAnswersVisibility(answerCount > 0);
         if (answerCount > 0)
+        {
             answerController.SetAnswers(inkStory.currentChoices);
+            return true;
+        } else
+        {
+            return false;
+        }
+            
     }
 
     public void SelectAnswer(int index)

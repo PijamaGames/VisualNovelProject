@@ -28,6 +28,7 @@ public class ConfigPanel : MonoBehaviour
 
     public void UpdateEffectsVolume(System.Single value)
     {
+        Debug.Log(value);
         GameManager.effectsVolume = value;
         AudioRegulator.UpdateAllVolumes();
     }

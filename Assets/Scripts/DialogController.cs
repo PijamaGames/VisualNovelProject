@@ -41,6 +41,17 @@ public class DialogController : MonoBehaviour
         StartCoroutine("TypeCoroutine");
     }
 
+    public void ForceFinish()
+    {
+        if (!finishedTyping)
+        {
+            StopCoroutine("TypeCoroutine");
+            dialogText.text = dialog;
+            finishedTyping = true;
+            onFinishedTyping.Invoke();
+        }
+    }
+
     IEnumerator TypeCoroutine()
     {
         for(int i = 0; i < dialog.Length; i++)
