@@ -13,12 +13,17 @@ public class SceneLoader : MonoBehaviour
     private const string newFileScene = "NewFile";
     private const string pauseScene = "Pause";
     private const string saveScene = "Save";
+    private const string gameScene = "Game";
 
     private static string previousScene = "";
 
     public void LoadMainMenuScene()
     {
         LoadScene(menuScene);
+    }
+    public void LoadGameScene()
+    {
+        LoadScene(gameScene);
     }
     public void LoadConfigScene()
     {
@@ -61,7 +66,7 @@ public class SceneLoader : MonoBehaviour
         }
     }
 
-    public void LoadScene(string name)
+    private void LoadScene(string name)
     {
         previousScene = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(name, LoadSceneMode.Single);
