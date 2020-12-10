@@ -6,8 +6,8 @@ public class AudioRegulator : MonoBehaviour
 {
     public static HashSet<AudioRegulator> regulators = new HashSet<AudioRegulator>();
     AudioSource audioSource;
-    float originalVolume;
-    [SerializeField] bool isMusic = true;
+    [HideInInspector] public float originalVolume;
+    public bool isMusic = true;
 
     private void OnDestroy()
     {
@@ -36,5 +36,6 @@ public class AudioRegulator : MonoBehaviour
             if(r != null)
                 r.UpdateVolume();
         }
+
     }
 }
