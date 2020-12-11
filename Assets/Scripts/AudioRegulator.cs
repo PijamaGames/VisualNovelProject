@@ -25,7 +25,7 @@ public class AudioRegulator : MonoBehaviour
 
     public void UpdateVolume()
     {
-        Debug.Log(GameManager.effectsVolume);
+        //Debug.Log(GameManager.effectsVolume);
         audioSource.volume = originalVolume * (isMusic ? GameManager.musicVolume : GameManager.effectsVolume);
     }
 

@@ -15,7 +15,7 @@ public class StoryManager : MonoBehaviour
     [SerializeField] GameObject continueButton;
     
 
-    Story inkStory;
+    [HideInInspector] public static Story inkStory;
     DialogController dialogController;
     AnswerController answerController;
     bool autoMode = false;
@@ -133,9 +133,13 @@ public class StoryManager : MonoBehaviour
         SetContinueButtonVisibility(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    public static string GetState()
     {
-        
+        return inkStory != null ? inkStory.state.ToJson() : null;
+    }
+
+    public static void LoadState(string json)
+    {
+        inkStory.state.LoadJson(json);
     }
 }
