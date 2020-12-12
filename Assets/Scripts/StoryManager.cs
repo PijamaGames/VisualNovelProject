@@ -13,7 +13,6 @@ public class StoryManager : MonoBehaviour
     [SerializeField] GameObject dialogPanel;
     [SerializeField] GameObject answersPanel;
     [SerializeField] GameObject continueButton;
-    
 
     [HideInInspector] public static Story inkStory;
     DialogController dialogController;
@@ -22,11 +21,27 @@ public class StoryManager : MonoBehaviour
 
     void Start()
     {
+        if (GameManager.currentSaveFile == null) return;
         inkStory = new Story(inkJSON.text);
         dialogController = dialogPanel.GetComponentInChildren<DialogController>();
         answerController = answersPanel.GetComponentInChildren<AnswerController>();
-        ContinueStory();
+        GameManager.currentSaveFile.StartRecordingPlayTime();
+        string saveFileState = GameManager.currentSaveFile.GetState();
+        if(saveFileState != null && saveFileState != "")
+        {
+            LoadState(saveFileState);
+            UpdateUI();
+        } else
+        {
+            ContinueStory();
+        }
     }
+
+    private void OnDestroy()
+    {
+        inkStory = null;
+    }
+
     public void SetAutoMode(bool active)
     {
         autoMode = active;
@@ -59,10 +74,15 @@ public class StoryManager : MonoBehaviour
         Debug.Log("CONTINUE STORY");
 
         inkStory.Continue();
+        UpdateUI();
+    }
+
+    private void UpdateUI()
+    {
         SetDialogVisibility(true);
         SetAnswersVisibility(false);
         SetContinueButtonVisibility(true);
-        
+
         dialogController.SetDialog(inkStory.currentText);
     }
 
@@ -124,6 +144,7 @@ public class StoryManager : MonoBehaviour
         {
             StopStory();
         }
+        GameManager.SaveCurrentStoryState(false);
     }
 
     public void StopStory()
@@ -141,5 +162,20 @@ public class StoryManager : MonoBehaviour
     public static void LoadState(string json)
     {
         inkStory.state.LoadJson(json);
+    }
+
+    public static string GetBackground()
+    {
+
+        if (inkStory == null) return BackgroundManager.mainMenu;
+        else
+        {
+            object backgroundObj = inkStory.variablesState["background"];
+            if (backgroundObj != null)
+            {
+                return backgroundObj.ToString();
+            }
+            else return BackgroundManager.mainMenu;
+        }
     }
 }

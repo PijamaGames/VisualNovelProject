@@ -17,44 +17,44 @@ public class SceneLoader : MonoBehaviour
 
     private static string previousScene = "";
 
-    public void LoadMainMenuScene()
+    public static  void LoadMainMenuScene()
     {
         LoadScene(menuScene);
     }
-    public void LoadGameScene()
+    public static void LoadGameScene()
     {
         LoadScene(gameScene);
     }
-    public void LoadConfigScene()
+    public static void LoadConfigScene()
     {
         LoadScene(configScene);
     }
-    public void LoadDeleteFileScene()
+    public static void LoadDeleteFileScene()
     {
         LoadScene(deleteFileScene);
     }
-    public void LoadEndScene()
+    public static void LoadEndScene()
     {
         LoadScene(endScene);
     }
-    public void LoadFilesScene()
+    public static void LoadFilesScene()
     {
         LoadScene(loadFilesScene);
     }
-    public void LoadNewFileScene()
+    public static void LoadNewFileScene()
     {
         LoadScene(newFileScene);
     }
-    public void LoadPauseScene()
+    public static void LoadPauseScene()
     {
         LoadScene(pauseScene);
     }
-    public void LoadSaveScene()
+    public static void LoadSaveScene()
     {
         LoadScene(saveScene);
     }
 
-    public void LoadPreviousScene()
+    public static void LoadPreviousScene()
     {
         if (!previousScene.Equals(""))
         {
@@ -66,7 +66,7 @@ public class SceneLoader : MonoBehaviour
         }
     }
 
-    private void LoadScene(string name)
+    private static void LoadScene(string name)
     {
         previousScene = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(name, LoadSceneMode.Single);
