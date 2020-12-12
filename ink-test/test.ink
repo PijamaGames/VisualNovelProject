@@ -8,7 +8,9 @@
 #BACKGROUND Entrance
 
 #CHARACTER Narrador | Narrator
-Poca gente espera acabar en la carcel a los 26 años. Para ti es todo un sueño. O al menos un paso para cumplir tu sueño. Entre muros grises de cemento y barrotes pulidos buscas encontrar el camino a tu libertad. 
+Poca gente espera acabar en la carcel a los 26 años. Para ti es todo un sueño. O al menos un paso para cumplir tu sueño. 
+
+Entre muros grises de cemento y barrotes pulidos buscas encontrar el camino a tu libertad. 
 
 #CHARACTER Johan (V.O) | Johan (V.O)
 Primer día, allá vamos. 
