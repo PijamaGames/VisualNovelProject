@@ -18,6 +18,7 @@ public class StoryManager : MonoBehaviour
     DialogController dialogController;
     AnswerController answerController;
     bool autoMode = false;
+    public static string lastState = null;
 
     void Start()
     {
@@ -27,10 +28,18 @@ public class StoryManager : MonoBehaviour
         answerController = answersPanel.GetComponentInChildren<AnswerController>();
         GameManager.currentSaveFile.StartRecordingPlayTime();
         string saveFileState = GameManager.currentSaveFile.GetState();
-        if(saveFileState != null && saveFileState != "")
+        if (GameManager.shouldLoadLastState)
+        {
+            LoadLastState();
+            UpdateUI();
+            dialogController.ForceFinish();
+            GameManager.shouldLoadLastState = false;
+        }
+        else if(saveFileState != null && saveFileState != "")
         {
             LoadState(saveFileState);
             UpdateUI();
+            lastState = saveFileState;
         } else
         {
             ContinueStory();
@@ -48,6 +57,9 @@ public class StoryManager : MonoBehaviour
         if (!autoMode)
         {
             StopCoroutine("JumpToNextDialogCoroutine");
+        } else if(dialogController.finishedTyping)
+        {
+            OnFinishedTyping();
         }
     }
 
@@ -74,6 +86,7 @@ public class StoryManager : MonoBehaviour
         Debug.Log("CONTINUE STORY");
 
         inkStory.Continue();
+        lastState = inkStory.state.ToJson();
         UpdateUI();
     }
 
@@ -131,7 +144,6 @@ public class StoryManager : MonoBehaviour
         {
             return false;
         }
-            
     }
 
     public void SelectAnswer(int index)
@@ -156,7 +168,26 @@ public class StoryManager : MonoBehaviour
 
     public static string GetState()
     {
-        return inkStory != null ? inkStory.state.ToJson() : null;
+        if(inkStory == null && lastState != null)
+        {
+            return lastState;
+        } else if(inkStory != null)
+        {
+            return inkStory.state.ToJson();
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+    public static void LoadLastState()
+    {
+        Debug.Log("loading last state");
+        if(lastState != null && lastState != "")
+        {
+            LoadState(lastState);
+        }
     }
 
     public static void LoadState(string json)

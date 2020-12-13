@@ -55,7 +55,7 @@ public class SaveFile
         background = StoryManager.GetBackground();
         UpdatePlayTime();
         UpdateSaveFilesInfo();
-        if (state != null)
+        if (state != null && state != "")
         {
             File.WriteAllText(saveFilePath, state);
         }

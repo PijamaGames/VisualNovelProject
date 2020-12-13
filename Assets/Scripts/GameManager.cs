@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     public static List<SaveFile> saveFiles;
     public static SaveFile currentSaveFile;
 
+    public static bool shouldLoadLastState = false;
+
     private void Awake()
     {
         if (firstInstance)
@@ -36,6 +38,11 @@ public class GameManager : MonoBehaviour
         Bilingual.UpdateAll();
     }
 
+    public void ShouldLoadLastState()
+    {
+        shouldLoadLastState = true;
+    }
+
     public static string GetFilePath(string name)
     {
         string path = resourcesPath + "/" + name + ".txt";
@@ -48,7 +55,6 @@ public class GameManager : MonoBehaviour
 
     public static void SaveCurrentStoryState(bool newFile)
     {
-        
         string state = StoryManager.GetState();
 
         if (newFile)
@@ -61,8 +67,10 @@ public class GameManager : MonoBehaviour
         if(currentSaveFile != null)
         {
             currentSaveFile.SaveState(state);
+            CheckSaveFiles();
         }
         else Debug.LogError("Could not save state");
+        
     }
 
     public static void DeleteCurrentSaveFile()
@@ -88,6 +96,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    
     private static void CheckPreferencesFile()
     {
 
