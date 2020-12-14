@@ -6,8 +6,8 @@ using TMPro;
 public class Bilingual : MonoBehaviour
 {
     TextMeshProUGUI text;
-    private string spanishText;
-    [SerializeField][TextArea] private string englishText = "";
+    [HideInInspector] public string spanishText;
+    [SerializeField][TextArea] public string englishText = "";
 
     private void Start()
     {

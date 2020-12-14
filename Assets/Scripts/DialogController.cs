@@ -10,6 +10,8 @@ public class DialogController : MonoBehaviour
     [Header("UI REFERENCES")]
     [SerializeField] TextMeshProUGUI nameText;
     [SerializeField] TextMeshProUGUI dialogText;
+    private Bilingual nameBilingual;
+    private Bilingual dialogBilingual;
 
     [Header("PARAMETERS")]
     [SerializeField][Range(0.005f, 0.05f)] float textSpeedMultiplier = 0.02f;
@@ -19,20 +21,39 @@ public class DialogController : MonoBehaviour
 
     [HideInInspector] public bool finishedTyping = true;
 
-    private string characterName;
-    private string dialog;
-    
+    private string spanishCharacterName;
+    private string englishCharacterName;
+    private string spanishDialog;
+    private string englishDialog;
+
+    private void Start()
+    {
+        nameBilingual = nameText.GetComponent<Bilingual>();
+        dialogBilingual = dialogText.GetComponent<Bilingual>();
+    }
 
     public void SetName(string _name)
     {
-        characterName = _name;
-        nameText.text = characterName;
+        string[] names = UsefulFuncs.Split(_name, '%');
+        spanishCharacterName = names[0].Trim(' ');
+        englishCharacterName = names[1].Trim(' ');
+        nameBilingual.spanishText = spanishCharacterName;
+        nameBilingual.englishText = englishCharacterName;
+        nameBilingual.UpdateLanguage();
     }
 
     public void SetDialog(string _dialog)
     {
-        dialog = _dialog;
+        string[] dialogs = UsefulFuncs.Split(_dialog, '%');
+        spanishDialog = dialogs[0].Trim(' ');
+        englishDialog = dialogs[1].Trim(' ');
+        Debug.Log("es:" + spanishDialog);
+        Debug.Log("en:" + englishDialog);
+
+        //dialog = _dialog;
         dialogText.text = "";
+        dialogBilingual.spanishText = "";
+        dialogBilingual.englishText = "";
         if (!finishedTyping)
         {
             StopCoroutine("TypeCoroutine");
@@ -46,7 +67,10 @@ public class DialogController : MonoBehaviour
         if (!finishedTyping)
         {
             StopCoroutine("TypeCoroutine");
-            dialogText.text = dialog;
+            //dialogText.text = dialog;
+            dialogBilingual.spanishText = spanishDialog;
+            dialogBilingual.englishText = englishDialog;
+            dialogBilingual.UpdateLanguage();
             finishedTyping = true;
             onFinishedTyping.Invoke();
         }
@@ -54,11 +78,14 @@ public class DialogController : MonoBehaviour
 
     IEnumerator TypeCoroutine()
     {
+        string dialog = GameManager.english ? englishDialog : spanishDialog;
+
         for(int i = 0; i < dialog.Length; i++)
         {
             dialogText.text += dialog[i];
             yield return new WaitForSeconds(GameManager.textSpeed * textSpeedMultiplier);
         }
+
         onFinishedTyping.Invoke();
         finishedTyping = true;
     }

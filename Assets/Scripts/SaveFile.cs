@@ -124,8 +124,8 @@ public class SaveFile
     {
         Debug.Log("Deleting save file: " + creationInstant);
 
-        if(File.Exists(saveFilePath))
-            File.Delete(saveFilePath);
+        /*if(File.Exists(saveFilePath))*/
+        File.Delete(saveFilePath);
 
         GameManager.saveFiles.Remove(this);
 
@@ -139,12 +139,14 @@ public class SaveFile
 
             if (_creationInstant != this.creationInstant)
             {
-                allLines.Add(creationInstant);
+                allLines.Add(_creationInstant);
                 allLines.Add(originalAllLines[i * linesPerFile + 1]);
                 allLines.Add(originalAllLines[i * linesPerFile + 2]);
                 allLines.Add(originalAllLines[i * linesPerFile + 3]);
                 allLines.Add(originalAllLines[i * linesPerFile + 4]);
-
+            } else
+            {
+                Debug.Log("Found and deleted from saveFiles info");
             }
         }
         File.WriteAllLines(GameManager.saveFilesInfoPath, allLines);

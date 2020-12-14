@@ -70,7 +70,6 @@ public class GameManager : MonoBehaviour
             CheckSaveFiles();
         }
         else Debug.LogError("Could not save state");
-        
     }
 
     public static void DeleteCurrentSaveFile()

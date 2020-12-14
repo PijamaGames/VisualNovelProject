@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Ink.Runtime;
+using UnityEngine.UI;
+using System;
 
 public class StoryManager : MonoBehaviour
 {
+    private static DateTime initTime = new DateTime(2018, 10, 3);
     
     [Header("FILES")]
     [SerializeField] TextAsset inkJSON;
@@ -13,17 +16,24 @@ public class StoryManager : MonoBehaviour
     [SerializeField] GameObject dialogPanel;
     [SerializeField] GameObject answersPanel;
     [SerializeField] GameObject continueButton;
+    [SerializeField] RawImage background;
+    [SerializeField] DateController dateController;
+    [SerializeField] Bilingual dateText;
 
     [HideInInspector] public static Story inkStory;
     DialogController dialogController;
     AnswerController answerController;
     bool autoMode = false;
     public static string lastState = null;
+    public static int day = 1;
+    public static string backgroundName;
+    public static string character;
 
     void Start()
     {
         if (GameManager.currentSaveFile == null) return;
         inkStory = new Story(inkJSON.text);
+        ObserveVars();
         dialogController = dialogPanel.GetComponentInChildren<DialogController>();
         answerController = answersPanel.GetComponentInChildren<AnswerController>();
         GameManager.currentSaveFile.StartRecordingPlayTime();
@@ -43,7 +53,15 @@ public class StoryManager : MonoBehaviour
         } else
         {
             ContinueStory();
+            CheckDateChange(true);
         }
+    }
+
+    private void ObserveVars()
+    {
+        //inkStory.ObserveVariable("background", (varName, newValue) => UpdateBackground(newValue.ToString()));
+        //inkStory.ObserveVariable("character", (varName, newValue) => UpdateName(newValue.ToString()));
+        //inkStory.ObserveVariable("day", (varName, newValue) => dateController.BeginTransition());
     }
 
     private void OnDestroy()
@@ -83,18 +101,22 @@ public class StoryManager : MonoBehaviour
     public void ContinueStory()
     {
         if (!inkStory.canContinue) return;
-        Debug.Log("CONTINUE STORY");
+        //Debug.Log("CONTINUE STORY");
 
         inkStory.Continue();
         lastState = inkStory.state.ToJson();
-        UpdateUI();
+        if(!CheckDateChange())
+            UpdateUI();
     }
 
-    private void UpdateUI()
+    public void UpdateUI()
     {
         SetDialogVisibility(true);
         SetAnswersVisibility(false);
         SetContinueButtonVisibility(true);
+        UpdateBackground();
+        UpdateCharacterName();
+        UpdateDate();
 
         dialogController.SetDialog(inkStory.currentText);
     }
@@ -193,6 +215,113 @@ public class StoryManager : MonoBehaviour
     public static void LoadState(string json)
     {
         inkStory.state.LoadJson(json);
+    }
+
+    private void UpdateBackground()
+    {
+        string newBackgroundName = inkStory.variablesState["background"].ToString();
+        if(newBackgroundName != backgroundName)
+        {
+            backgroundName = newBackgroundName;
+            Texture2D tex = BackgroundManager.GetBackground(backgroundName);
+            if (tex != null)
+            {
+                GameManager.currentSaveFile.background = backgroundName;
+                background.texture = tex;
+            }
+            else
+            {
+                Debug.Log("No texture for background: " + backgroundName);
+            }
+        }
+    }
+
+    private void UpdateCharacterName()
+    {
+        string newCharacter = inkStory.variablesState["character"].ToString();
+        if(newCharacter != character)
+        {
+            character = newCharacter;
+            dialogController.SetName(character);
+        }
+    }
+
+    private void UpdateDate()
+    {
+        string[] dates = GetCurrentDate();
+        dateText.spanishText = dates[0];
+        dateText.englishText = dates[1];
+        dateText.UpdateLanguage();
+    }
+
+    public static string[] GetCurrentDate()
+    {
+        day = int.Parse(inkStory.variablesState["day"].ToString());
+
+        DateTime dateTime = initTime.AddDays(day-1);
+        int dayOfTheWeekNum = (int)dateTime.DayOfWeek;
+        Debug.Log(dayOfTheWeekNum);
+        string dayOfTheWeekSpanish = "";
+        string dayOfTheWeekEnglish = "";
+        switch (dayOfTheWeekNum)
+        {
+            case 1:
+                dayOfTheWeekSpanish = "Lunes";
+                dayOfTheWeekEnglish = "Monday";
+                break;
+            case 2:
+                dayOfTheWeekSpanish = "Martes";
+                dayOfTheWeekEnglish = "Tuesday";
+                break;
+            case 3:
+                dayOfTheWeekSpanish = "Miércoles";
+                dayOfTheWeekEnglish = "Wednesday";
+                break;
+            case 4:
+                dayOfTheWeekSpanish = "Jueves";
+                dayOfTheWeekEnglish = "Thursday";
+                break;
+            case 5:
+                dayOfTheWeekSpanish = "Viernes";
+                dayOfTheWeekEnglish = "Friday";
+                break;
+            case 6:
+                dayOfTheWeekSpanish = "Sábado";
+                dayOfTheWeekEnglish = "Saturday";
+                break;
+            case 7:
+                dayOfTheWeekSpanish = "Domingo";
+                dayOfTheWeekEnglish = "Sunday";
+                break;
+        }
+
+        string spanishDate = dayOfTheWeekSpanish + ", " + dateTime.Day + "/" + dateTime.Month + ".";
+        string englishDate = dayOfTheWeekEnglish + ", " + dateTime.Month + "/" + dateTime.Day + ".";
+
+
+        return new string[] { spanishDate, englishDate };
+    }
+
+    
+
+    private bool CheckDateChange(bool forced = false)
+    {
+        int currentDay = int.Parse(inkStory.variablesState["day"].ToString());
+        if (!forced)
+        {
+            if (currentDay != day)
+            {
+                day = currentDay;
+                dateController.BeginTransition();
+                return true;
+            }
+        } else if (forced)
+        {
+            day = currentDay;
+            dateController.BeginTransitionAtDate();
+            return true;
+        }
+        return false;
     }
 
     public static string GetBackground()
