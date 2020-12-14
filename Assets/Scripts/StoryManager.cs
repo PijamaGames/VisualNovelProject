@@ -33,7 +33,7 @@ public class StoryManager : MonoBehaviour
     {
         if (GameManager.currentSaveFile == null) return;
         inkStory = new Story(inkJSON.text);
-        ObserveVars();
+        //ObserveVars();
         dialogController = dialogPanel.GetComponentInChildren<DialogController>();
         answerController = answersPanel.GetComponentInChildren<AnswerController>();
         GameManager.currentSaveFile.StartRecordingPlayTime();
@@ -57,16 +57,16 @@ public class StoryManager : MonoBehaviour
         }
     }
 
-    private void ObserveVars()
+    /*private void ObserveVars()
     {
         //inkStory.ObserveVariable("background", (varName, newValue) => UpdateBackground(newValue.ToString()));
         //inkStory.ObserveVariable("character", (varName, newValue) => UpdateName(newValue.ToString()));
         //inkStory.ObserveVariable("day", (varName, newValue) => dateController.BeginTransition());
-    }
+    }*/
 
     private void OnDestroy()
     {
-        inkStory = null;
+        //inkStory = null;
     }
 
     public void SetAutoMode(bool active)

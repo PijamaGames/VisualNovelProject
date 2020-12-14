@@ -17,6 +17,8 @@ public class SaveFileSelect : MonoBehaviour
     {
         saveFile = _saveFile;
         Texture2D tex = BackgroundManager.GetBackground(saveFile.background);
+        Debug.Log("TEX " + saveFile.background);
+        Debug.Log(tex);
         if(tex != null)
         {
             background.texture = tex;

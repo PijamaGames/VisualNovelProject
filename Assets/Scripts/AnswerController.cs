@@ -7,17 +7,22 @@ using Ink.Runtime;
 public class AnswerController : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI[] answerButtons;
+    private Bilingual[] bilinguals;
     private int answerButtonsCount;
 
     public void SetAnswers(List<Choice> answers)
     {
         int count = answers.Count;
-        for(int i = 0; i < answerButtonsCount; i++)
+        string[] texts;
+        for (int i = 0; i < answerButtonsCount; i++)
         {
             answerButtons[i].transform.parent.gameObject.SetActive(i < count);
             if(i < count)
             {
-                answerButtons[i].text = answers[i].text;
+                texts = UsefulFuncs.Split(answers[i].text, '%');
+                bilinguals[i].spanishText = texts[0];
+                bilinguals[i].englishText = texts[1];
+                bilinguals[i].UpdateLanguage();
             }
         }
     }
@@ -26,13 +31,13 @@ public class AnswerController : MonoBehaviour
     void Start()
     {
         answerButtonsCount = answerButtons.Length;
+        List<Bilingual> aux = new List<Bilingual>();
+        foreach (var t in answerButtons)
+        {
+            aux.Add(t.transform.parent.GetComponent<Bilingual>());
+        }
+        bilinguals = aux.ToArray();
         //answerButtons = new GameObject[] { answerButton0, answerButton1, answerButton2, answerButton3};
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
