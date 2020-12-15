@@ -105,6 +105,7 @@ public class PersistentAudioSource : MonoBehaviour
             source.Play();
             var regulator = source.GetComponent<AudioRegulator>();
             regulator.isMusic = isMusic;
+            regulator.UpdateVolume();
         }
     }
 }
