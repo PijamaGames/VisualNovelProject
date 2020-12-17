@@ -883,6 +883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a03f5bd26bce5e429140a229bff016a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spanishText: 
   englishText: Settings
 --- !u!1 &651543491
 GameObject:
@@ -1015,6 +1016,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 787829753}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SavePreferences
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &662368614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1065,6 +1078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a03f5bd26bce5e429140a229bff016a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spanishText: 
   englishText: Return
 --- !u!1 &722127696
 GameObject:
@@ -1476,6 +1490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a03f5bd26bce5e429140a229bff016a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spanishText: 
   englishText: "Cambiar idioma a espa\xF1ol"
 --- !u!1 &901372101
 GameObject:
@@ -1697,6 +1712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a03f5bd26bce5e429140a229bff016a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spanishText: 
   englishText: Effects volume
 --- !u!1 &1001659544
 GameObject:
@@ -1944,6 +1960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a03f5bd26bce5e429140a229bff016a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spanishText: 
   englishText: Text speed
 --- !u!1 &1111927245
 GameObject:
@@ -3233,6 +3250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a03f5bd26bce5e429140a229bff016a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spanishText: 
   englishText: Auto mode speed
 --- !u!1 &1621034766
 GameObject:
@@ -3418,6 +3436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a03f5bd26bce5e429140a229bff016a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spanishText: 
   englishText: Music volume
 --- !u!1 &1946386035
 GameObject:

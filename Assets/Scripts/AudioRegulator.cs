@@ -36,6 +36,5 @@ public class AudioRegulator : MonoBehaviour
             if(r != null)
                 r.UpdateVolume();
         }
-
     }
 }

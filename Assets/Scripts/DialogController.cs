@@ -83,7 +83,7 @@ public class DialogController : MonoBehaviour
         for(int i = 0; i < dialog.Length; i++)
         {
             dialogText.text += dialog[i];
-            yield return new WaitForSeconds(GameManager.textSpeed * textSpeedMultiplier);
+            yield return new WaitForSeconds((4-GameManager.textSpeed) * textSpeedMultiplier);
         }
 
         onFinishedTyping.Invoke();

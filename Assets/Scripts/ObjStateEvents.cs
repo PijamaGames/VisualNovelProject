@@ -11,6 +11,8 @@ public class ObjStateEvents : MonoBehaviour
     [SerializeField] UnityEvent onEnable;
     [SerializeField] UnityEvent onDisable;
     [SerializeField] UnityEvent onDestroy;
+    [SerializeField] UnityEvent onTriggerEnter;
+    [SerializeField] UnityEvent onTriggerExit;
 
     private void Awake()
     {
@@ -42,5 +44,14 @@ public class ObjStateEvents : MonoBehaviour
         onDestroy.Invoke();
     }
 
-    
+    private void OnTriggerEnter(Collider other)
+    {
+        onTriggerEnter.Invoke();
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        onTriggerExit.Invoke();
+    }
+
 }
