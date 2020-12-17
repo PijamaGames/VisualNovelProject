@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class UsefulFuncs : MonoBehaviour
 {
@@ -14,6 +15,26 @@ public class UsefulFuncs : MonoBehaviour
     {
         System.DateTime now = System.DateTime.Now;
         return GetCurrentDate() + "_" + now.Hour + "_" + now.Minute + "_" + now.Second;
+    }
+
+    public static string InstantToDate(string instant)
+    {
+        string[] dateInfo = Split(instant, '_');
+        return dateInfo[0] + "_" + dateInfo[1] + "_" + dateInfo[2];
+    }
+
+    public DateTime GetDateTimeFromInstant(string instant)
+    {
+        string[] dateInfo = Split(instant, '_');
+        DateTime date = new DateTime(
+            int.Parse(dateInfo[2]),
+            int.Parse(dateInfo[1]),
+            int.Parse(dateInfo[0]),
+            int.Parse(dateInfo[3]),
+            int.Parse(dateInfo[4]),
+            int.Parse(dateInfo[5])
+        );
+        return date;
     }
 
     public static string[] Split(string original, char splitChar = ' ')

@@ -220,8 +220,9 @@ public class StoryManager : MonoBehaviour
     private void UpdateBackground()
     {
         string newBackgroundName = inkStory.variablesState["background"].ToString();
-        if(newBackgroundName != backgroundName)
-        {
+
+        /*if(newBackgroundName != backgroundName)
+        {*/
             backgroundName = newBackgroundName;
             Texture2D tex = BackgroundManager.GetBackground(backgroundName);
             if (tex != null)
@@ -233,7 +234,7 @@ public class StoryManager : MonoBehaviour
             {
                 Debug.Log("No texture for background: " + backgroundName);
             }
-        }
+        //}
     }
 
     private void UpdateCharacterName()

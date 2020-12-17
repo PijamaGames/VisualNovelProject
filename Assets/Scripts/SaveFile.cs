@@ -51,7 +51,7 @@ public class SaveFile
     public void SaveState(string state)
     {
         Debug.Log("Saving state to: " + creationInstant);
-        lastTime = UsefulFuncs.GetCurrentDate();
+        lastTime = UsefulFuncs.GetCurrentInstant();
         background = StoryManager.GetBackground();
         UpdatePlayTime();
         UpdateSaveFilesInfo();

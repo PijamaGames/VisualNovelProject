@@ -99,6 +99,11 @@ public class GameManager : MonoBehaviour
                 saveFilesInfo[i * SaveFile.linesPerFile + 4])
                 );
         }
+
+        saveFiles.Sort((s1, s2) =>
+        {
+            return UsefulFuncs.InstantToDate(s1.lastTime).CompareTo(UsefulFuncs.InstantToDate(s2.lastTime));
+        });
     }
 
     public static void SavePreferences()
