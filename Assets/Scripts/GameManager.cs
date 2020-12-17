@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
 
     public static string resourcesPath;
     public static string saveFilesInfoPath;
+    public static string saveFilesPath;
     public static List<SaveFile> saveFiles;
     public static SaveFile currentSaveFile;
 
@@ -24,7 +25,13 @@ public class GameManager : MonoBehaviour
         if (firstInstance)
         {
             firstInstance = false;
-            resourcesPath = Application.dataPath + "/Resources";
+            resourcesPath = Application.persistentDataPath;
+            saveFilesPath = resourcesPath + "/SaveFiles";
+            if (!Directory.Exists(saveFilesPath))
+            {
+                Directory.CreateDirectory(saveFilesPath);
+            }
+            Debug.Log("Resources path: "+resourcesPath);
             CheckSaveFiles();
             CheckPreferencesFile();
             //SaveCurrentStoryState(true);
