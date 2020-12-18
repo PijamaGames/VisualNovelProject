@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour
         if (firstInstance)
         {
             firstInstance = false;
+            Screen.sleepTimeout = SleepTimeout.NeverSleep;
+            Input.multiTouchEnabled = false;
             resourcesPath = Application.persistentDataPath;
             saveFilesPath = resourcesPath + "/SaveFiles";
             if (!Directory.Exists(saveFilesPath))
