@@ -9,6 +9,7 @@ public class SaveFileDisplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        StoryManager.lastState = null;
         foreach(SaveFile saveFile in GameManager.saveFiles)
         {
             GameObject saveFileItem = Instantiate(saveFilePrefab);

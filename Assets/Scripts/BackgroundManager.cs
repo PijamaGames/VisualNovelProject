@@ -17,7 +17,7 @@ public class BackgroundManager : MonoBehaviour
     public const string yard = "yard";
     
 
-    private void Start()
+    private void Awake()
     {
         if(instance == null)
         {

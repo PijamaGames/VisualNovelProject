@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
 
     public static string resourcesPath;
     public static string saveFilesInfoPath;
+    public static string saveFilesPath;
     public static List<SaveFile> saveFiles;
     public static SaveFile currentSaveFile;
 
@@ -24,10 +25,17 @@ public class GameManager : MonoBehaviour
         if (firstInstance)
         {
             firstInstance = false;
-            resourcesPath = Application.dataPath + "/Resources";
+            Screen.sleepTimeout = SleepTimeout.NeverSleep;
+            Input.multiTouchEnabled = false;
+            resourcesPath = Application.persistentDataPath;
+            saveFilesPath = resourcesPath + "/SaveFiles";
+            if (!Directory.Exists(saveFilesPath))
+            {
+                Directory.CreateDirectory(saveFilesPath);
+            }
+            Debug.Log("Resources path: "+resourcesPath);
             CheckSaveFiles();
             CheckPreferencesFile();
-            //SaveCurrentStoryState(true);
         }
     }
 
@@ -93,11 +101,37 @@ public class GameManager : MonoBehaviour
                 saveFilesInfo[i * SaveFile.linesPerFile + 4])
                 );
         }
+
+        saveFiles.Sort((s1, s2) =>
+        {
+            return UsefulFuncs.InstantToDate(s1.lastTime).CompareTo(UsefulFuncs.InstantToDate(s2.lastTime));
+        });
     }
 
+    public static void SavePreferences()
+    {
+        string preferencesPath = GetFilePath("Preferences");
+        List<string> allLines = new List<string>(5);
+
+        allLines.Add(musicVolume.ToString());
+        allLines.Add(effectsVolume.ToString());
+        allLines.Add(textSpeed.ToString());
+        allLines.Add(autoModeSpeed.ToString());
+        allLines.Add(english.ToString());
+        File.WriteAllLines(preferencesPath, allLines);
+    }
     
     private static void CheckPreferencesFile()
     {
-
+        string preferencesPath = GetFilePath("Preferences");
+        string[] allLines = File.ReadAllLines(preferencesPath);
+        if(allLines.Length > 0)
+        {
+            musicVolume = float.Parse(allLines[0]);
+            effectsVolume = float.Parse(allLines[1]);
+            textSpeed = int.Parse(allLines[2]);
+            autoModeSpeed = int.Parse(allLines[3]);
+            english = bool.Parse(allLines[4]);
+        }
     }
 }

@@ -11,8 +11,10 @@ public class StoryManager : MonoBehaviour
     
     [Header("FILES")]
     [SerializeField] TextAsset inkJSON;
-    
+
     [Header("UI REFERENCES")]
+    [SerializeField] GameObject autoOn;
+    [SerializeField] GameObject autoOff;
     [SerializeField] GameObject dialogPanel;
     [SerializeField] GameObject answersPanel;
     [SerializeField] GameObject continueButton;
@@ -23,7 +25,7 @@ public class StoryManager : MonoBehaviour
     [HideInInspector] public static Story inkStory;
     DialogController dialogController;
     AnswerController answerController;
-    bool autoMode = false;
+    private static bool autoMode = false;
     public static string lastState = null;
     public static int day = 1;
     public static string backgroundName;
@@ -33,6 +35,8 @@ public class StoryManager : MonoBehaviour
     {
         if (GameManager.currentSaveFile == null) return;
         inkStory = new Story(inkJSON.text);
+        autoOff.SetActive(!autoMode);
+        autoOn.SetActive(autoMode);
         //ObserveVars();
         dialogController = dialogPanel.GetComponentInChildren<DialogController>();
         answerController = answersPanel.GetComponentInChildren<AnswerController>();
@@ -118,7 +122,8 @@ public class StoryManager : MonoBehaviour
         UpdateCharacterName();
         UpdateDate();
 
-        dialogController.SetDialog(inkStory.currentText);
+        bool italics = inkStory.currentTags.Contains("italics");
+        dialogController.SetDialog(inkStory.currentText, italics);
     }
 
     public void OnContinueButton()
@@ -220,8 +225,9 @@ public class StoryManager : MonoBehaviour
     private void UpdateBackground()
     {
         string newBackgroundName = inkStory.variablesState["background"].ToString();
-        if(newBackgroundName != backgroundName)
-        {
+
+        /*if(newBackgroundName != backgroundName)
+        {*/
             backgroundName = newBackgroundName;
             Texture2D tex = BackgroundManager.GetBackground(backgroundName);
             if (tex != null)
@@ -233,7 +239,7 @@ public class StoryManager : MonoBehaviour
             {
                 Debug.Log("No texture for background: " + backgroundName);
             }
-        }
+        //}
     }
 
     private void UpdateCharacterName()

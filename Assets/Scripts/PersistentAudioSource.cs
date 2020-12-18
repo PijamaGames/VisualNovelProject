@@ -11,7 +11,7 @@ public class PersistentAudioSource : MonoBehaviour
     private static HashSet<AudioSource> inUseAudioSources = new HashSet<AudioSource>();
     private static GameObject pool;
 
-    private void Start()
+    private void Awake()
     {
         if(pool == null)
         {
@@ -37,7 +37,6 @@ public class PersistentAudioSource : MonoBehaviour
     private void Update()
     {
         List<AudioSource> audiosToStop = new List<AudioSource>();
-        
         foreach(AudioSource source in inUseAudioSources)
         {
             if (!source.isPlaying)
@@ -61,21 +60,29 @@ public class PersistentAudioSource : MonoBehaviour
 
     public static void StopClip(AudioClip clip)
     {
-        foreach(AudioSource source in inUseAudioSources)
+        List<AudioSource> audiosToStop = new List<AudioSource>();
+        foreach (AudioSource source in inUseAudioSources)
         {
-            if(source.clip == clip)
+            if(source && source.clip == clip)
             {
-                StopSource(source);
+                audiosToStop.Add(source);
+                //StopSource(source);
             }
         }
+        for (int i = 0; i < audiosToStop.Count; i++)
+        {
+            StopSource(audiosToStop[i]);
+        }
+        audiosToStop.Clear();
     }
 
     public static void PlayMusic(AudioClip clip)
     {
+        if (clip == null) return;
         bool alreadyPlaying = false;
         foreach(AudioSource source in inUseAudioSources)
         {
-            if(source.clip == clip)
+            if(source && source.clip == clip)
             {
                 alreadyPlaying = true;
             }
@@ -85,12 +92,12 @@ public class PersistentAudioSource : MonoBehaviour
         {
             TryPlayClip(clip, true, true);
         }
-        
     }
 
     public static void PlayEffect(AudioClip clip)
     {
-        TryPlayClip(clip, false, false);
+        if (clip != null)
+            TryPlayClip(clip, false, false);
     }
 
     private static void TryPlayClip(AudioClip clip, bool isMusic, bool loop = false)
@@ -98,6 +105,7 @@ public class PersistentAudioSource : MonoBehaviour
         if (avaibleAudioSources.Count > 0)
         {
             var source = avaibleAudioSources.Pop();
+            if (!source) return;
             inUseAudioSources.Add(source);
             source.enabled = true;
             source.clip = clip;

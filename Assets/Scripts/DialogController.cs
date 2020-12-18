@@ -42,8 +42,9 @@ public class DialogController : MonoBehaviour
         nameBilingual.UpdateLanguage();
     }
 
-    public void SetDialog(string _dialog)
+    public void SetDialog(string _dialog, bool italics = true)
     {
+        dialogText.fontStyle = italics ? FontStyles.Italic : FontStyles.Normal;
         string[] dialogs = UsefulFuncs.Split(_dialog, '%');
         spanishDialog = dialogs[0].Trim(' ');
         englishDialog = dialogs[1].Trim(' ');
@@ -83,7 +84,7 @@ public class DialogController : MonoBehaviour
         for(int i = 0; i < dialog.Length; i++)
         {
             dialogText.text += dialog[i];
-            yield return new WaitForSeconds(GameManager.textSpeed * textSpeedMultiplier);
+            yield return new WaitForSeconds((4-GameManager.textSpeed) * textSpeedMultiplier);
         }
 
         onFinishedTyping.Invoke();
