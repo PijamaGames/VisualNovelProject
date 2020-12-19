@@ -70,8 +70,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgrounds:
+  - {fileID: 2800000, guid: 59f0e3c3c3c8429418a9dd2dceff1b84, type: 3}
+  - {fileID: 2800000, guid: 1e10dc957bafdc54d80a399dd523b26a, type: 3}
+  - {fileID: 2800000, guid: 525ba71a41af6474fabda0472861b578, type: 3}
   - {fileID: 2800000, guid: 613f9e5abbc44b2489faa96beed82352, type: 3}
+  - {fileID: 2800000, guid: 6d513026706ce454ebd7355fb30c8ef5, type: 3}
+  - {fileID: 2800000, guid: a519d91a8981a38479f60ae460935e76, type: 3}
+  - {fileID: 2800000, guid: 816818ade48b30049aa250717f83f39e, type: 3}
+  - {fileID: 2800000, guid: 968d7be478bcdc4479a26e788766d659, type: 3}
   - {fileID: 2800000, guid: 03c9db00864f8aa44a5884214f053736, type: 3}
   - {fileID: 2800000, guid: 50d36ebf9045e4045825b05fc8e28849, type: 3}
+  - {fileID: 2800000, guid: a369897e470a3fc4e830e93e82485163, type: 3}
   - {fileID: 2800000, guid: 0d0327dffe3ae0a4cbbcf66d47f3fc81, type: 3}
+  - {fileID: 2800000, guid: a3ed917f6b9c6174fb3a165620074f12, type: 3}
+  - {fileID: 2800000, guid: 7daeb0a0368f4224caf3417eca28d9b1, type: 3}
   - {fileID: 2800000, guid: 2cf4b3e1f618ba74aa2b9ef1fd4f2ee9, type: 3}

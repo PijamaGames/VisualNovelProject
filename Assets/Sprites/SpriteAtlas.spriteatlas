@@ -48,6 +48,7 @@ SpriteAtlas:
     - {fileID: 2800000, guid: e67d2ae533feb154fb0439d5f6241b7f, type: 3}
     - {fileID: 2800000, guid: 70e45bf799b6f2642ac51e8686b70f4c, type: 3}
     - {fileID: 2800000, guid: 42081ba559cd4aa47b8039116b310d00, type: 3}
+    - {fileID: 2800000, guid: 26ddfdc9663585b468c5431590c0f401, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -58,6 +59,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: e67d2ae533feb154fb0439d5f6241b7f, type: 3}
   - {fileID: 21300000, guid: bbebb9a7e2655c64d9ad1f1434beb3a6, type: 3}
   - {fileID: 21300000, guid: 70e45bf799b6f2642ac51e8686b70f4c, type: 3}
+  - {fileID: 21300000, guid: 26ddfdc9663585b468c5431590c0f401, type: 3}
   - {fileID: 21300000, guid: 62dd30fa182ff0d4993a86a459dafe27, type: 3}
   m_PackedSpriteNamesToIndex:
   - pause
@@ -65,6 +67,7 @@ SpriteAtlas:
   - play
   - auto
   - recuadro
+  - auto_on
   - basura
   m_Tag: SpriteAtlas
   m_IsVariant: 0
