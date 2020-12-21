@@ -419,6 +419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a03f5bd26bce5e429140a229bff016a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spanishText: 
   englishText: Are you sure you want to start a new game?
 --- !u!1 &710873445
 GameObject:
@@ -711,6 +712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a03f5bd26bce5e429140a229bff016a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spanishText: 
   englishText: Yes
 --- !u!1 &1001659544
 GameObject:

@@ -10,15 +10,16 @@ public class AnswerController : MonoBehaviour
     [SerializeField] TextMeshProUGUI[] answerPcts;
     private Bilingual[] bilinguals;
     private int answerButtonsCount;
+    private int choiceCount = 0;
 
     public void SetAnswers(List<Choice> answers)
     {
-        int count = answers.Count;
+        choiceCount = answers.Count;
         string[] texts;
         for (int i = 0; i < answerButtonsCount; i++)
         {
-            answerButtons[i].transform.parent.gameObject.SetActive(i < count);
-            if(i < count)
+            answerButtons[i].transform.parent.gameObject.SetActive(i < choiceCount);
+            if(i < choiceCount)
             {
                 texts = UsefulFuncs.Split(answers[i].text, '%');
                 bilinguals[i].spanishText = texts[0];
@@ -38,6 +39,7 @@ public class AnswerController : MonoBehaviour
 
     public void SetAnswersPcts(QuestionDocument question)
     {
+        if (choiceCount < 2) return;
         float total = question.a0 + question.a1 + question.a2 + question.a3;
         Debug.Log("TOTAL :" + total);
         int[] pcts;
@@ -61,7 +63,6 @@ public class AnswerController : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         answerButtonsCount = answerButtons.Length;

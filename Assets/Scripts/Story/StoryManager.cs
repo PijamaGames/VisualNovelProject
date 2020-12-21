@@ -255,7 +255,10 @@ public class StoryManager : MonoBehaviour
     private void UpdateBackground()
     {
         string newBackgroundName = inkStory.variablesState["background"].ToString();
-
+        if(newBackgroundName != backgroundName)
+        {
+            GameManager.SaveCurrentStoryState(false);
+        }
         backgroundName = newBackgroundName;
         Texture2D tex = BackgroundManager.GetBackground(backgroundName);
         if (tex != null)

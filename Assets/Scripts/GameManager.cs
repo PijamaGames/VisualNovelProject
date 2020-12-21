@@ -65,13 +65,17 @@ public class GameManager : MonoBehaviour
 
     public static void SaveCurrentStoryState(bool newFile)
     {
-        string state = StoryManager.GetState();
+        string state;
 
         if (newFile)
         {
             string currentDate = UsefulFuncs.GetCurrentDate();
             string currentInstant = UsefulFuncs.GetCurrentInstant();
             currentSaveFile = new SaveFile(currentInstant, currentDate, currentDate, "0", BackgroundManager.mainMenu);
+            state = "";
+        } else
+        {
+            state = StoryManager.GetState();
         }
 
         if(currentSaveFile != null)
