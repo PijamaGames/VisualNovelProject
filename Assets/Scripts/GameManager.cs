@@ -36,6 +36,8 @@ public class GameManager : MonoBehaviour
             Debug.Log("Resources path: "+resourcesPath);
             CheckSaveFiles();
             CheckPreferencesFile();
+
+            DatabaseManager.Connect();
         }
     }
 

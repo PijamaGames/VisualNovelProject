@@ -7,6 +7,7 @@ using Ink.Runtime;
 public class AnswerController : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI[] answerButtons;
+    [SerializeField] TextMeshProUGUI[] answerPcts;
     private Bilingual[] bilinguals;
     private int answerButtonsCount;
 
@@ -24,6 +25,39 @@ public class AnswerController : MonoBehaviour
                 bilinguals[i].englishText = texts[1];
                 bilinguals[i].UpdateLanguage();
             }
+        }
+    }
+
+    public void CleanAnswersPcts()
+    {
+        foreach(var t in answerPcts)
+        {
+            t.text = "";
+        }
+    }
+
+    public void SetAnswersPcts(QuestionDocument question)
+    {
+        float total = question.a0 + question.a1 + question.a2 + question.a3;
+        Debug.Log("TOTAL :" + total);
+        int[] pcts;
+        if(total < 0.5f)
+        {
+            pcts = new int[] { 0, 0, 0, 0 };
+        } else
+        {
+            pcts = new int[]
+            {
+                (int)((question.a0 / total)*100),
+                (int)((question.a1 / total)*100),
+                (int)((question.a2 / total)*100),
+                (int)((question.a3 / total)*100),
+            };
+        }
+
+        for(int i = 0; i < answerPcts.Length; i++)
+        {
+            answerPcts[i].text = ""+pcts[i] + "%";
         }
     }
 

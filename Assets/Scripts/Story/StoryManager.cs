@@ -31,6 +31,8 @@ public class StoryManager : MonoBehaviour
     public static string backgroundName;
     public static string character;
 
+    public static QuestionDocument questionDocument;
+
     void Start()
     {
         if (GameManager.currentSaveFile == null) return;
@@ -157,7 +159,6 @@ public class StoryManager : MonoBehaviour
         yield return new WaitForSeconds((4-GameManager.autoModeSpeed));
         ContinueStory();
     }
-
     private bool CheckChoices()
     {
         int answerCount = inkStory.currentChoices.Count;
@@ -165,6 +166,21 @@ public class StoryManager : MonoBehaviour
         SetAnswersVisibility(answerCount > 0);
         if (answerCount > 0)
         {
+            int questionId;
+            
+            try
+            {
+                questionId = int.Parse(inkStory.variablesState["questionId"].ToString());
+            }
+            catch
+            {
+                Debug.Log("QUESTION ID NOT FOUND");
+                questionId = 0;
+            }
+
+            questionDocument = new QuestionDocument(questionId, 0, 0, 0, 0);
+            answerController.CleanAnswersPcts();
+            GetQuestionInfoFromDB(questionId);
             answerController.SetAnswers(inkStory.currentChoices);
             return true;
         } else
@@ -173,9 +189,23 @@ public class StoryManager : MonoBehaviour
         }
     }
 
+    private async void GetQuestionInfoFromDB(int id)
+    {
+        await DatabaseManager.TryGetQuestion(id);
+        answerController.SetAnswersPcts(questionDocument);
+    }
+
     public void SelectAnswer(int index)
     {
         inkStory.ChooseChoiceIndex(index);
+        switch (index)
+        {
+            case 0: questionDocument.a0++; break;
+            case 1: questionDocument.a1++; break;
+            case 2: questionDocument.a2++; break;
+            case 3: questionDocument.a3++; break;
+        }
+        DatabaseManager.UpdateQuestion(questionDocument.Clone());
         if (inkStory.canContinue)
         {
             ContinueStory();
@@ -226,20 +256,17 @@ public class StoryManager : MonoBehaviour
     {
         string newBackgroundName = inkStory.variablesState["background"].ToString();
 
-        /*if(newBackgroundName != backgroundName)
-        {*/
-            backgroundName = newBackgroundName;
-            Texture2D tex = BackgroundManager.GetBackground(backgroundName);
-            if (tex != null)
-            {
-                GameManager.currentSaveFile.background = backgroundName;
-                background.texture = tex;
-            }
-            else
-            {
-                Debug.Log("No texture for background: " + backgroundName);
-            }
-        //}
+        backgroundName = newBackgroundName;
+        Texture2D tex = BackgroundManager.GetBackground(backgroundName);
+        if (tex != null)
+        {
+            GameManager.currentSaveFile.background = backgroundName;
+            background.texture = tex;
+        }
+        else
+        {
+            Debug.Log("No texture for background: " + backgroundName);
+        }
     }
 
     private void UpdateCharacterName()
