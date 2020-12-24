@@ -5,6 +5,12 @@ using System;
 
 public class UsefulFuncs : MonoBehaviour
 {
+    public static float SmoothStep(float edge0, float edge1, float value)
+    {
+        value = Mathf.Clamp((value - edge0) / (edge1 - edge0), 0.0f, 1.0f);
+        return value * value * (3f - 2f * value);
+    }
+
     public static string GetCurrentDate()
     {
         System.DateTime now = System.DateTime.Now;

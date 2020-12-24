@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PersistentAudioSource : MonoBehaviour
 {
-
+    [SerializeField] float musicTransitionTime = 1f;
+    private static float s_musicTransitionTime = 1f;
     private const int poolSize = 10;
     private static AudioSource[] audioSources = new AudioSource[poolSize];
     private static Stack<AudioSource> avaibleAudioSources = new Stack<AudioSource>();
@@ -15,6 +16,7 @@ public class PersistentAudioSource : MonoBehaviour
     {
         if(pool == null)
         {
+            s_musicTransitionTime = musicTransitionTime;
             pool = new GameObject("AudioPool");
             pool.transform.position = Camera.main.transform.position;
             GameObject obj;
@@ -41,21 +43,30 @@ public class PersistentAudioSource : MonoBehaviour
         {
             if (!source.isPlaying)
             {
+                Debug.Log("TO STOP");
                 audiosToStop.Add(source);
             }
         }
         for(int i = 0; i < audiosToStop.Count; i++)
         {
-            StopSource(audiosToStop[i]);
+            StopSource(audiosToStop[i], true);
         }
         audiosToStop.Clear();
     }
 
-    private static void StopSource(AudioSource source)
+    private static void StopSource(AudioSource source, bool forced = false)
     {
-        source.enabled = false;
-        inUseAudioSources.Remove(source);
-        avaibleAudioSources.Push(source);
+        var regulator = source.GetComponent<AudioRegulator>();
+        if (regulator.isMusic && !forced)
+        {
+            regulator.FadeOut(s_musicTransitionTime);
+        } else
+        {
+            source.enabled = false;
+            inUseAudioSources.Remove(source);
+            avaibleAudioSources.Push(source);
+        }
+        
     }
 
     public static void StopClip(AudioClip clip)
@@ -113,7 +124,12 @@ public class PersistentAudioSource : MonoBehaviour
             source.Play();
             var regulator = source.GetComponent<AudioRegulator>();
             regulator.isMusic = isMusic;
+            if (isMusic)
+            {
+                regulator.FadeIn(s_musicTransitionTime);
+            }
             regulator.UpdateVolume();
+            
         }
     }
 }
