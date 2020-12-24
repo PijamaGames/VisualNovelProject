@@ -69,7 +69,17 @@ public class SceneLoader : MonoBehaviour
     private static void LoadScene(string name)
     {
         previousScene = SceneManager.GetActiveScene().name;
-        SceneManager.LoadScene(name, LoadSceneMode.Single);
+        UITransition transitioner = FindObjectOfType<UITransition>();
+        if(transitioner != null)
+        {
+            transitioner.onPlayOutEnd = ()=> SceneManager.LoadScene(name, LoadSceneMode.Single);
+            transitioner.PlayOut();
+        } else
+        {
+            SceneManager.LoadScene(name, LoadSceneMode.Single);
+        }
+        
+        
     }
 
     
