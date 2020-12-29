@@ -1640,7 +1640,7 @@ Cages un sándwich antes de salir de casa.%
 ->PrisonEntrance
 
 =PrisonEntrance
-~background = "prisonentrance"
+~background = "reception"
 ~character = "Narrador%Narrator"
 ~sprite = ""
 
@@ -2309,13 +2309,166 @@ Me pregunto qué me habrán comprado este año...% #italics
 =BeedroomStanislav
 ~background = "bedroom"
 TODO Stanislav Habitación
+~character = "Narrador%Narrator"
+~sprite = ""
+Dejas la partitura sobre la mesa y te pones a rebuscar en la mochila.%
+Encuentras la librea de Stanislav al fondo, escondida tras una chaqueta.%
+Sacas una nota de papel con un número de teléfono escrito.%
+
+~character = "Johan%Johan"
+~sprite = ""
+Allá vamos...% #italics
+
+~character = "Narrador%Narrator"
+~sprite = ""
+Llamas al número de teléfono mientras abres la libreta de Stanislav sobre tu regazo.%
+
+~character = "Secretario%Secretario"
+~sprite = "Phone"
+Oficina del partido Rusia Renacida, buenas noches.%
+¿Puedo ayudarle?%
+
+~character = "Johan%Johan"
+~sprite = "Phone"
+*[Buenas noches, necesito hablar con Viktor Barinov%]
+*[Póngame con Viktor Barinov. Es urgente%]
+-
+~character = "Secretario%Secretario"
+~sprite = "Phone"
+Lo siento mucho. El señor Viktor está muy ocupado.%
+Déjeme su nombre y le concertaré una cita.%
+¿Qué tal le viene el 12 de enero?%
+
+~character = "Johan%Johan"
+~sprite = "Phone"
+Es acerca de Stanislav.%
+Creo que le interesa coger esta llamada.%
+
+~character = "Secretario%Secretario"
+~sprite = "Phone"
+...%...
+Deme un segundo. Veré que puedo hacer.%
+
+~character = "Narrador%Narrador"
+~sprite = ""
+Ojeas la libreta de Stanislav varias veces mientras esperas con una música de ascensor de fondo.%
+Varias gotas de sudor caen sobre las páginas dejando una marca.%
+
+~character = "Secretario%Secretario"
+~sprite = "Phone"
+El señor Viktor está dispuesto a aceptar su llamada.%
+¿Podría darme su nombre?
+
+
+~character = "Johan%Johan"
+~sprite = "Phone"
+VAR name = ""
+
+*[Johan%Johan]
+~questionId = 45
+~name = "Johan"
+*[Alek%Alek]
+~questionId = 46
+~name = "Alek"
+
+-
+~character = "Secretario%Secretario"
+~sprite = "Phone"
+Muchas gracias, caballero.%
+Le paso con VIktor.%
+
+~character = "Johan%Johan"
+~sprite = ""
+Llegó el momento de la verdad.% #italics
+
+~character = "Viktor%Viktor"
+~sprite = "Phone"
+Buenas noches. Viktor Barinov al habla.%
+
+~character = "Johan%Johan"
+~sprite = "Phone"
+
+*[Tengo información sobre Stanislav%]
+~character = "Viktor%Viktor"
+~sprite = "Phone"
+¿Se refiere a Stanislav Volkov?%
+Yo también tengo información sobre él.%
+Está encerrado en la cárcel de Moscú. Y durante un buen tiempo, espero.%
+*[Sé lo que habéis hecho con Stanislav%]
+~character = "Viktor%Viktor"
+~sprite = "Phone"
+Yo también sé lo que hemos hecho con él.%
+Le hemos encerrado en la prisión de Moscú. Y durante bastante tiempo, espero.%
+-
+
+~character = "Johan%Johan"
+~sprite = "Phone"
+*[Se la habéis jugado%]
+~character = "Viktor%Viktor"
+~sprite = "Phone"
+Si se refiere a lo del museo, en efecto, se la hemos jugado.%
+No podemos grabar el nombre de un asesino en un monumento público.%
+*[Le habéis utilizado]
+~character = "Viktor%Viktor"
+~sprite = "Phone"
+Si se refiere a lo del museo, en efecto, le hemos utilizado.%
+Le hemos utilizado para limpiar la imagen de Moscú.%
+No podemos grabar el nombre de un asesino en un monumento público.%
+
+-
+~character = "Johan%Johan"
+~sprite = "Phone"
+*[Tengo pruebas%]
+Tengo pruebas, Viktor.%
+Sé que le has cargado el asesinato de Adrik Avilov a las espaldas.%
+No pareces muy contento con sus propuestas para la reforma económica.%
+-
+~character = "Viktor%Viktor"
+~sprite = "Phone"
+Y de qué pruebas se trata, señor {name}.%
+
+~character = "Johan%Johan"
+~sprite = "Phone"
+*[Fotografías de la coartada%]
+~character = "Narrador%Narrator"
+~sprite = ""
+Pasas las páginas dela libreta de Stanislav con mano temblorosa.%
+
+~character = "Johan%Johan"
+~sprite = "Phone"
+En estas fotografías puede verse a Stanislav salir de un coche con una... bueno, con una amiga.%
+Está tomada la misma noche en la que, según su partido, asesinó a Adrik.
+*[Recortes de periódico%]
+~character = "Narrador%Narrator"
+~sprite = ""
+Pasas las páginas dela libreta de Stanislav con mano temblorosa.%
+
+~character = "Johan%Johan"
+~sprite = "Phone"
+Estos recortes de periódico hablan sobre Stanislav.%
+Le pillaron una noche saliendo de un coche con una... bueno, con una amiga.%
+Esa misma noche debería estar asesinando a Adrik.%
+Al menos según la versión de los hechos de su partido.%
+-
+
+~character = "Viktor%Viktor"
+~sprite = "Phone"
+Tegno que colgarle.%
+Como dije durante la rueda de prensa, en Rusia Renacida nos desligamos completamente del señor Stanislav.%
+Pase una buena noche, {name}.%
+Y tenga cuidado. Creo que no sabe dónde se está metiendo.%
+
+~character = "Narrador%Narrator"
+~sprite = ""
+El teléfono emite un pitido antes de cortar la llamada.%
+
+~character = "Johan%Johan"
+~sprite = ""
+Espero que esto ayude a Stanislav... y que no me cause demasiados problemas.% #italics
+Estoy deseando salir mañana de fiesta con los chicos.% #italics
+Me pregunto qué me habrán comprado este año...% #italics
 
 ->BedroomEnd
-
-
-
-
-
 
 =BedroomEnd
 ~background = "bedroom"
@@ -2328,51 +2481,397 @@ Te arropas con las ´sábanas hasta el cuello y das un profundo bostezo antes de
 ==Day_Four==
 ~day = 4
 ~hour = 0
+
+->BedroomMorning
+
+=BedroomMorning
 ~background = "bedroom"
+~character = "Narrador%Narrator"
+~sprite = ""
+Escuchas el móvil vibrar sobre el escritorio.%
+La luz de la pantalla ilumina la habitación junto a los pocos rayos de sol que entran por las rendijas de la persiana.%
+Te levantas y coges el teléfono, restregándote los ojos con la otra mano.%
+
+~character = "Luka%Luka"
+~sprite = "Phone"
+¡Hola, cadete! ¡Buenos días!
+
+~character = "Johan%Johan"
+~sprite = "Phone"
+¿Qué quieres, Luka?%
+Hoy tengo el día libre.%
+
+~character = "Luka%Luka"
+~sprite = "Phone"
+Por eso mismo te llamaba.%
+Ha surgido una... oportunidad de trabajo en la cárcel.%
+Hay un tipo que no puede venir hoy y necesitamos un sustituto urgente.%
+Creo que te interesa, pagan bien.%
+MUY bien.%
+
+~character = "Johan%Johan"
+~sprite = "Phone"
+¿Cuántas horas son?%
+Necesito tener la tarde libre. Tengo planes.%
+
+~character = "Luka%Luka"
+~sprite = "Phone"
+No te preocupes por eso, serán solo un par de horas como mucho.%
+
+~character = "Johan%Johan"
+~sprite = "Phone"
+Supongo que me interesa entonces.%
+¿De qué va el trabajo?%
+
+~character = "Luka%Luka"
+~sprite = "Phone"
+¡Perfecto, chaval! Nos vemos en media hora en la cárcel.%
+
+~character = "Narrador%Narrador"
+~sprite = ""
+Luka cuelga el teléfono bruscamente.%
+Te vistes rápidamente y sales por la puerta con un sándwich en la mano.%
+
+->PrisonReception
+
+=PrisonReception
+~background = "reception"
+~character = "Narrador%Narrador"
+~sprite = ""
+~sfx = "Pasos_1"
+La recepción de la cárcel está completamente vacía.%
+Cada uno de tus pasos resuena por toda la habitación.%
+
+~character = "Luka%Luka"
+~sprite = "Luka"
+¡Johan! Has llegado pronto y todo. Así me gusta.%
+Sígueme. Vamos a tu nuevo puesto de trabajo.%
+
+->ElectricChairDoor
+
+=ElectricChairDoor
+~background = "closeddoor"
+~sfx = "Zumbido"
+~character = "Narrador%Narrador"
+~sprite = ""
+Luka se para frente a la puerta de metal.%
+Desbloquea los tres cerrojos y se saca una llave del bolsillo para abrir la cerradura.%
+
+~character = "Luka%Luka"
+~sprite = "Luka"
+bienvenido al matadero.%
+
+->ElectricChair
+
+=ElectricChair
+~background = "electricchair"
+~sfx = "Zumbido"
+~character = "Narrador%Narrador"
+~sprite = ""
+Un olor a polvo y humo subre toda la habitación.%
+Te cuesta respirar, no sabes si por el polvo o la visión de la silla en el centro de la habitación.%
+El zumbido monótono crece a cada paso que das hacia ella.%
+ 
+~character = "Luka%Luka"
+~sprite = "Luka"
+El trabajo es muy sencillo. Solo tienes que bajar esta palanca cuando yo te lo diga.%
+Cuando empieces a oler a barbacoa la subes.5
+Tampoco hay que ser sádico.%
+
+~character = "Johan%Johan"
+~sprite = "Luka"
+Luka...%
+No puedo hacer esto.%
+No puedo matar a una persona.%
+
+~character = "Luka%Luka"
+~sprite = "Luka"
+Oye, oye. Tú no estás matando a nadie.%
+Solo estás bajando una palanca, ¿entiendes?%
+
+~character = "Johan%Johan"
+~sprite = "Luka"
+...%...
+
+~character = "Luka%Luka"
+~sprite = "Luka"
+Vamos, chaval. Lo vas a hacer genial.%
+Y piensa en la paga.%
+Necesitarás bastante dinero para grabas más CDs como el que me diste.%
+Es genial, Johan. Tienes talento.%
+
+~character = "Narrador%Narrador"
+~sprite = ""
+Luka te pone la mano en la espalda y te dirige hacia la cabina de la sala.%
+Arrastras los pies por la habitación levantando nuevas nubes de polvo en el ambiente.%
+
+->ExecutionIntro
+
+=ExecutionIntro
+La sala se va llenando de nuevas personas.%
+Toman asiento en banquetas dispuestas frente a la silla eléctrica.%
+Luka les recibe a cada uno en la puerta hasta que las banquetas están llenas.%
+La puerta de metal se abre una última vez hasta golpear la pared.%
+Dos guardias vestidos con chalecos reforzados entran en la sala, arrastrando por los hombros a un preso.%
+Luka cierra la puerta tras ellos antes de sentarse entre el público.%
+
+{Day_Two.HelpKalev} ->ExecutionKalev
+{Day_Two.HelpStanislav} ->ExecutionStanislav
+
+=ExecutionKalev
+~character = "Narrador%Narrador"
+~sprite = ""
+Los guardias sientan al preso en la silla y le atan las manos.%
+Revelan un pelo rubio al levantar la bolsa de su cabeza.%
+
+~character = "Johan%Johan"
+~sprite = "Kalev"
+Kalev...
+
+~character = "Narrador%Narrador"
+~sprite = "Kalev"
+Kalev gira la cabeza para mirarte.%
+Sientes un escalofrío al encontrar sus ojos vacíos.%
+Su cara está totalmente pálida, sin vistas de una sonrisa o una lágrima.%
+Los guardias le agarran con fuerza del cuello para forzarle a mirar al público.%
+Luka te levanta un pulgar sentado entre el público, entre dos hombres altos con tatuajes de arañas y estrellas.%
+Los guardias colocan una esponja húmeda sobre la cabeza de Kalev antes de bajar el casco de metal.%
+Los dos guardias te miran y asienten antes de dar un paso atrás al público.%
+Sientes cada uno de los tendones de tus dedos tensarse mientras tu cara se enfría y palidece.%
+Alcanzas hacia la palanca de la pared...
+
+*[Bajar la palanca%]
+~sfx = "Palanca"
+
+~character = "Johan%Johan"
+~sprite = ""
+Lo siento...% #italics
+
+-
+~character = "Narrador%Narrador"
+~sprite = "Kalev"
+~sfx = "Muertepreso_4"
+Un olor a carne quemada empieza a invadir la habitación junto al crepitar de la electricidad.%
+
+*[Subir la palanca]
+~sfx = "Zumbido"
+~character = "Narrador%Narrador"
+~sprite = ""
+Levantas la palanca y te desplomas en el suelo con la visión nublosa.%
+
+->Canteen
+
+=ExecutionStanislav
+~character = "Narrador%Narrador"
+~sprite = ""
+Los guardias sientan al preso en la silla y le atan las manos.%
+Revelan un pelo rubio al levantar la bolsa de su cabeza.%
+
+~character = "Johan%Johan"
+~sprite = "Stanislav"
+Stanislav...
+
+~character = "Narrador%Narrador"
+~sprite = "Stanislav"
+Stanislav gira la cabeza para mirarte.%
+Sientes un escalofrío al encontrar sus ojos vacíos.%
+Su cara está totalmente pálida, sin vistas de una sonrisa o una lágrima.%
+Los guardias le agarran con fuerza del cuello para forzarle a mirar al público.%
+Luka te levanta un pulgar sentado entre el público, junto a un tipo trajeado con un maletín.%
+Los guardias colocan una esponja húmeda sobre la cabeza de Stanislav antes de bajar el casco de metal.%
+Los dos guardias te miran y asienten antes de dar un paso atrás al público.%
+Sientes cada uno de los tendones de tus dedos tensarse mientras tu cara se enfría y palidece.%
+Alcanzas hacia la palanca de la pared...
+
+*[Bajar la palanca%]
+~sfx = "Palanca"
+
+~character = "Johan%Johan"
+~sprite = ""
+Lo siento...% #italics
+
+-
+~character = "Narrador%Narrador"
+~sprite = "Stanislav"
+~sfx = "Muertepreso_5"
+Un olor a carne quemada empieza a invadir la habitación junto al crepitar de la electricidad.%
+
+*[Subir la palanca]
+~sfx = "Zumbido"
+~character = "Narrador%Narrador"
+~sprite = ""
+Levantas la palanca y te desplomas en el suelo con la visión nublosa.%
+
+->Canteen
+
+=Canteen
+~hour = 1
+~background = "canteen"
+~sfx = "zumbido"
+~character = "Narrador%Narrador"
+~sprite = ""
+Te despiertas en la cantina de la cárcel sentado junto a Luka.%
+La cabeza te da vueltras y pulsa de forma intermitente.%
+
+~character = "Luka%Luka"
+~sprite = "Luka"
+Al fin has despertado. Pensé que te perdía ahí dentro.%
+Menuda barbacoa has montado. Buen trabajo, chico.%
+
+~character = "Johan%Johan"
+~sprite = "Luka"
+...%...
+
+~character = "Narrador%Narrator"
+~sprite = "Luka"
+Luka abre su bandeja de comida, arrancando el plástico y tirándolo por el aire.%
+Te llega un olor a carne asada.%
+Bajas la cabeza y cubres tus piernas y el suelo de vómito.%
+
+~character = "Luka%Luka"
+~sprite = "Luka"
+¡Hostia!5
+¿Te encuentras bien, Johan?%
+Será mejor que te lleve a casa.%
+
+~character = "Narrador%Narrator"
+~sprite = ""
+Luka te pone la mano en el hombro y te lleva en coche hasta tu piso.%
+
+->FlatDoorstep
+
+=FlatDoorstep
+~hour = 2
+~background = "apartmentdoor"
+~sfx = "Zumbido"
+~character = "Johan%Johan"
+~sprite = "Luka"
+Gracias por acompañarme, Luka.%
+No creo que pudiera haber llegado yo solo.%
+
+~character = "Luka%Luka"
+~sprite = "Luka"
+No hay de qué, Johan.%
+Lo has hecho genial antes. Mañana te enviarán el cheque.%
+Descansa este fin de semana.%
+
+~character = "Johan%Johan"
+~sprite = "Luka"
+Igualmente, Luka.%
+
+~character = "Narrador%Narrator"
+~sprite = ""
+Te tiembla la mano mientras tratas de introducir la llave en la cerradura.%
+Cuando Luka se marcha caes al suelo frente a la puerta y rompes a llorar.%
+
+~character = "Fay%Fay"
+~sprite = "Fay"
+¿Johan? ¿Estás bien?%
+
+~character = "Narrador%Narrator"
+~sprite = "Fay"
+Escuchas la voz de Fay a través de la puerta.%
+Te levantas de un salto y terminas de abrir la puerta.%
+La cabeza te da vueltas.%
+
+->Flat
+
+=Flat
+~background = "apartmententrance"
+~sfx = "Zumbido"
+~character = "Fay%Fay"
+~sprite = "Fay"
+Dios Johan, perdona pero... Uff.%
+Tienes un aspecto horrible.%
+
+~character = "Johan%Johan"
+~sprite = "Fay"
+Ya...%
+Ha sido un día duro en el trabajo.%
+
+~character = "Fay%Fay"
+~sprite = "Fay"
+¿Trabajas en fin de semana también?%
+Vaya faena...%
+
+~character = "Johan%Johan"
+~sprite = "Fay"
+Son horas extras.%
+Las pagan bien.%
+O eso me han dicho.%
+
+~character = "Fay%Fay"
+~sprite = "Fay"
+Siéntate, anda. Acabo de prepararme un té. Puedes quedártelo.%
+
+~character = "Johan%Johan"
+~sprite = "Fay"
+Gracias Fay, pero no creo que pueda tomar nada ahora mismo.%
+Solo quiero terminar este día de una vez.%
+
+~character = "Narrador%Narrator"
+~sprite = "Fay"
+Fay se te acerca y te rodea con los brazos.%
+Te aprieta con fuerza mientras hundes la cabeza en su hombro, sollozando en silencio.%
+
+~character = "Fay%Fay"
+~sprite = "Fay"
+Descansa, Johan. Te vendrá bien.%
+Y oye, si te hace falta estoy en mi habitación.%
+
+~character = "Johan%Johan"
+~sprite = "Fay"
+Gracias...%
+
+~character = "Narrador%Narrator"
+~sprite = ""
+Arrastras los pies hasta tu habitación mientras Fay vuelve a la suya%
+
+{Day_Two.HelpKalev} ->BeedroomKalev
+{Day_Two.HelpStanislav} ->BeedroomStanislav
+
+=BeedroomKalev
+~background = "Bedroom"
+~character = "Narrador%Narrator"
+~sprite = ""
+La habitación está oscura. Solo entran unos pocos rayos de luz de la luna entre la persiana.%
+Cierras la puerta y te llevas las manos a las sienes, masajeándolas suavemente.%
+Te tumbas sobre la cama con el uniforme sudado aún puesto.%
+Al subir las piernas sobre el colchón golpeas algo blando.%
+Comienza a brillar con una tenue luz azúl.%
+
+~character = "Kalev%Kalev"
+~sprite = "Kalev"
+Hola, Johan.%
+
+~character = "Narrador%Narrator"
+~sprite = "Kalev"
+Das un salto al ver a Kalev sentado, brillando, sobre tu caman.%
+Te golpeas la cabeza contra la estantería y caes sobre el suelo mientras toda la habitación da vueltas.%
+
+->TO_BE_CONTINUED
+
+=BeedroomStanislav
+~background = "Bedroom"
+~character = "Narrador%Narrator"
+~sprite = ""
+La habitación está oscura. Solo entran unos pocos rayos de luz de la luna entre la persiana.%
+Cierras la puerta y te llevas las manos a las sienes, masajeándolas suavemente.%
+Te tumbas sobre la cama con el uniforme sudado aún puesto.%
+Al subir las piernas sobre el colchón golpeas algo blando.%
+Comienza a brillar con una tenue luz azúl.%
+
+~character = "Stanislav%Stanislav"
+~sprite = "Stanislav"
+Hola, Johan.%
+
+~character = "Narrador%Narrator"
+~sprite = "Stanislav"
+Das un salto al ver a Stanislav sentado, brillando, sobre tu caman.%
+Te golpeas la cabeza contra la estantería y caes sobre el suelo mientras toda la habitación da vueltas.%
+
+->TO_BE_CONTINUED
+
+==TO_BE_CONTINUED==
 
 ->END
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
