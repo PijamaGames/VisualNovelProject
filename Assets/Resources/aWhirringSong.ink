@@ -9,7 +9,6 @@ VAR sprite = "" //Nombre sprite del personaje
 
 ->Day_One
 
-
 ==Day_One==
 ~day = 1
 ~hour = 0
@@ -1631,6 +1630,705 @@ Caes rendido en la cama sin siquiera quitarte el uniforme.%
 ~background = "bedroom"
 ~character = "Narrador%Narrator"
 ~sprite = ""
+Una voz robótica grita desde tu móvil. Las 6 en punto.%
+Te levantas de la cama, con el uniforme ya puesto de anoche.%
+
+~background = "apartmententrance"
+Andas despacio por el pasillo, tratando de no despertar Fay, que ronca en su habitación.%
+Cages un sándwich antes de salir de casa.%
+
+->PrisonEntrance
+
+=PrisonEntrance
+~background = "prisonentrance"
+~character = "Narrador%Narrator"
+~sprite = ""
+
+Llegas a la cárcel con el sol apenas asomando por el horizonte.%
+Saludas al recepcionista bajándote la gorra y te drigiges al corredor de los presos.%
+
+->ElectricChair
+
+=ElectricChair
+~background = "closeddoor"
+~character = "Narrador%Narrator"
+~sprite = ""
+~sfx = "Zumbido"
+En tu camino al corredor de los presos te topas otra vez con la puerta cerrada con tres cerrojos y una llave.%
+EL mismo zumbido monótono suena al otro lado. Te acercas poco a poco hasta pegar la oreja.%
+Un escalofrío recorre tu espalda. Debe de ser cosa del frío metal de la puerta.%
+Continuas andando hacia el corredor de los presos, mirando de vez en cuando a tu espalda, a la puerta cerrada con tres cerrojos y una llave.%
+
+->CellCorridorMorning
+
+=CellCorridorMorning
+~background = "cellcorridor"
+~sfx = "Pasos"
+~character = "Narrador%Narrator"
+~sprite = ""
+Las luces del corredor parpadean al ritmo de tus pasos.%
+El golpe de tus botas hace eco por las paredes de cemento.%
+
+{Day_Two.HelpKalev} ->CellCorridorMorningKalev
+{Day_Two.HelpStanislav} ->CellCorridorMorningStanislav
+
+=CellCorridorMorningKalev
+~background = "cell"
+~character = "Narrador%Narrator"
+~sprite = ""
+No hay rastro de Kalev en su celda.%
+EL colchón tiene una raja y el relleno está desperdigado por el suelo.%
+
+*[Ir a la celda de aislamiento%]
+
+~background = "heavydoor"
+~character = "Narrador%Narrator"
+~sprite = ""
+Caminas hacia el final del pasillo hasta acercarte a las gruesas puertas de acero.%
+Escuchas los susurros de un sollozo escapar entre las bisagras y tornillos.%
+
+~character = "Johan%Johan"
+~sprite = ""
+¿Kalev? ¿Kalev, estás ahí?
+
+~character = "Narrador%Narrator"
+~sprite = ""
+Escuchas pasos arrastrarse hasta llegar al otro lado de la puerta.%
+
+~character = "Kalev%Kalev"
+~sprite = "Kalev"
+¿Johan?
+
+~character = "Johan%Johan"
+~sprite = "Kalev"
+Sí, soy yo. Podemos hablar. No hay nadie más aquí.%
+He enviado la carta.%
+
+~character = "Kalev%Kalev"
+~sprite = "Kalev"
+Gracias chico...%
+
+~character = "Narrador%Narrator"
+~sprite = "Kalev"
+La voz de Kalev comienza a quebrarse.%
+
+~character = "Kalev%Kalev"
+~sprite = "Kalev"
+Te debo...%
+Te debo una.%
+
+~character = "Johan%Johan"
+~sprite = "Kalev"
+Aguanta ahí dentro, ¿quieres? Te soltarán pronto, seguro.%
+Tengo que marcharme a empezar mi ronda. Nos vemos, Kalev.%
+
+~character = "Narrador%Narrator"
+~sprite = ""
+Kalev vuelve a arrastrar los pies hasta el fondo de la celda.%
+Vuelves a escuchar un sollozo escapar por la puerta mientras te alejas.%
+
+->VendingMachine
+
+=CellCorridorMorningStanislav
+~background = "cell"
+~character = "Narrador%Narrator"
+~sprite = ""
+Stanislav está sentado sobre su cama leyendo un pequeño libro con la espina desgastada-%
+Cuando te acercas lo cierra de golpe y lo deja sobre las sábanas.%
+
+~character = "Stanislav%Stanislav"
+~sprite = "Stanislav"
+¡Johan1 Qué agradable visita.%
+Dime, ¿qué tal fue el encargo?%
+
+~character = "Johan%Johanr"
+~sprite = "Stanislav"
+Está hecho. Espero que salga todo bien.%
+Sea lo que sea.%
+
+~character = "Stanislav%Stanislav"
+~sprite = "Stanislav"
+Yo no tendría muchas esperanzas.%
+Pero bueno, incluso un reloj roto acierta dos veces al día, ¿no?
+
+~character = "Narrador%Narrator"
+~sprite = ""
+Stanislav se despide de ti y vuelve a sentarse sobre la cama.%
+Espera hasta que te marches para volver a abrir su libro.%
+
+->VendingMachine
+
+=VendingMachine
+~background = "cellcorridor"
+~character = "Narrador%Narrator"
+~sprite = ""
+Mientras recorres el corredor de los presos escuchas un golpe venir de la máquina expendedora.%
+
+~character = "Luka%Luka"
+~sprite = ""
+¡Maldito cacharro!%
+
+~background = "vendingmachine"
+~character = "Narrador%Narrator"
+~sprite = "Luka"
+Luka sigue dando patadas contra la máquina expendedora hasta que empieza a escupir chocolatinas-%
+Te acercas a Luka y le das dos golpecitos en la espalda en forma de saludo.%
+
+~character = "Luka%Luka"
+~sprite = "Luka"
+Buenos días, cadete. Aprendiendo a ser puntual, ¿eh?%
+
+~character = "Narrador%Narrator"
+~sprite = ""
+Sonríes y te encojes de hombros.%
+
+~character = "Johan%Johan"
+~sprite = "Luka"
+Quizás hasta puntual de más.%
+He llegado al menos dos robos armados pronto.%
+
+~sfx = "Risa"
+~character = "Luka%Luka"
+~sprite = "Luka"
+Luka comienza a reírse mientras engulle dos chocolatinas a la vez.%
+
+{Day_Two.HelpKalev} ->VendingMachineKalev
+{Day_Two.HelpStanislav} ->VendingMachineStanislav
+
+=VendingMachineKalev
+~character = "Luka%Luka"
+~sprite = "Luka"
+Hoy te toca vigilar el patio.%
+Igual hasta puedes sacar un rato para usar el gimnasio y mejorar esos bracitos.%
+->VendingMachineEnd
+
+=VendingMachineStanislav
+~character = "Luka%Luka"
+~sprite = "Luka"
+Hoy te toca vigilar la sala de recreo.%
+No te acomodes demasiado en el sofá. No quiero que te crezca más la panza.%
+->VendingMachineEnd
+
+=VendingMachineEnd
+~character = "Luka%Luka"
+~sprite = "Luka"
+Nos vemos a la hora de cenar en la cantina.%
+Buena suerte, cadete.%
+
+~character = "Narrador%Narrator"
+~sprite = ""
+Luka te da una palmada en la espalda antes de marcharse hacia la sala de guardias.%
+
+~hour = 1
+
+{Day_Two.HelpKalev} ->CellCorridorKalev1
+{Day_Two.HelpStanislav} ->CellCorridorStanislav1
+
+=CellCorridorKalev1
+~background = "heavydoor"
+~character = "Narrador%Narrator"
+~sprite = ""
+Antes de ir hacia el patio vuelves a las celdas de aislamiento.%
+Das un golpe en la puerta hasta que Kalev vuelve a levantarse.%
+
+~character = "Johan%Johan"
+~sprite = "Kalev"
+Soy yo, Johan. Me toca vigilar el patio hoy, creo que no podré pasarme más tarde.%
+¿Va todo bien?%
+
+~character = "Kalev%Kalev"
+~sprite = "Kalev"
+Bueno... Necesito una cosa.%
+¿Podrías pasarte por mi celda y traérmela?%
+
+~character = "Johan%Johan"
+~sprite = "Kalev"
+*[¿Qué necesitas?%]
+*[¿De qué se trata?%]
+
+-
+~character = "Kalev%Kalev"
+~sprite = "Kalev"
+Una foto.%
+Es muy importante para mí. Nunca me separo de ella, pero no me dejaron recogerla antes de que me trajeran aquí.%
+Busca dentro de mi almohada. No debería costar encontrarla.%
+
+
+~character = "Johan%Johan"
+~sprite = "Kalev"
+Me pasaré antes de salir al patio, pero no sé si te la podré traer hoy.%
+Esto se llenará de guardias en cualquier momento.%
+
+~character = "Kalev%Kalev"
+~sprite = "Kalev"
+No importa.%
+No sé cuánto tiempo estaré aquí dentro, pero necesito esa foto cuanto antes.%
+Gracias, Johan.%
+
+
+~character = "Narrador%Narrator"
+~sprite = ""
+Kalev vuelve a arrastrarse al fondo de su celda mientras te marchas hacia el fondo del pasillo.%
+
+->KalevCell
+
+=KalevCell
+~background = "cell"
+~character = "Narrador%Narrator"
+~sprite = ""
+Abres la puerta de la celda de Kalev y te acercas a la cama.%
+
+->CellChoice
+
+=CellChoice
+*[Buscar dentro del colchón rajado%]
+~questionId = 42
+Metes la mano dentro de la raja del colchón.%
+Solo encuentras muelles y plumas.%
+
+->CellChoice
+*[Buscar dentro de la almohada%q]
+~questionId = 43
+Metes la mano dentro de la almohada hasta encontrar un marco de madera.%
+
+->KalevCellEnd
+
+=KalevCellEnd
+Sacas una foto enmarcada en madera oscura y con el cristal algo quebrado.%
+Tienes varias esquinas agarradas con cinta aislante.%
+En la foto se ve a Kalev sonriendo y abraznado a otro chico, un joven bajito y también de pelo rubio.%
+Guardas la foto en tu chaqueta y vuelves al pasillo.%
+
+->CellCorridorKalev2
+
+=CellCorridorKalev2
+~background = "cellcorridor"
+Intentas acercarte a la celda de aislamiento, pero hay tres guardias rondando alrededor.%
+Kalev tendrá que esperar hasta mañana para tu visita.%
+Comienzas a caminar hacia el patio, evitando la puerta extraña.%
+
+->Yard
+
+=Yard
+~background = "yard"
+~sfx = "Gente de fondo hablando"
+~character = "Narrador%Narrator"
+~sprite = ""
+Un grupo de presos juega en la cancha de baloncesto.5
+Un balón pasa a pocos centímetros de tu cara mientras alguien se disculpa y corre a recogerlo.%
+Los bancos de ejercicio están ocupados por presos sin camiseta que trabajan con las máquinas hasta hacerlas chirriar.%
+En un banco, apartado en una esquina, Stanislav lee un periódico con su librito apoyado en el regazo.%
+
+*[Acercarte a Stanislav%]
+-
+Stanislav rasga el periódico hasta arrancar una parte y guardarla en su libro.%
+Cuando te acercas se lo guarda en el bolsillo y cierra el periódico.%
+
+~character = "Stanislav%Stanislav"
+~sprite = "Stanislav"
+¿Qué haces aquí, Johan? ¿Han dejado que te el aire hoy?%
+
+~character = "Narrador%Narrator"
+~sprite = ""
+Stanislav se ríe, aunque arruga la cara al mover la nariz.%
+
+~character = "Johan%Johan"
+~sprite = "Stanislav"
+Me toca turno en el patio.%
+Todo el mundo parece bastante... entretenido.%
+¿Tú no haces nada?%
+
+~character = "Stanislav%Stanislav"
+~sprite = "Stanislav"
+¿Yo? Esos animales solo me aceptarían para usarme como balón.%
+Prefiero seguir leyendo. Además, tengo que tener cuidado con mi nariz.%
+
+~character = "Johan%Johan"
+~sprite = "Stanislav"
+¿Qué tal la llevas?
+
+~character = "Stanislav%Stanislav"
+~sprite = "Stanislav"
+Duele. Duele mucho.%
+Creo que es lo más doloroso que he sentido en mi vida.%
+Más doloroso incluso que me dejaras en manos de Luka.%
+
+~character = "Johan%Johan"
+~sprite = "Stanislav"
+Mejor dejarte con Luka que con Kalev, ¿no?%
+¿Te hace un segunndo asalto?%
+
+~character = "Stanislav%Stanislav"
+~sprite = "Stanislav"
+Lo lamento, pero no puedo aceptar la oferta.%
+Creo que prefiero seguir leyendo. Aunque parezca mentira, no tenemos demasiado tiempo libre.%
+
+~character = "Narrador%Narrator"
+~sprite = "Stanislav"
+Dejas a Stanislav continuar con su lectura, no sin antes echar un vistazo a la portada del periódico.%
+Está repleta de noticias sobre política.%
+No puedes leer mucho de la página arrancada.%
+Stanislav ha marcado las palabras "juicio" y "asesinato" en una de las páginas.%
+Stanislav carraspea y cierra el periódico hasta que te marchas.%
+
+~character = "Narrador%Narrator"
+~sprite = ""
+El sol desciende por el horizonte y los muros de cemento van proyectando su sombra sobre el patio.%
+Los guardias comienzan a indicar a  los presos que han de volver a sus celdas.%
+Con el estómago rugiendo, te diriges a la cantina con Luka.%
+
+->Canteen
+
+=CellCorridorStanislav1
+~background = "cellcorridor"
+~character = "Narrador%Narrator"
+~sprite = ""
+De camino a la sala de recreo pasas frente a la celda de Kalev.%
+No hay rastro del preso.%
+Su colchón está tirado en el suelo, con una raja en el centro y el relleno desperdigado por toda la celda.%
+
+*[Continuar a la sala de recreo%]
+~questionId = 43
+->Breakroom
+*[Ir a la celda de aislamiento%]
+~questionId = 44
+    ~character = "Narrador%Narrator"
+    ~sprite = ""
+    Caminas por el corredor hasta llegar a las celdas de aislamiento en el fondo.%
+    ~background = "heavydoor"
+    Escuchas los susurros de un sollozo escapar entre los tornillos y bisagras de la enorme puerta de acero.%
+    **[Acercarse a ver a Kalev%]
+    --
+    Tratas de acercarte a la celda de aislamiento, pero hay dos guardias apostados a los lados.%
+    Les escuchas hablar acerca de la mafia y su impacto en el desarrollo de Moscú.%
+    Decides dejar la visita a Kalev para más tarde. Te diriges a la sala de recreo.%
+    ->Breakroom
+
+=Breakroom
+~background = "breakroom"
+~sfx = "Gente de fondo hablando"
+~character = "Narrador%Narrator"
+~sprite = ""
+Un olor a sudor mezclado con palomitas te golpea al entrar en la sala de recreo.%
+Varios presos están reunidos en torno a una mesa de billar, planeando su próxima tirada.%
+El sofá de la habitación está cubierto de pelusillas y alguna mancha roja seca.%
+~sfx = "Zumbido"
+La televisión está encendida sin ningún canal puesto, inunando la sala de un ruido de estática.%
+Te apoyas en una de las paredes de la habitación, observando a cada uno de los presos.%
+Stanislav entra en la sala con su librito bajo el brazo.%
+Se sienta en el sofá y se recoloca la barriga antes de alcanzar el mando a distancia.%
+
+*[Acercarse a Stanislav%]
+-
+Dejas tu sitio contra la pared para sentarte en el sofá junto a Stanislav.%
+
+~character = "Stanislav%Stanislav"
+~sprite = "Stanislav"
+¡Johan, muchacho! Veo que te han dejado salir del... ¿Cómo lo llamaba Luka?%
+¿Establo?%
+
+~character = "Narrador%Narrator"
+~sprite = ""
+Asientes mientras Stanislav enciende la televisión.%
+Trastea con el mando, cambiando a un canal y a otro hasta pararse en un informativo de noticias.%
+
+~character = "Stanislav%Stanislav"
+~sprite = "Stanislav"
+Vamos a ver si tu pequeño encargo del otro día ha servido para algo.%
+
+~character = "Narrador%Narrator"
+~sprite = "TV"
+Un hombre trajeado se acerca a un atril rodeado de cámaras y micrófonos.%
+Los presentadores le introducen como Viktor Barinov mientras saca una pila de papeles de su maletín.%
+Da dos golpecitos al micrófono que tiene delante antes de comenzar a hablar.%
+La televisión emite su mensaje con un deje robótico.%
+
+~character = "Viktor%Viktor"
+~sprite = "TV"
+Queridos ciudadanos. Vengo hoy a hablaros acerca de las nuevas noticias que han surgido sobre el "caso Stanislav".%
+Algunas fuentes hablan de una supuesta carta que ha recibido nuestro partido.%
+En esta ficticia hoja de papel el convicto defiende, como ha hecho ya tantas veces, su condición de inocencia.%
+Quiero recalcar que desde Rusia Renacida continuamos desligados del actual criminal y asesino Stanislav Volkov.%
+Lamentamos que el anterior ministro de economía no sea capaz de reconocer y aceptar sus graves errores.%
+Dada su continuada insistencia en su inocencia durante los años, desde el partido hemos tomado una decisión.%
+No nos queda más remedio que eliminar su nombre de las puertas de nuestro museo de la moneda.%
+El nombre de un asesino no puede coronar un monumento tan importante para Moscú.%
+Eso es todo. Tengan todos ustedes una muy buena tarde.%
+
+~character = "Narrador%Narrator"
+~sprite = "tuvimos"
+Viktor se aleja del atril mientras una avalancha de periodistas le asalta con micrófonos.%
+Sus escoltas les cortan el paso hasta que Viktor se pierde en la distancia con su coche.%
+
+~character = "Stanislav%Stanislav"
+~sprite = "Stanislav"
+¡Será malnacido! ¡Buitre!%
+¡Eres un puto buitre Viktor, ¿me oyes?!%
+UN.%
+PUTO.%
+BUITRE.%
+
+~character = "Narrador%Narrator"
+~sprite = ""
+Stanislav cierra con fuerza su librito.%
+Varios recortes de periódico salen volando desde las páginas hasta el suelo.%
+Le ayudas a recogerlos mientras continua insultando a Viktor.%
+Los recortes de periódico solo hablan de asesinatos y varios juicios fallidos.%
+
+~character = "Johan%Johan"
+~sprite = "Stanislav"
+Ha dicho algo de unos asesinatos.%
+¿Sabes de qué está hablando?
+
+~character = "Narrador%Narrator"
+~sprite = "Stanislav"
+Stanislav espira profundamente y colca sus manos sobre las tuyas.%
+
+~character = "Stanislav%Stanislav"
+~sprite = "Stanislav"
+Hace un tiempo, como... Uff, ¿dos años ya?%
+Me la jugaron, Johan.%
+Ese capullo de Viktor me cargó a las espaldas el asesinato de Adrik Akilov.%
+
+~character = "Johan%Johan"
+~sprite = "Stanislav"
+¿Quién?%
+
+~character = "Stanislav%Stanislav"
+~sprite = "Stanislav"
+Oh, nadie importante. Solo fue el vicepresidente del anterior partido gobernante.%
+No te veo muy puesto en política, chaval.%
+El caso es que, sorpresa sorpresa, con Adrik fuera de escena, Viktor no ha tenido competidor real en estas elecciones.%
+Ese capullo... Con todo lo que he hecho para él y me deja aquí tirado.%
+No sabes la de planes económicos que tenía organizados.%
+Iva a levantar este maldito país, por mucho que a Viktor le costara.%
+Oh, pero no te preocupes.%
+Tengo pruebas. Muchas, sí.%
+Está todo aquí, en este libro. Solo tengo que ordenarlo...
+
+~character = "Narrador%Narrador"
+~sprite = "Stanislav"
+Stanislav comienza a sudar hasta empaparse la espalda.%
+Sus ojos se van enrojeciendo cada vez más por cada página del libro que pasa.%
+
+~character = "Stanislav%Stanislav"
+~sprite = "Stanislav"
+Está todo aquí, Johan. Te lo prometo.%
+Solo necesito llamar a Viktor y con esto le tendré cogido por los huevos.%
+Pero nunca me contestan el teléfono en la oficina.%
+Quizás si... ¿Tienes algo que hacer esta noche?%
+
+~character = "Johan%Johan"
+~sprite = "Stanislav"
+*[Me das miedo, Stanislav%]
+*[¿Qué te traes entre manos?%]
+-
+~character = "Stanislav%Stanislav"
+~sprite = "Stanislav"
+Estab pensando en que quizás podrías llamar tú.%
+
+~character = "Johan%Johan"
+~sprite = "Stanislav"
+Ni de coña. No puedo hacerlo.%
+
+~character = "Stanislav%Stanislav"
+~sprite = "Stanislav"
+Venga, hombre. No seas así. Te dejaré mi libro.%
+Lo tienes todo ahí dentro.%
+Solo es una llamadita de unos minutos y le tendremos temblando.%
+
+~character = "Johan%Johan"
+~sprite = "Stanislav"
+*[No puedo arriesgarme tanto%]
+*[¿Qué saco yo de esto?%]
+-
+~character = "Stanislav%Stanislav"
+~sprite = "Stanislav"
+Bueno... ¿No merece la pena por hacerte amigo del futuro ministro de economía?%
+A un futuro música como tú le podría hacer falta un préstamo de vez en cuando.%
+
+~character = "Johan%Johan"
+~sprite = "Stanislav"
+Está bien. Pero diré que llamo de tu parte.%
+Y no daré mi nombre.%
+Tampoco haré más llamadas en el futuro.%
+¿Trato?%
+
+~character = "Narrador%Narrator"
+~sprite = "Stanislav"
+Stanislav te coge la mano con ambos brazos y sonríe.%
+
+~character = "Stanislav%Stanislav"
+~sprite = "Stanislav"
+Trato hecho, amigo.%
+No te arrepentirás.%
+Ahora deja que te de un par de consejos para la llamada...%
+
+~character = "Narrador%Narrator"
+~sprite = "Stanislav"
+Stanislav repasa cada una de las páginas del libro indicando para qué podrías usar cada prueba.%
+Apenas ha llegado a la mitad cuando un par de guardias entran en la sala de recreo y conducen a los presos a sus celdas.%
+Stanislav te deja el libro bajo un cojín antes de marcharse con una sonrisa en la cara.%
+
+~character = "Narrador%Narrator"
+~sprite = "Stanislav"
+Sales de la sala de recreo con el libro oculto bajo la chaqueta hasta dejarlo en tu taquilla.%
+Después, con el estómago rugiendo, te diriges a la cantina con Luka.%
+
+->Canteen
+
+=Canteen
+~background = "canteen"
+~hour = 2
+~sfx = "Gente de fondo hablando"
+~character = "Narrador%Narrator"
+~sprite = ""
+Te sientas junto a Luka en una de las mesas de la cantina.%
+La comida no tiene mejor pinta que el resto de días, pero tu estómago pide a gritos devorarla.%
+
+~character = "Luka%Luka"
+~sprite = "Luka"
+Entra que no veas después de un día duro de trabajo, ¿eh pipiolo?%
+
+~character = "Johan%Johan"
+~sprite = "Luka"
+Cuesta admitirlo, pero sí.%
+
+~character = "Narrador%Narrator"
+~sprite = "Luka"
+Sigues engullendo lo que quiera que sea que te han servido.%
+
+~character = "Luka%Luka"
+~sprite = "Luka"
+Y... ¿vas a ver el partido hoy?%
+
+~character = "Johan%Johan"
+~sprite = "Luka"
+No. No me va mucho ver deportes por la tele, la verdad.%
+Estaré practicando un rato antes de dormir, casi no he tenido tiempo esta semana.%
+
+~character = "Luka%Luka"
+~sprite = "Luka"
+Anda, ¿practicar el qué?%
+
+~character = "Johan%Johan"
+~sprite = "Luka"
+Ah, pensé que ya te lo había comentado.%
+Toco el teclado.%
+Quiero dedicarme a la música.%
+
+~character = "Luka%Luka"
+~sprite = "Luka"
+Me cago en la leche, pues sí que sabes cosas, pipiolo.%
+A ver si me tocas algo un día de estos para animar al ganado.%
+
+~character = "Johan%Johan"
+~sprite = "Luka"
+Estaría curioso dar mi primer gran concierto aquí, con los presos como público.%
+
+~character = "Johan%Johan"
+~sprite = "Luka"
+Ahora que lo pienso. Llevo un CD en la mochila.%
+¿Te gustaría llevártelo para escucharlo y me dices qué te parece?%
+
+~character = "Luka%Luka"
+~sprite = "Luka"
+¡Pero bueno, cadete! ¡Me encantaría!%
+
+~character = "Narrador%Narrator"
+~sprite = "Luka"
+Terminas la comida de la bandeja y te levantas del asiento.%
+Sonríes cunado Luka se guarda tu CD antes de marcharte de vuelta al piso.%
+
+->FlatDoorstep
+
+=FlatDoorstep
+~background = "apartmentdoor"
+~character = "Narrador%Narrator"
+~sprite = ""
+
+*[Abrir la puerta%Open the door]
+~sfx = "Cadena_1"
+->FlatKitchen
+
+=FlatKitchen
+~background = "apartmentkitchen"
+~character = "Narrador%Narrator"
+~sprite = ""
+En la puerta de la nevera encuentras un post-it con el logo de los Featherknights en una esquina.%
+~character = "Fay%Fay"
+~sprite = ""
+"¡Hola Johan! Espero que haya ido bien el día.% #italics
+Hoy no estaré en casa. Tenemos torneo.% #italics
+PD: Te he dejado unas partituras sobre el teclado.% #italics
+Son de mis favoritas. Fay" #italics
+
+~character = "Johan%Johan"
+~sprite = ""
+¡Machácalos, Fay! Les echaré un vistazo a esas partituras.% #italics
+
+->Flat
+
+=Flat
+~background = "apartmententrance"
+~character = "Narrador%Narrator"
+~sprite = ""
+Te acercas al teclado en mitad del salón.%
+Está cubierto por un montón de papeles grapados.%
+"Villain", "Warriors", "Rolling Girl", "All Star".%
+
+~character = "Johan%Johan"
+~sprite = ""
+No conozco ninguna de estas canciones.% #italics
+No parecen demasiado complicadas, me aprenderé alguna para cuando Fay regrese.% #italics
+
+~character = "Narrador%Narrator"
+~sprite = ""
+Coges la partitura de "Warriors" y entras en tu cuarto%
+
+{Day_Two.HelpKalev} ->BeedroomKalev
+{Day_Two.HelpStanislav} -> BeedroomStanislav
+
+=BeedroomKalev
+~background = "bedroom"
+~character = "Narrador%Narrator"
+~sprite = ""
+Dejas las partituras sobre la mesa y te pones a rebuscar en la mochla.%
+Encuentras la foto de Kalev en el fondo, escondida tras tu cuaderno.%
+Echas un último vistazo a la sonrisa de Kalev, que braza por el hombro al otro chico rubio.%
+Dejas la foto sobre el escritorio.%
+
+~character = "Johan%Johan"
+~sprite = ""
+Pensé que nunca llegaría el fin de semana.% #italics
+Estoy deseando salir de fiesta con los chicos.% #italics
+Me pregunto qué me habrán comprado este año...% #italics
+
+->BedroomEnd
+
+=BeedroomStanislav
+~background = "bedroom"
+TODO Stanislav Habitación
+
+->BedroomEnd
+
+
+
+
+
+
+=BedroomEnd
+~background = "bedroom"
+~character = "Narrador%Narrator"
+~sprite = ""
+Te arropas con las ´sábanas hasta el cuello y das un profundo bostezo antes de irte a dormir.%
+
+->Day_Four
+
+==Day_Four==
+~day = 4
+~hour = 0
+~background = "bedroom"
 
 ->END
 
