@@ -4273,7 +4273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e878e137afd5304d858df02e660e525, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inkJSON: {fileID: 4900000, guid: 0512efc041ab4854fa8c5416972959b7, type: 3}
+  inkJSON: {fileID: 4900000, guid: 6c027d98bad2f1e43a6db9ad38d04df6, type: 3}
   autoOn: {fileID: 1135261710}
   autoOff: {fileID: 698815628}
   dialogPanel: {fileID: 1001659544}
