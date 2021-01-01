@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PersistentAudioSource : MonoBehaviour
 {
+    [SerializeField] AudioClip[] allClips;
+    public static Dictionary<string, AudioClip> allClipsDict = new Dictionary<string, AudioClip>();
+    
+
     [SerializeField] float musicTransitionTime = 1f;
     private static float s_musicTransitionTime = 1f;
     private const int poolSize = 10;
@@ -16,6 +20,8 @@ public class PersistentAudioSource : MonoBehaviour
     {
         if(pool == null)
         {
+            foreach (var a in allClips) allClipsDict.Add(a.name, a);
+
             s_musicTransitionTime = musicTransitionTime;
             pool = new GameObject("AudioPool");
             pool.transform.position = Camera.main.transform.position;
@@ -43,7 +49,6 @@ public class PersistentAudioSource : MonoBehaviour
         {
             if (!source.isPlaying)
             {
-                Debug.Log("TO STOP");
                 audiosToStop.Add(source);
             }
         }
@@ -105,6 +110,26 @@ public class PersistentAudioSource : MonoBehaviour
         }
     }
 
+    public static void StopAllMusic()
+    {
+        List<AudioSource> audiosToStop = new List<AudioSource>();
+        AudioRegulator regulator;
+        foreach (AudioSource source in inUseAudioSources)
+        {
+            regulator = source.GetComponent<AudioRegulator>();
+            
+            if (regulator.isMusic)
+            {
+                audiosToStop.Add(source);
+            }
+        }
+        for (int i = 0; i < audiosToStop.Count; i++)
+        {
+            StopSource(audiosToStop[i]);
+        }
+        audiosToStop.Clear();
+    }
+
     public static void PlayEffect(AudioClip clip)
     {
         if (clip != null)
@@ -129,7 +154,6 @@ public class PersistentAudioSource : MonoBehaviour
                 regulator.FadeIn(s_musicTransitionTime);
             }
             regulator.UpdateVolume();
-            
         }
     }
 }

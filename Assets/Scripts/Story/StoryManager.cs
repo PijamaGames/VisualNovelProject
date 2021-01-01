@@ -8,6 +8,11 @@ using System;
 public class StoryManager : MonoBehaviour
 {
     private static DateTime initTime = new DateTime(2018, 10, 3);
+
+    [Header("UI RESOURCES")]
+    [SerializeField] Sprite[] hours;
+    [SerializeField] Sprite[] characterSprites;
+    static Dictionary<string, Sprite> characterSpritesDict = new Dictionary<string, Sprite>();
     
     [Header("FILES")]
     [SerializeField] TextAsset inkJSON;
@@ -21,6 +26,8 @@ public class StoryManager : MonoBehaviour
     [SerializeField] RawImage background;
     [SerializeField] DateController dateController;
     [SerializeField] Bilingual dateText;
+    [SerializeField] Image hourImage;
+    [SerializeField] Image characterSprite;
 
     [HideInInspector] public static Story inkStory;
     DialogController dialogController;
@@ -36,6 +43,9 @@ public class StoryManager : MonoBehaviour
     void Start()
     {
         if (GameManager.currentSaveFile == null) return;
+
+        foreach (var s in characterSprites) characterSpritesDict.Add(s.name, s);
+
         inkStory = new Story(inkJSON.text);
         autoOff.SetActive(!autoMode);
         autoOn.SetActive(autoMode);
@@ -61,14 +71,63 @@ public class StoryManager : MonoBehaviour
             ContinueStory();
             CheckDateChange(true);
         }
+        ObserveVars();
+
+        string music = inkStory.variablesState["music"].ToString();
+        PersistentAudioSource.StopAllMusic();
+        PlayMusicByName(music);
+        string sprite = inkStory.variablesState["sprite"].ToString();
+        SetCharacterSpriteByName(sprite);
     }
 
-    /*private void ObserveVars()
+    private void ObserveVars()
     {
-        //inkStory.ObserveVariable("background", (varName, newValue) => UpdateBackground(newValue.ToString()));
-        //inkStory.ObserveVariable("character", (varName, newValue) => UpdateName(newValue.ToString()));
-        //inkStory.ObserveVariable("day", (varName, newValue) => dateController.BeginTransition());
-    }*/
+        inkStory.ObserveVariable("sfx", (varName, newValue) =>
+        {
+            AudioClip clip;
+            if(PersistentAudioSource.allClipsDict.TryGetValue(newValue.ToString(), out clip))
+            {
+                PersistentAudioSource.PlayEffect(clip);
+            } else
+            {
+                Debug.Log("SFX " + newValue.ToString() + " not found");
+            }
+        });
+        inkStory.ObserveVariable("music", (varName, newValue) =>
+        {
+            PlayMusicByName(newValue.ToString());
+        });
+        inkStory.ObserveVariable("sprite", (varName, newValue) =>
+        {
+            SetCharacterSpriteByName(newValue.ToString());
+        });
+    }
+
+    private void PlayMusicByName(string name)
+    {
+        AudioClip clip;
+        if (PersistentAudioSource.allClipsDict.TryGetValue(name, out clip))
+        {
+            PersistentAudioSource.StopAllMusic();
+            PersistentAudioSource.PlayMusic(clip);
+        }
+        else
+        {
+            Debug.Log("MUSIC " + name + " not found");
+        }
+    }
+
+    private void SetCharacterSpriteByName(string name)
+    {
+        Sprite sprite;
+        bool found = characterSpritesDict.TryGetValue(name, out sprite);
+        characterSprite.gameObject.SetActive(found);
+        if (found)
+        {
+            characterSprite.sprite = sprite;
+        }
+        else Debug.Log("SPRITE " + name + " not found");
+    }
 
     private void OnDestroy()
     {
@@ -123,6 +182,7 @@ public class StoryManager : MonoBehaviour
         UpdateBackground();
         UpdateCharacterName();
         UpdateDate();
+        UpdateHour();
 
         bool italics = inkStory.currentTags.Contains("italics");
         dialogController.SetDialog(inkStory.currentText, italics);
@@ -282,6 +342,15 @@ public class StoryManager : MonoBehaviour
         }
     }
 
+    private void UpdateHour()
+    {
+        int hour = int.Parse(inkStory.variablesState["hour"].ToString());
+        if(hour >= 0 && hour <= 2 && hour < hours.Length)
+        {
+            hourImage.sprite = hours[hour];
+        }
+    }
+
     private void UpdateDate()
     {
         string[] dates = GetCurrentDate();
@@ -296,7 +365,6 @@ public class StoryManager : MonoBehaviour
 
         DateTime dateTime = initTime.AddDays(day-1);
         int dayOfTheWeekNum = (int)dateTime.DayOfWeek;
-        Debug.Log(dayOfTheWeekNum);
         string dayOfTheWeekSpanish = "";
         string dayOfTheWeekEnglish = "";
         switch (dayOfTheWeekNum)
