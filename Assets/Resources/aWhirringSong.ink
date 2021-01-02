@@ -19,7 +19,7 @@ VAR sprite = "" //Nombre sprite del personaje
 ~character = "Narrador%Narrator"
 ~sprite = ""
 Poca gente espera acabar en la cárcel a los 26 años.%Few people expect to end up in prison at 26.
-Para ti es el gran sueño. O al menos un para cumplir tu sueño.%It's a big dream for you. Or at least it's a step to achieve your dream.
+Para ti es el gran sueño. O al menos un paso para cumplir tu sueño.%It's a big dream for you. Or at least it's a step to achieve your dream.
 Buscas el camino a tu libertad entre muros de cemento gris y barrotes oxidados.%You seek the path to yourfreedom among dull concrete walls and rusty bars.
 
 ~character = "Johan%Johan"
@@ -896,58 +896,58 @@ El conductor suelta una risita contenida antes de cerrar la puerta.%The bus driv
 ->PrisonReception
 
 =PrisonReception
-TODO Continuar aquí (página 20, 2.3)
 ~background = "reception"
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-Otra vez tarde. Incluso te has superado.%
-Hoy han sido cinco minutos completos.%
+Otra vez tarde. Incluso te has superado.%Late again. You even got a new record.
+Hoy han sido cinco minutos completos.%It's been five full minutes today.
 
 ~character = "Johan%Johan"
 ~sprite = "Luka"
-Lo siento, tengo que coger el autobús para venir. Había mucho tráfico hoy.%
+Lo siento, tengo que coger el autobús para venir. Había mucho tráfico hoy.%I'm sorry I have to take the bus to come work. There was a lot of traffic today.
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-Dime, ¿a cuántos robos armados equivalen cinco minutos?%
+Dime, ¿a cuántos robos armados equivalen cinco minutos?%Tell me, how many armed robbery does five minute equal?
 
 ~character = "Johan%Johan"
 ~sprite = "Luka"
-*[Esto...¿dos?%]
+*[Esto...¿dos?%Well... ¿two?]
 ~questionId = 31
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-¡¿Dos?! Si fuera así me habrían robado hasta los calcetines, chaval.%
-*[¿Tres? Eso creo, vaya%]
+¡¿Dos?! Si fuera así me habrían robado hasta los calcetines, chaval.%Two!? If it was like that even my socks would've been stolen, kid.
+*[¿Tres? Eso creo, vaya%Three. I think so.]
 ~questionId = 32
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-¡¿Tres?! Si fuera así me habrían robado hasta los calcetines, chaval.%
-*[No demasiado, medio robo quizás%]
+¡¿Tres?! Si fuera así me habrían robado hasta los calcetines, chaval.%Three!? If it was like that even my socks would've been stolen, kid.
+*[No demasiado, medio robo quizás%Not too many. Half a robbery maybe.]
 ~questionId = 33
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-¿Medio robo no te parece demasiado? Quizás debería robarte medio almuerzo más tarde.%
+¿Medio robo no te parece demasiado?%Half a robbery isn't too much for you?
+Quizás debería robarte medio almuerzo más tarde.%Maybe I should steal half your meal later.
 
 -
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-Hemos hecho el reparto de tareas para hoy.%
-Te toca turno de lavandería.%
+Hemos hecho el reparto de tareas para hoy.%We have done the distribution of tasks today.
+Te toca turno de lavandería.%It's your turn to do laundry.
 
 ~character = "Johan%Johan"
 ~sprite = "Luka"
-¿Lavandería? No entiendo cómo voy a usar el táser para lavar la ropa.%
+¿Lavandería? No entiendo cómo voy a usar el táser para lavar la ropa.%Laundry? I don't know how I'll use the taser to do the laundry.
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-Y yo no entiendo cómo puedes llegar tarde todos los días.%
-Ahora largo, ve al establo a pedir calzoncillos sucios.%
+Y yo no entiendo cómo puedes llegar tarde todos los días.%And I don't know how you can be late everyday.
+Ahora largo, ve al establo a pedir calzoncillos sucios.%Now get out. Go to the barn to ask for dirty underpants.
 
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Luka te da la espalda y se marcha con paso firme.%
-Jurarías que puedes ver humo salir de su cabeza.%
+Luka te da la espalda y se marcha con paso firme.%Luka turns his back on you and leaves with a firm step.
+Jurarías que puedes ver humo salir de su cabeza.%You'd swear you can see smoke coming out from his head.
 
 ->CellCorridor
 
@@ -955,273 +955,277 @@ Jurarías que puedes ver humo salir de su cabeza.%
 ~hour = 1
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Al llegar al corredor esperas encontrar el mismo alborto que ayer, con presos gritandp e improvisando música desafinada.%
-Lo que ayer parecía una taberna se ha convertido hoy en un supermercado, con todos los presos arrastrando sus carritos con ropa sucia hasta llegar a la lavandería.%
-Kalev está sentado en su celda, mirando a un lado y a otro con la cesta vacía.%
+Al llegar al corredor esperas encontrar el mismo alborto que ayer.%When you get to the corridor you expect to find the same rampage as yesterday.
+Presos gritandp e improvisando música desafinada.%Prisoners screaming and improvising out of tune music.
+Lo que ayer parecía una taberna se ha convertido hoy en un supermercado.%What yesterday looked like a tavern today has turned into a supermarket.
+Los presos arrastran sus carritos con ropa sucia hasta llegar a la lavandería.%The inmates drag their carts full of dirty clothes to the laundry.
+Kalev está sentado en su celda, mirando a un lado y a otro con la cesta vacía.%Kalev is sitting in his cell, looking back and forth with the basket empty.
 
 ->SeeKalevChoice
 
 =SeeKalevChoice
-*[Acercarte a Kalev%]
+*[Acercarte a Kalev%Get closer to Kalev]
 ~questionId = 34
 ~background = "cell"
 ~character = "Narrador%Narrator"
 ~sprite = "Kalev"
-Kalev te mira fijamente a los ojos e inclina la cabeza hacia un lado sin decir una palabra.%
+Kalev te mira fijamente a los ojos e inclina la cabeza hacia un lado sin decir una palabra.%Kalev stares into your eyes and tilts his head to the side without saying a word.
 
 ~character = "Johan%Johan"
 ~sprite = "Kalev"
-¿Todo bien por aquí, Kalev?%
+¿Todo bien por aquí, Kalev?%Everything all right over here, Kalev?
 
 ~character = "Narrador%Narrator"
 ~sprite = "Kalev"
-El preso abre los ojos, sorprendido por oirte pronunciar su nombre.%
-Niega con la cabeza, indicando que te marches.%
+El preso abre los ojos, sorprendido por oirte pronunciar su nombre.%The inmate open his eyes, surprised to hear you pronounce his name.
+Niega con la cabeza, indicando que te marches.%He nods indicating you to leave.
 
 ~character = "Johan%Johan"
 ~sprite = "Kalev"
-Bueno, si necesitas cualquier cosa estaré por aquí.%
+Bueno, si necesitas cualquier cosa estaré por aquí.%Well, if you need anything I'll be around.
 
 ->SeeKalevChoice
-*[Seguir recorriendo el pasillo%]
+*[Seguir recorriendo el pasillo%Keep going down the hall]
 ~questionId = 35
 ~background = "cellcorridor"
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Sigues recorriendo el pasillo hasta toparte con Luka apoyado frente a la máquina expendedora.%
-Tiene los brazos cargados de chocolatinas y sujeta un café a duras penas.%
+Sigues recorriendo el pasillo hasta toparte con Luka apoyado frente a la máquina expendedora.%You keep walking down the hall until you come across Luka leaning in front of the vending machine.
+Tiene los brazos cargados de chocolatinas y sujeta un café a duras penas.%His arms are loaded with chocolates and he's hardly holding a coffe.
 ->VendingMachine
 
 =VendingMachine
 ~background = "vendingmachine"
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-¿Qué tal va todo, pipiolo? ¿Te has atragantado ya con algún calcetín?%
+¿Qué tal va todo, pipiolo? ¿Te has atragantado ya con algún calcetín?%How's everything going, tyro? Have you already choked on a sock?
 ~sfx = "Risa"
 
 ~character = "Narrador%Narrator"
 ~sprite = "Luka"
-Luka comienza a reírse, lanzando trocitos de chocolate y cacahuete en todas direcciones.%
+Luka comienza a reírse, lanzando trocitos de chocolate y cacahuete en todas direcciones.%Luka starts laughing, throwing chunks of chocolate and peanut in all directions.
 
 ~character = "Johan%Johan"
 ~sprite = "Luka"
-Todo bien, de momento solo me he tragado...%
+Todo bien, de momento solo me he tragado...%Everything all right. For now i've only swallowed...
 ~sfx = "Muertepreso_3"
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Un estruendo seco suena a tu espalda. Luka se sobresalta y lanza café y chocolatinas por los aires.%
-Alguien comienza a gritar entre sonidos de plástico cayendo.%
-Te asalta un olor metálico mientras el grto hace eco por el pasillo.%
+Un estruendo seco suena a tu espalda. Luka se sobresalta y lanza café y chocolatinas por los aires.%A heavy blow sounds behind your back. Luka startles and throws coffe and chocolates into the air.
+Alguien comienza a gritar entre sonidos de plástico cayendo.%Someone starts yelling between sounds of plastic falling.
+Te asalta un olor metálico mientras el grto hace eco por el pasillo.%You're surrounded by a metallic smell whilst the scream echoes through the corridor.
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-¡Joder!
-Chaval, mira a ver qué demonios ha pasado por allí, anda.%
-Yo tengo que recoger todo esto.%
+¡Joder!%¡Fuck!
+Chaval, mira a ver qué demonios ha pasado por allí, anda.%Kid, go and look what the hell happened over there.
+Yo tengo que recoger todo esto.%I gotta clean up all this mess.
 
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Luka se agacha y comienza a apilar las chocolatinas de vuelta en sus brazos con la verdadera diligencia de un agente de la ley.%
-Te das la vuelta y caminas hasta encontrar la fuente de los gritos.%
+Luka se agacha y comienza a apilar las chocolatinas de vuelta en sus brazos con la verdadera diligencia de un agente de la ley.%Luka reaches down and starts stacking the chocolates back in his arms with the true diligence of a law enforcement officer.
+Te das la vuelta y caminas hasta encontrar la fuente de los gritos.%Yout turn back until you find the source of the screams.
 ->StanislavVsKalev
 
 =StanislavVsKalev
 ~background = "cell"
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Stanislav se tapa la cara con ambas manos frente a Kalev, que está envuelto con una manta hasta el cuello.%
-Su ropa está tirada en una cesta de plástico en el suelo, cubierta con algunas gotas de sangre.%
+Stanislav se tapa la cara con ambas manos frente a Kalev, que está envuelto con una manta hasta el cuello.%Stanislav covers his face with both hands in front of Kalev, who is wrapped in a blanket up to his neck.
+Su ropa está tirada en una cesta de plástico en el suelo, cubierta con algunas gotas de sangre.%His clothes are lying in a plastic basket on the floor, covered with a few drops of blood.
 
 ~character = "Johan%Johan"
 ~sprite = ""
-*[¡¿Qué está pasando aquí?!%]
+*[¡¿Qué está pasando aquí?!%What's happening over here?!]
 ~character = "Kalev%Kalev"
 ~sprite = "Kalev"
 ...%...
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-¿Que si pasa algo? Ese desgraciado me acaba de dar un puñetazo.%
-*[¿Stanislav? ¿Estás bien?%]
+¿Que si pasa algo? Ese desgraciado me acaba de dar un puñetazo.%That if something's happening? That miserable just punched me.
+*[¿Stanislav? ¿Estás bien?%Stanislav? Are you all right?]
 ~character = "Kalev%Kalev"
 ~sprite = "Kalev"
 ...%...
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-¿Que si estoy bien? Claro, estoy perfectamente.%
-Solo me acaba de partir la nariz un maldito neandertal.%
+¿Que si estoy bien? Claro, estoy perfectamente.%Am I all right? Of course. I'm perfectly fine.
+Solo me acaba de partir la nariz un maldito neandertal.%It's just that a damn neanderthal just broke my nose.
 -
 
 ~character = "Johan%Johan"
 ~sprite = ""
-*[Llevar a Stanilav a la enfermería%]
+*[Llevar a Stanilav a la enfermería%Take Stanislav to the infirmary]
 ~questionId = 36
 ->HelpStanislav
 
-*[Interrogar a Kalev%]
+*[Interrogar a Kalev%Question Kalev]
 ~questionId = 37
 ->HelpKalev
 
 =HelpStanislav
 ~character = "Johan%Johan"
 ~sprite = ""
-¡Luka! ¡Eh, Luka!%
-Encárgata de Kalev. Yo voy con Stanislav a la enfermería.%
+¡Luka! ¡Eh, Luka!%Luka! Hey, Luka!
+Encárgata de Kalev. Yo voy con Stanislav a la enfermería.%Take care of Kalev. I'm going to the infirmary with Stanislav.
 
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Luka llega a la celda con chocolatinas metidas entre los bolsillos.%
+Luka llega a la celda con chocolatinas metidas entre los bolsillos.%Luka arrives at the cell with chocolates stuffed into his pockets.
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-Así me gusta, cadete. ¡Con decisión!%
-No te preocupes, sé encargarme de esta gente.%
-Te esperan unos días en mi fortaleza de la soledad.%
+Así me gusta, cadete. ¡Con decisión!%That's how I like it, boy. With decision!
+No te preocupes, sé encargarme de esta gente.%Don't worry, I know how to take care of these people.
+Te esperan unos días en mi fortaleza de la soledad.%A few days await you in my fortress of solitude.
 ->Infirmary
 
 =Infirmary
 ~background = "infirmary"
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Llegas a la enfermería con Stanislav. La sangre comienza a brotar entre sus dedos mientras intenta taparse la nariz.%
-Los enfermeros le sientan en una camilla y le inclinan la cabeza hacia adelante.%
+Llegas a la enfermería con Stanislav.%You arrive at the infirmary with Stanislav.
+La sangre comienza a brotar entre sus dedos mientras intenta taparse la nariz.%Blood starts to gush between his fingers as he tries to hold his nose.
+Los enfermeros le sientan en una camilla y le inclinan la cabeza hacia adelante.%The nurses seat him on a gurney while they lean his head forward.
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-Gracias por lo de ahí dentro.%
-Ese tipo es de lo más raro que hay por aquí.%
+Gracias por lo de ahí dentro.%Thanks for that
+Ese tipo es de lo más raro que hay por aquí.%That guy's one of the weirdest you can find around here.
 
 ~character = "Johan%Johan"
 ~sprite = "Stanislav"
-No hay de qué, por eso me pagan. O eso espero.%
-Oye, ¿y qué le ha pasado antes?%
+No hay de qué, por eso me pagan. O eso espero.%You're welcome. That's what I get paid for.
+Oye, ¿y qué le ha pasado antes?%Hey, what happened back there?
 
 ~character = "Narrador%Narrator"
 ~sprite = "Stanislav"
-Los enfermeros aprietan un pañueño contra la nariz de Stanislav hasta extraer un pequeño coágulo.%
+Los enfermeros aprietan un pañueño contra la nariz de Stanislav hasta extraer un pequeño coágulo.%The nurses press a handkerchief against Stanislav's nose until a small clot is removed.
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-Estaba terminando de recoger mi ropa cuando miré hacia su celda. Estaba tranquilo, dejando la camiseta en su cesta.%
-En cuanto vio que le estaba mirando se tapó con una manta y me dio un puñetazo.%
+Estaba terminando de recoger mi ropa cuando miré hacia su celda.%I was finishing picking up my clothes when I looked towards his cell.
+Estaba tranquilo, dejando la camiseta en su cesta.%He was calm, leaving the shirt in his basket.
+En cuanto vio que le estaba mirando se tapó con una manta y me dio un puñetazo.%As soon as he realised that I was looking at him, he covered himself with a blanket and punched me.
 
 ~character = "Johan%Johan"
 ~sprite = "Stanislav"
-¿Te ha pegado por verle sin camiseta?
+¿Te ha pegado por verle sin camiseta?Did he hit you for seeing him shirtless?
 
 ~character = "Narrador%Narrator"
 ~sprite = "Stanislav"
-Stanislav frunce el ceño cuando los enfermeros le insertan unos papeles húmedos por la nariz.%
+Stanislav frunce el ceño cuando los enfermeros le insertan unos papeles húmedos por la nariz.%Stanislav frowns as the nurses insert some wet papers into his nose.
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-Eso creo.%
-Nunca deja que nadie le vea desnudo. Ha pasado semanas enteras sin ducharse por no poder ir él solo.%
-No entiendo tanto alboroto por unos tatuajes. Ni siquiera le quedan mal.%
+Eso creo.%I think so.
+Nunca deja que nadie le vea desnudo. Ha pasado semanas enteras sin ducharse por no poder ir él solo.%He never lets anyone see him naked. He spent whole weeks without showering just because he couldn't do it alone.
+No entiendo tanto alboroto por unos tatuajes. Ni que fuera el primero por aquí.%I don't understand all the fuss over some tattoos. He's not even the first one to wear those around here.
 
 ~character = "Johan%Johan"
 ~sprite = "Stanislav"
-¿Qué tipo de tatuajes? ¿Alguna fecha de aniversario de una ex?%
+¿Qué tipo de tatuajes? ¿Alguna fecha de aniversario de una ex?%What kind of tattoos? Any anniversary date of an ex?
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-Ojalá, pero no.%
-Tiene un montón de arañas en el brazo.%
-Aléjate de ese tipo. He tenido encuentros con gente de ese... bueno, de ese mundillo.%
-Nunca sale bien. Demasaida sangre.%
+Ojalá, pero no.%I wish, but no.
+Tiene un montón de arañas en el brazo.%He has a lot of spiders on his arm.
+Aléjate de ese tipo. He tenido encuentros con gente de ese... bueno, de ese mundillo.%Stay away from that guy. I've had some encounters with people from that... well, from that world.
+Nunca sale bien. Demasaida sangre.%It never goes well. Too much blood.
 
 ~character = "Narrador%Narrator"
 ~sprite = "Stanislav"
-Stanislav comienza a llorar cuando lso enfermeros le sacan los pañuelos enrojecidos y le insertan unos nuevos.%
+Stanislav comienza a llorar cuando lso enfermeros le sacan los pañuelos enrojecidos y le insertan unos nuevos.%Stanislav starts crying when the nurses remove the reddened tissues and insert new ones.
 
 ~character = "Johan%Johan"
 ~sprite = "Stanislav"
-...%
+...%...
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-¿Te ha comido la lengua el gato, eh?5
-No te preocupes, yo estoy limpio. Jamás contrataría a esa gente.%
-Y dime, ¿cómo alguien tan... cándido ha terminado aquí?%
+¿Te ha comido la lengua el gato, eh?%Cat got your tongue, huh?
+No te preocupes, yo estoy limpio. Jamás contrataría a esa gente.%Don't worry, I'm clean. I'd never hire that people.
+Y dime, ¿cómo alguien tan... cándido ha terminado aquí?%And tell me, how come someone so... naive ended up here?
 
 ~character = "Johan%Johan"
 ~sprite = "Stanislav"
-Me lo recomendó una antigua compañera de trabajo. Es algo temporal, pero se supone que pagan bien.%
-He tenido bastante suerte. Es mucho más divertido que freír patatas.%
+Me lo recomendó una antigua compañera de trabajo. Es algo temporal, pero se supone que pagan bien.%Recommended by a former co-worker. It's a temporary thing, but it's supposed to be payed well.
+He tenido bastante suerte. Es mucho más divertido que freír patatas.%I've been lucky. It's way more entertaining than frying chips.
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-¿Suerte? Je, sí, bueno...%
-Al menos tú llevas ese otro uniforme y tienes la nariz intacta.%
-¿Y qué piensas hacer después? ¿Quitarle el puesto de sargento a Luka?5
+¿Suerte? Je, sí, bueno...%Lucky? Hah, yeah, well...
+Al menos tú llevas ese otro uniforme y tienes la nariz intacta.%At least you're wearing that other uniforme and your nose is still intact.
+¿Y qué piensas hacer después? ¿Quitarle el puesto de sargento a Luka?%What are you planning to do after that? Take Luka's sargeant job away from him?
 
 ~character = "Johan%Johan"
 ~sprite = "Stanislav"
-No no, Luka es único en su especie. Nadie podría sustituirle.%
-Quiero ser músico.%
-Es un mundo difícil, y más con poco dinero, pero voy a darlo todo por intentarlo.%
+No no, Luka es único en su especie. Nadie podría sustituirle.%No no, Luka's one of a kind. No one could replace him.
+Quiero ser músico.%want to be a musician.
+Es un mundo difícil, y más con poco dinero, pero voy a darlo todo por intentarlo.%It's a difficult world, and even more with little money. But I'll give it all to try it.
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-Anda, ¿quién lo iba a decir? La música es tan bonita como exigente.%
-De hecho, tuve el placer de conocer a Yuri Pletinov hace un par de años.%
-Gran tipo, mejor compositor.%
-Aunque peor bebedor de lo que dicen.%
+Anda, ¿quién lo iba a decir? La música es tan bonita como exigente.%Wows, who would've said? Music is as beautiful as it is demanding.
+De hecho, tuve el placer de conocer a Yuri Pletinov hace un par de años.%In fact, I had the pleasure of meeting Yuri Pletniov a couple of years ago.
+Gran tipo, mejor compositor.%Great guy, better composer.
+Aunque peor bebedor de lo que dicen.%Although a worse drinker than they say.
 
 ~character = "Johan%Johan"
 ~sprite = "Stanislav"
-¡¿En serio?!%
-Adoro a Yuri, he aprendido un montón de sus libros.%
+¡¿En serio?!%Really?!
+Adoro a Yuri, he aprendido un montón de sus libros.%I love Yuri. I've learnt a lot from his books.
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-Acabo de tener una gran idea, chico.%
-¿Qué te parece si te lo presento? Me debe algunos favores.%
+Acabo de tener una gran idea, chico.%I just had a great idea, kid.
+¿Qué te parece si te lo presento? Me debe algunos favores.%What if I present him to you? He owes me a few favors.
 
 ~character = "Johan%Johan"
 ~sprite = "Stanislav"
-¿Puedes hacer eso? Sería genial, Stanislav.%
-Tengo varios CDs que me gustaría enseñarle. No sé cómo podría recompensártelo.%
+¿Puedes hacer eso? Sería genial, Stanislav.%Can you do that? That'd be great, Stanislav.
+Tengo varios CDs que me gustaría enseñarle. No sé cómo podría recompensártelo.%I have som CD's that I'd like to show him. I don't know how I could compensate you.
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-Bueno, creo que yo sí lo sé.%
-Necesito mandar una carta a un ex amigo y resulta complicado desde aquí dentro.%
-Más aún con la nariz partida.%
-¿Podrías ayudarme?%
+Bueno, creo que yo sí lo sé.%Well, I think I do.
+Necesito mandar una carta a un ex amigo y resulta complicado desde aquí dentro.%I need to send a letter from a former friend and it is difficult from in here.
+Más aún con la nariz partida.%Even more so with my nose broken.
+¿Podrías ayudarme?%Could you help me?
 
 ~character = "Johan%Johan"
 ~sprite = "Stanislav"
-*[Claro, la mandaré en cuanto llegue a casa%]
+*[Claro, la mandaré en cuanto llegue a casa%Sure. I'll send it as soon as I get home.]
 ~questionId = 38
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-Genial Johan.%
-Si todo sale bien, la siguiente carta que mandes será para Yuri.%
-*[¿Quién es ese amigo?%]
+Genial Johan.%Great, Johan.
+Si todo sale bien, la siguiente carta que mandes será para Yuri.%If everything goes well, the next letter you'll send will be for Yuri.
+*[¿Quién es ese amigo?%Who's that friend?]
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
 ~questionId = 39
-Ex amigo.%
-Digamos que es la razón por la que estoy en esta... situación tan curiosa.%
-Ya te contaré esa historia otro día.%
-Dime, ¿la enviarás entonces?%
+Ex amigo.%Former friend.
+Digamos que es la razón por la que estoy en esta... situación tan curiosa.%Let's say he's the reason why I'm in... such a curious situation.
+Ya te contaré esa historia otro día.%I'll tell you that story another day.
+Dime, ¿la enviarás entonces?%Tell me, will you send it then?
 
 ~character = "Johan %Johan"
 ~sprite = "Stanislav"
-Claro, la mandaré en cuanto llegue a casa.%
+Claro, la mandaré en cuanto llegue a casa.%Sure. I'll send it as soon as I get home.
 
 -
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-Stanislav saca un papel de dentro de su pantalón, aunque no quieres saber de dónde en concreto.%
-Lo restriegas con la manga antes de guardarlo en el bolsillo.%
-Un par de guardias irrumpen en la enfermería para llevar a Stanislav de vuelta a su celda.%
-Le agarran por los hombros y comienzan a esposarle hasta dejarle rojas las muñecas.%
-Stanislav te guiña el ojo antes de ser arrastrado hasta su celda.%
-Decides ir a ver qué tal le ha ido a Luka.%
-Cuando termina de sacar nuevas chocolatinas de la máquina expendedora camináis juntos hacia la cantina.%
+Stanislav saca un papel de dentro de su pantalón, aunque no quieres saber de dónde en concreto.%Stanislav pulls out a piece of paper from inside his pants, although you don't want to know where it came from.
+Lo restriegas con la manga antes de guardarlo en el bolsillo.%You scrub it with your sleeve before putting it in your pocket.
+Un par de guardias irrumpen en la enfermería para llevar a Stanislav de vuelta a su celda.%A pair of guards break into the infirmary to take Stanislav back to his cell.
+Le agarran por los hombros y comienzan a esposarle hasta dejarle rojas las muñecas.%They grab him by the shoulders and begin to handcuff him until his wrists turn red.
+Stanislav te guiña el ojo antes de ser arrastrado hasta su celda.%Stanislav winks at you before being dragged into his cell.
+Decides ir a ver qué tal le ha ido a Luka.%You decide to check how it went for Luka.
+Cuando termina de sacar nuevas chocolatinas de la máquina expendedora camináis juntos hacia la cantina.%You walk together to the canteen when he finishes taking out new chocolets from the vending machine.
 
 ->Canteen
 
@@ -1229,37 +1233,37 @@ Cuando termina de sacar nuevas chocolatinas de la máquina expendedora camináis
 ~background = "cell"
 ~character = "Johan%Johan"
 ~sprite = ""
-¡Luka! ¡Eh, Luka!%
-Lleva a Stanislav a la enfermería.%
-Yo me encargo de Kalev.%
+¡Luka! ¡Eh, Luka!%Luka! Hey, Luka!
+Lleva a Stanislav a la enfermería.%Take Stanislav to the inirmary.
+Yo me encargo de Kalev.%I'll take care of Kalev.
 
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Luka llega a la celda con chocolatinas derretidas metidas en los bolsillos.%
+Luka llega a la celda con chocolatinas derretidas metidas en los bolsillos.%Luka arrives at the cell with chocolates stuffed into his pockets.
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-Así me gusta, cadee. ¡Con decisión!%
-Avisaré a otros guardias para que te echen un cable.%
-Aguanta a ese podiosero en su sitio, ¿quieres?%
-Yo me llevo al hocico roto a la enfermería.%
+Así me gusta, cadete. ¡Con decisión!%That's how I like it, boy. With decision!
+Avisaré a otros guardias para que te echen un cable.%I'll call the other guards so that they give you a hand.
+Aguanta a ese podiosero en su sitio, ¿quieres?%Keep that beggar in his place, will you?
+Yo me llevo al hocico roto a la enfermería.%I'll take broken-snout to the infirmary.
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-¡¿Hocico roto?!%
+¡¿Hocico roto?!%Broken-snout?!
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-Andando, cerdito. Vamos al veterinario.%
+Andando, cerdito. Vamos al veterinario.%Come on, piggy. Let's go to the vet.
 
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Luka se lleva a Stanislav hacia la enfermería.%
+Luka se lleva a Stanislav hacia la enfermería.%Luka leads Stanislav to the infirmary.
 
 ~character = "Johan%Johan"
 ~sprite = "Kalev"
-Bueno, por fin solos. Hacerse el poli malo es difícil.%
-Dime, ¿puede saberse por qué le has partido la nariz a Stanislav?%
+Bueno, por fin solos. Hacerse el poli malo es difícil.%Well, finally alone. Playing the bad cop is hard.
+Dime, ¿puede saberse por qué le has partido la nariz a Stanislav?%Tell me, why would you break Stanislav's nose?
 
 ~character = "Kalev%Kalev"
 ~sprite = "Kalev"
@@ -1267,155 +1271,157 @@ Dime, ¿puede saberse por qué le has partido la nariz a Stanislav?%
 
 ~character = "Narrador%Narrator"
 ~sprite = "Kalev"
-Kalev te mantiene la mirada sin pestañear.%
-La camiseta se le hincha al ritmo calmado de su repsiración.%
+Kalev te mantiene la mirada sin pestañear.%Kalev stares at you without blinking.
+La camiseta se le hincha al ritmo calmado de su repsiración.%His shirt swells to the calm rythm of his breathing.
 
 ~character = "Johan%Johan"
 ~sprite = "Kalev"
-Mira... Sé que no te gusta hablar, pero no puedo ayudarte si no cooperas.%
-Quiero que esto salga lo mejor posible para ambos.%
-¿Por qué le has pegado?%
+Mira... Sé que no te gusta hablar, pero no puedo ayudarte si no cooperas.%Look... I know you don't like talking. But I can't help you if you don't cooperate.
+Quiero que esto salga lo mejor posible para ambos.%I want this to end up the best way possible for both of you.
+¿Por qué le has pegado?%Why did you hit him?
 
 ~character = "Narrador%Narrator"
 ~sprite = "Kalev"
-Kalev baja la mirada al suelo, con los ojos algo enrojecidos.%
+Kalev baja la mirada al suelo, con los ojos algo enrojecidos.%Kalev looks down at the ground, with his eyes a bit reddened.
 
 ~character = "Kalev%Kalev"
 ~sprite = "Kalev"
-Ha visto cosas que nadie debería ver aquí dentro.%
+Ha visto cosas que nadie debería ver aquí dentro.%He's seen things no one should see in here.
 
 ~character = "Johan%Johan"
 ~sprite = ""
-Bueno, es un primer paso...% #italics
+Bueno, es un primer paso...%Well, it's a first step... #italics
 
 ~character = "Johan%Johan"
 ~sprite = "Kalev"
-Eso no me dice demasiado, Kalev. ¿Qué es lo que ha visto?%
+Eso no me dice demasiado, Kalev. ¿Qué es lo que ha visto?%That doesn't tell me too much, Kalev. What did he see?
 
 ~character = "Narrador%Narrator"
 ~sprite = "Kalev"
-Kalev juguetea con su camiseta, retorciéndose las mangas en la muñeca.%
-Se acerca un poco a ti y comienza a susurrar.%
+Kalev juguetea con su camiseta, retorciéndose las mangas en la muñeca.%Kalev fiddles with his shirt, twisting the sleeves at his wrist.
+Se acerca un poco a ti y comienza a susurrar.%He comes a bit closer to you and starts whispering.
 
 ~character = "Kalev%Kalev"
 ~sprite = "Kalev"
-Ha visto mis tatuajes.%
-La araña.%
-La estrella.%
-El alambre de espino.%
-Todos. Los ha visto todos, joder.%
+Ha visto mis tatuajes.%He's seen my tattoos.
+La araña.%The spider.
+La estrella.%The star.
+El alambre de espino.%The barbed wire.
+Todos. Los ha visto todos, joder.%All of them. He's seen all of them, damn it.
 
 ~character = "Johan%Johan"
 ~sprite = "Kalev"
-Oh vaya...
+Oh vaya...%Oh, wow...
 
 ~character = "Kalev%Kalev"
 ~sprite = "Kalev"
-No puedo dejar que nadie lo sepa.%
-Ellos... No saben que me he escapado.%
-Tenía que dejarlo, por mi bien, por el de...
+No puedo dejar que nadie lo sepa.%I can't let anyone know.
+Ellos... No saben que me he escapado.%They... don't know i've escaped.
+Tenía que dejarlo, por mi bien, por el de..had to quit. For my sake. For the sake of....
 
 ~character = "Narrador%Narrator"
 ~sprite = "Kalev"
-La voz de Kalev comienza a quebrarse.%
+La voz de Kalev comienza a quebrarse.%Kalev's voice starts to break.
 
 ~character = "Kalev%Kalev"
 ~sprite = "Kalev"
-Tenía que dejarlo.%
+Tenía que dejarlo.%I had to quit.
 
 ~character = "Johan%Johan"
 ~sprite = "Kalev"
-No te preocupes, aquí dentro estás a salvo.%
-Los guardias... Bueno, yo te protegeré. Pero no puedes montar estas escenas.%
-¿No has pensado que llamarás más la atención?%
+No te preocupes, aquí dentro estás a salvo.%Don't worry. You're safe in here.
+Los guardias... Bueno, yo te protegeré. Pero no puedes montar estas escenas.%The guards... Well, I'll protect you. But you can't make this kind of scenes.
+¿No has pensado que llamarás más la atención?%Haven't you thought you'll draw even more attention?
 
 ~character = "Kalev%Kalev"
 ~sprite = "Kalev"
-Sí. Sí, tienes razón.%
-No supe como reaccionar.%
-Nadie podía saberlo.%
-Nadie.%
+Sí. Sí, tienes razón.%Yeah. Yes, You're right.
+No supe como reaccionar.%didn't know how to react.
+Nadie podía saberlo.%Nobody can know.
+Nadie.%No one.
 
 ~character = "Johan%Johan"
 ~sprite = "Kalev"
-Nadie que te quiera hacer daño, Kalev.%
+Nadie que te quiera hacer daño, Kalev.%Nobody who wants to hurt you, Kalev.
 
 ~character = "Kalev%Kalev"
 ~sprite = "Kalev"
-No es a mí a quien quieren hacer daño. ¿Lo entiendes?%
+No es a mí a quien quieren hacer daño. ¿Lo entiendes?%It's not me who they want to hurt. Do you understand?
 
 ~character = "Johan%Johan"
 ~sprite = "Kalev"
-Ya... Empieza por no volver a hacer esto. Veré en qué más puedo ayudarte.%
+Ya... Empieza por no volver a hacer esto. Veré en qué más puedo ayudarte.%Yeah... Start by not doing this again. I'll see how else I can help you.
 
 ~character = "Kalev%Kalev"
 ~sprite = "Kalev"
-Hay algo más que puedes hacer. O eso creo, no quiero pedirte demasiado.%
-Ni meterte en problemas.%
+Hay algo más que puedes hacer. O eso creo, no quiero pedirte demasiado.%There's something else you can do. Or so I think. I don't want to ask you for too much.
+Ni meterte en problemas.%Nor get you in trouble.
 
 ~character = "Johan%Johan"
 ~sprite = "Kalev"
-*[¿De qué se trata?%]
+*[¿De qué se trata?%What's it about?]
 -
 ~character = "Narrador%Narrator"
 ~sprite = "Kalev"
-Kalev mira a un lado y a otro del pasillo antes de levantar el colchón.%
-Saca un sobre mal cerrado, a punto de romperse.%
+Kalev mira a un lado y a otro del pasillo antes de levantar el colchón.%Kalev looks up and down the corridor before lifting his mattress.
+Saca un sobre mal cerrado, a punto de romperse.%He takes out a poorly sealed envelope, about to rip.
 
 ~character = "Kalev%Kalev"
 ~sprite = "Kalev"
-¿Podrías... podrías enviar esto a una dirección?%
-Yo no puedo hacerlo desde aquí dentro.%
+¿Podrías... podrías enviar esto a una dirección?%Could you... could you send this to an address?
+Yo no puedo hacerlo desde aquí dentro.%I can't do it from in here.
 
 ~character = "Johan%Johan"
 ~sprite = "Kalev"
-¿Qué hay en el sobre?%
+¿Qué hay en el sobre?%What's in the envelope?
 
 ~character = "Narrador%Narrator"
 ~sprite = "Kalev"
-Kalev abre el sobre durante unos pocos segundos. Está repleto de billetes.%
-No puedes contarlo todo, pero hay al menos 20.000 rublos.%
+Kalev abre el sobre durante unos pocos segundos. Está repleto de billetes.%Kalev opens the envelope for a few seconds. It's full of notes.
+No puedes contarlo todo, pero hay al menos 20.000 rublos.%You can't count all of it, but there's at least 20.000 rubles.
 
 ~character = "Kalev%Kalev"
 ~sprite = "Kalev"
-Llevo ahorrando esto desde que entré en prisión.%
-No es demasiado, pero espero que mi... la persona que va a recibir el sobre sepa usarlo bien.%
+Llevo ahorrando esto desde que entré en prisión.%I've been saving this since I entered prison.
+No es demasiado, pero espero que mi... la persona que va a recibir el sobre sepa usarlo bien.%It's not too much, but I hope that my... the person is going to recieves the envelope knows how to use it well.
 
 ~character = "Johan%Johan"
 ~sprite = "Kalev"
-*[Está bien, dame la dirección%]
+*[Está bien, dame la dirección%Ok, give me the address]
 -
 
 ~character = "Narrador%Narrator"
 ~sprite = "Kalev"
-Le dejas un boli y una hoja de tu libreta a Kalev.%
-El preso escribe la dirección con renglones temblorosos.%
+Le dejas un boli y una hoja de tu libreta a Kalev.%You lend a pen and a sheet of your notebook to Kalev.
+El preso escribe la dirección con renglones temblorosos.%The prisoner writes the addres with shaky lines.
 
 ~character = "Kalev%Kalev"
 ~sprite = "Kalev"
-Gracias.%
-Mucha gracias.%
+Gracias.%Thank you.
+Mucha gracias.%Thank you so much.
 
 ~character = "Narrador%Narrator"
 ~sprite = "Kalev"
-Kalev se acerca más y te da un abrazo a través de los barrotes.%
-El preso comienza a temblar y le escuchas llorar sobre tu hombro.%
+Kalev se acerca más y te da un abrazo a través de los barrotes.%Kalev comes closer and hugs you through the bars.
+El preso comienza a temblar y le escuchas llorar sobre tu hombro.%The inmate starts shaking and you hear him crying over your shoulder.
 
 ~character = "Johan%Johan"
 ~sprite = "Kalev"
-No hay de qué, estoy aquí para ayudaros.%
-Intenta no meterte en problemas con el resto de guardias ahora.%
+No hay de qué, estoy aquí para ayudaros.%You're welcome. I'm here to help you.
+Intenta no meterte en problemas con el resto de guardias ahora.%Try not to get in trouble with the other guards now.
 
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Tres guardias irrumpen en la celda de Kalev. Le cogen de los hombros y se lo llevan a rastras.%
-Kalev te sonría mientras le llevan por el pasillo hasta la sala de aislamiento.%
-Te acercas a Luka, que está sacando una nueva tanda de chocolatinas de la máquina expendedora. Juntos camináis hasta la cantina.%
+Tres guardias irrumpen en la celda de Kalev. Le cogen de los hombros y se lo llevan a rastras.%Three guards break into Kalev's cell. They grab him by the shoulders and drag him away.
+Kalev te sonría mientras le llevan por el pasillo hasta la sala de aislamiento.%Kalev smiles as they drag him down the corridor to the isolation room.
+Te acercas a Luka, que está sacando una nueva tanda de chocolatinas de la máquina expendedora.%You walk over Luka, who is pulling a new stack of chocolates from the vending machine.
+Juntos camináis hasta la cantina.%You walk together to the canteen.
 
 ->Canteen
 
 
 =Canteen
+TODO Conitnuar aquí (página 30, 2.6.1)
 ~background = "canteen"
 ~hour = 2
 ~sfx = "Gente de fondo hablando"
