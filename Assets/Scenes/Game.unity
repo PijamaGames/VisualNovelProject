@@ -477,6 +477,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1255728121}
     m_Modifications:
+    - target: {fileID: 3563752201135994411, guid: 2ac33ac2807b5d949b0e79f4b946501f, type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 50d36ebf9045e4045825b05fc8e28849, type: 3}
     - target: {fileID: 3563752201135994412, guid: 2ac33ac2807b5d949b0e79f4b946501f, type: 3}
       propertyPath: m_Name
       value: Background
@@ -3213,8 +3217,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 137, y: 219.3}
-  m_SizeDelta: {x: 220, y: 440}
+  m_AnchoredPosition: {x: 193, y: 96.345}
+  m_SizeDelta: {x: 403.73206, y: 738.6648}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1765714770
 MonoBehaviour:
@@ -3238,7 +3242,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: fa2c4eaf6d4e45f4d9433e7c3b6f91d6, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -4341,7 +4345,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 02c331bce6be76044b7ad1eae6a1f72a, type: 3}
   - {fileID: 21300000, guid: e114c6a8c037b624b9d8d1099b9d4cad, type: 3}
   - {fileID: 21300000, guid: 4c123c63eaeaa764d9731e63dcd83f23, type: 3}
-  characterSprites: []
+  characterSprites:
+  - {fileID: 21300000, guid: fa2c4eaf6d4e45f4d9433e7c3b6f91d6, type: 3}
+  - {fileID: 21300000, guid: 20066cdd11a127442ab19eee2bfb0310, type: 3}
+  - {fileID: 21300000, guid: 51cabb1778a7db64cb8c8f33ad9deccb, type: 3}
   inkJSON: {fileID: 4900000, guid: 6c027d98bad2f1e43a6db9ad38d04df6, type: 3}
   autoOn: {fileID: 1135261710}
   autoOff: {fileID: 698815628}
