@@ -11,6 +11,8 @@ public class StoryManager : MonoBehaviour
 
     [Header("UI RESOURCES")]
     [SerializeField] Sprite[] hours;
+    [SerializeField] Sprite[] characterSprites;
+    static Dictionary<string, Sprite> characterSpritesDict = new Dictionary<string, Sprite>();
     
     [Header("FILES")]
     [SerializeField] TextAsset inkJSON;
@@ -25,6 +27,7 @@ public class StoryManager : MonoBehaviour
     [SerializeField] DateController dateController;
     [SerializeField] Bilingual dateText;
     [SerializeField] Image hourImage;
+    [SerializeField] Image characterSprite;
 
     [HideInInspector] public static Story inkStory;
     DialogController dialogController;
@@ -40,6 +43,9 @@ public class StoryManager : MonoBehaviour
     void Start()
     {
         if (GameManager.currentSaveFile == null) return;
+
+        foreach (var s in characterSprites) characterSpritesDict.Add(s.name, s);
+
         inkStory = new Story(inkJSON.text);
         autoOff.SetActive(!autoMode);
         autoOn.SetActive(autoMode);
@@ -70,6 +76,8 @@ public class StoryManager : MonoBehaviour
         string music = inkStory.variablesState["music"].ToString();
         PersistentAudioSource.StopAllMusic();
         PlayMusicByName(music);
+        string sprite = inkStory.variablesState["sprite"].ToString();
+        SetCharacterSpriteByName(sprite);
     }
 
     private void ObserveVars()
@@ -89,6 +97,10 @@ public class StoryManager : MonoBehaviour
         {
             PlayMusicByName(newValue.ToString());
         });
+        inkStory.ObserveVariable("sprite", (varName, newValue) =>
+        {
+            SetCharacterSpriteByName(newValue.ToString());
+        });
     }
 
     private void PlayMusicByName(string name)
@@ -103,6 +115,18 @@ public class StoryManager : MonoBehaviour
         {
             Debug.Log("MUSIC " + name + " not found");
         }
+    }
+
+    private void SetCharacterSpriteByName(string name)
+    {
+        Sprite sprite;
+        bool found = characterSpritesDict.TryGetValue(name, out sprite);
+        characterSprite.gameObject.SetActive(found);
+        if (found)
+        {
+            characterSprite.sprite = sprite;
+        }
+        else Debug.Log("SPRITE " + name + " not found");
     }
 
     private void OnDestroy()
