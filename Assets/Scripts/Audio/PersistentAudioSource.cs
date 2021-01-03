@@ -64,13 +64,17 @@ public class PersistentAudioSource : MonoBehaviour
         if (regulator.isMusic && !forced)
         {
             regulator.FadeOut(s_musicTransitionTime);
+            regulator.onEndFade = () =>
+            {
+                StopSource(source, true);
+            };
         } else
         {
+            regulator.onEndFade = null;
             source.enabled = false;
             inUseAudioSources.Remove(source);
             avaibleAudioSources.Push(source);
         }
-        
     }
 
     public static void StopClip(AudioClip clip)
