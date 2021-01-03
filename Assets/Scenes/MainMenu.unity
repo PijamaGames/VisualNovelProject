@@ -424,7 +424,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5888815994677063434, guid: d677e64e0cdbf6545a0e4afda06a7a51, type: 3}
       propertyPath: m_Pivot.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5888815994677063434, guid: d677e64e0cdbf6545a0e4afda06a7a51, type: 3}
       propertyPath: m_Pivot.y
@@ -452,11 +452,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5888815994677063434, guid: d677e64e0cdbf6545a0e4afda06a7a51, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 200
+      value: 238.14832
       objectReference: {fileID: 0}
     - target: {fileID: 5888815994677063434, guid: d677e64e0cdbf6545a0e4afda06a7a51, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 82.3
+      value: 125.2
       objectReference: {fileID: 0}
     - target: {fileID: 5888815994677063434, guid: d677e64e0cdbf6545a0e4afda06a7a51, type: 3}
       propertyPath: m_LocalPosition.x
@@ -488,11 +488,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5888815994677063434, guid: d677e64e0cdbf6545a0e4afda06a7a51, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 118.61
+      value: 18.609985
       objectReference: {fileID: 0}
     - target: {fileID: 5888815994677063434, guid: d677e64e0cdbf6545a0e4afda06a7a51, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 98.00001
+      value: 71.7
       objectReference: {fileID: 0}
     - target: {fileID: 5888815994677063434, guid: d677e64e0cdbf6545a0e4afda06a7a51, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -557,7 +557,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 159.7, y: 0}
+  m_SizeDelta: {x: 145.4, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &881586304
 MonoBehaviour:
@@ -716,7 +716,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 114.5, y: 0}
+  m_SizeDelta: {x: 107.7, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &941661765
 MonoBehaviour:
@@ -863,7 +863,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 235.08, y: 0}
+  m_SizeDelta: {x: 142.6, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1128454542
 MonoBehaviour:
@@ -1268,7 +1268,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Configuraci\xF3n"
+  m_text: Ajustes
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 25e6b53533cd61c4abe4cfb18afd22ae, type: 2}
   m_sharedMaterial: {fileID: -4633018342634737114, guid: 25e6b53533cd61c4abe4cfb18afd22ae, type: 2}
@@ -1443,7 +1443,7 @@ MonoBehaviour:
     m_Bottom: 0
   m_ChildAlignment: 5
   m_Spacing: 0
-  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
   m_ChildControlHeight: 1
@@ -1498,7 +1498,19 @@ MonoBehaviour:
       m_Calls: []
   onStart:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 853845715}
+        m_TargetAssemblyTypeName: PersistentAudioSource, Assembly-CSharp
+        m_MethodName: PlayMusic
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 4f4a03d8507f7c54e93059bea050a55b, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onUpdate:
     m_PersistentCalls:
       m_Calls: []
@@ -1510,19 +1522,7 @@ MonoBehaviour:
       m_Calls: []
   onDestroy:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 853845715}
-        m_TargetAssemblyTypeName: PersistentAudioSource, Assembly-CSharp
-        m_MethodName: StopClip
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: c90db97eb59718d4bb490b997a334d84, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onTriggerEnter:
     m_PersistentCalls:
       m_Calls: []

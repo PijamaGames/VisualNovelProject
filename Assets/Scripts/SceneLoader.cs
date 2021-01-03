@@ -72,7 +72,10 @@ public class SceneLoader : MonoBehaviour
         UITransition transitioner = FindObjectOfType<UITransition>();
         if(transitioner != null)
         {
-            transitioner.onPlayOutEnd = ()=> SceneManager.LoadScene(name, LoadSceneMode.Single);
+            transitioner.onPlayOutEnd = () =>
+            {
+                SceneManager.LoadScene(name, LoadSceneMode.Single);
+            };
             transitioner.PlayOut();
         } else
         {
