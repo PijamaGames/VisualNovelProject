@@ -13,6 +13,20 @@ public class SaveFileSelect : MonoBehaviour
 
     private SaveFile saveFile = null;
 
+    Button btn;
+    [SerializeField] Button trashButton;
+
+    private void Start()
+    {
+        btn = GetComponent<Button>();
+        AudioClip clip = PersistentAudioSource.allClipsDict["UI_6"];
+        if(clip != null)
+        {
+            btn.onClick.AddListener(() => PersistentAudioSource.PlayEffect(clip));
+            trashButton.onClick.AddListener(() => PersistentAudioSource.PlayEffect(clip));
+        }
+    }
+
     public void SetSaveFile(SaveFile _saveFile)
     {
         saveFile = _saveFile;

@@ -153,6 +153,7 @@ MonoBehaviour:
   firstTimeText: {fileID: 4291485306362641515}
   minsPlayedText: {fileID: 4291485307783267644}
   background: {fileID: 4291485306381770527}
+  trashButton: {fileID: 4291485306794295388}
 --- !u!1 &4291485306362641509
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,7 +6,6 @@ public class PersistentAudioSource : MonoBehaviour
 {
     [SerializeField] AudioClip[] allClips;
     public static Dictionary<string, AudioClip> allClipsDict = new Dictionary<string, AudioClip>();
-    
 
     [SerializeField] float musicTransitionTime = 1f;
     private static float s_musicTransitionTime = 1f;
@@ -47,7 +46,7 @@ public class PersistentAudioSource : MonoBehaviour
         List<AudioSource> audiosToStop = new List<AudioSource>();
         foreach(AudioSource source in inUseAudioSources)
         {
-            if (!source.isPlaying)
+            if (!source.isPlaying && source.time >= source.clip.length)
             {
                 audiosToStop.Add(source);
             }
@@ -65,13 +64,17 @@ public class PersistentAudioSource : MonoBehaviour
         if (regulator.isMusic && !forced)
         {
             regulator.FadeOut(s_musicTransitionTime);
+            regulator.onEndFade = () =>
+            {
+                StopSource(source, true);
+            };
         } else
         {
+            regulator.onEndFade = null;
             source.enabled = false;
             inUseAudioSources.Remove(source);
             avaibleAudioSources.Push(source);
         }
-        
     }
 
     public static void StopClip(AudioClip clip)
