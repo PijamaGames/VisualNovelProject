@@ -2469,42 +2469,41 @@ Y de qué pruebas se trata, señor {name}.%And what evidence do you hace, mister
 *[Fotografías de la coartada%Photographs of his alibi]
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Pasas las páginas dela libreta de Stanislav con mano temblorosa.%
+Pasas las páginas dela libreta de Stanislav con mano temblorosa.%You turn the pages of Stanislav's notebook with a shaking hand.
 
 ~character = "Johan%Johan"
 ~sprite = "Phone"
-En estas fotografías puede verse a Stanislav salir de un coche con una... bueno, con una amiga.%
-Está tomada la misma noche en la que, según su partido, asesinó a Adrik.
+En estas fotografías puede verse a Stanislav salir de un coche con una... bueno, con una amiga.%In this photograpgs Stanislav can be seen getting out of a car with a... well, with a friend.
+Está tomada la misma noche en la que, según su partido, asesinó a Adrik.%It was taken the same night that, according to your party, he murdered Adrik.
 *[Recortes de periódico%Newspaper clippings]
-TODO seguir por aquí
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Pasas las páginas dela libreta de Stanislav con mano temblorosa.%
+Pasas las páginas dela libreta de Stanislav con mano temblorosa.%You turn the pages of Stanislav's notebook with a shaking hand.
 
 ~character = "Johan%Johan"
 ~sprite = "Phone"
-Estos recortes de periódico hablan sobre Stanislav.%
-Le pillaron una noche saliendo de un coche con una... bueno, con una amiga.%
-Esa misma noche debería estar asesinando a Adrik.%
-Al menos según la versión de los hechos de su partido.%
+Estos recortes de periódico hablan sobre Stanislav.%These newspaper clippings speak about Stanislav.
+Le pillaron una noche saliendo de un coche con una... bueno, con una amiga.%He was caught one night getting out of a car with... well, with a friend.
+Esa misma noche debería estar asesinando a Adrik.%That very same night he should have been murdering Adrik,
+Al menos según la versión de los hechos de su partido.%At least according to your party's version of the events.
 -
 
 ~character = "Viktor%Viktor"
 ~sprite = "Phone"
-Tegno que colgarle.%
-Como dije durante la rueda de prensa, en Rusia Renacida nos desligamos completamente del señor Stanislav.%
-Pase una buena noche, {name}.%
-Y tenga cuidado. Creo que no sabe dónde se está metiendo.%
+Tegno que colgarle.%I have to hang up.
+Como dije durante la rueda de prensa, en Rusia Renacida nos desligamos completamente del señor Stanislav.%As I said during the press conference, in Russia Reborn we completely disassociate ourselves from Mr. Stanislav.
+Pase una buena noche, {name}.%Have a good night, {name}.
+Y tenga cuidado. Creo que no sabe dónde se está metiendo.%And be careful. I think you don't understand what you're getting into.
 
 ~character = "Narrador%Narrator"
 ~sprite = ""
-El teléfono emite un pitido antes de cortar la llamada.%
+El teléfono emite un pitido antes de cortar la llamada.%The phone beeps before disconnecting the call.
 
 ~character = "Johan%Johan"
 ~sprite = ""
-Espero que esto ayude a Stanislav... y que no me cause demasiados problemas.% #italics
-Estoy deseando salir mañana de fiesta con los chicos.% #italics
-Me pregunto qué me habrán comprado este año...% #italics
+Espero que esto ayude a Stanislav... y que no me cause demasiados problemas.%I hope this helps Stanislav... And that it doesn't cause me too much trouble. #italics
+Estoy deseando salir mañana de fiesta con los chicos.%I'm looking forward to partying with the boys tomorrow. #italics
+Me pregunto qué me habrán comprado este año...%wonder what they have bought me this year... #italics
 
 ->BedroomEnd
 
@@ -2526,49 +2525,49 @@ Te arropas con las ´sábanas hasta el cuello y das un profundo bostezo antes de
 ~background = "bedroom"
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Escuchas el móvil vibrar sobre el escritorio.%
-La luz de la pantalla ilumina la habitación junto a los pocos rayos de sol que entran por las rendijas de la persiana.%
-Te levantas y coges el teléfono, restregándote los ojos con la otra mano.%
+Escuchas el móvil vibrar sobre el escritorio.%You hear the mobile vibrating on the desk.
+La luz de la pantalla ilumina la habitación junto a los pocos rayos de sol que entran por las rendijas de la persiana.%The light from the screen illuminates the room along with a few rays of sunlight.
+Te levantas y coges el teléfono, restregándote los ojos con la otra mano.%You get up and pick up the phone, rubbing your eyes with the other hand.
 
 ~character = "Luka%Luka"
 ~sprite = "Phone"
-¡Hola, cadete! ¡Buenos días!
+¡Hola, cadete! ¡Buenos días!%Hello, boy! Good morning!
 
 ~character = "Johan%Johan"
 ~sprite = "Phone"
-¿Qué quieres, Luka?%
-Hoy tengo el día libre.%
+¿Qué quieres, Luka?%What do you want, Luka?
+Hoy tengo el día libre.%Today's my day off.
 
 ~character = "Luka%Luka"
 ~sprite = "Phone"
-Por eso mismo te llamaba.%
-Ha surgido una... oportunidad de trabajo en la cárcel.%
-Hay un tipo que no puede venir hoy y necesitamos un sustituto urgente.%
-Creo que te interesa, pagan bien.%
-MUY bien.%
+Por eso mismo te llamaba.%That's why I was calling you.
+Ha surgido una... oportunidad de trabajo en la cárcel.%A... job opportunity has come up in prison.
+Hay un tipo que no puede venir hoy y necesitamos un sustituto urgente.%There's a guy who can't come today and we need a replacement urgently.
+Creo que te interesa, pagan bien.%I think you're interested. They pay well.
+MUY bien.%REALLY well.
 
 ~character = "Johan%Johan"
 ~sprite = "Phone"
-¿Cuántas horas son?%
-Necesito tener la tarde libre. Tengo planes.%
+¿Cuántas horas son?%How long will it take?
+Necesito tener la tarde libre. Tengo planes.%I need to have this afternoon free. I have plans.
 
 ~character = "Luka%Luka"
 ~sprite = "Phone"
-No te preocupes por eso, serán solo un par de horas como mucho.%
+No te preocupes por eso, serán solo un par de horas como mucho.%Don't worry about that. It will just be a couple of hours at most.
 
 ~character = "Johan%Johan"
 ~sprite = "Phone"
-Supongo que me interesa entonces.%
-¿De qué va el trabajo?%
+Supongo que me interesa entonces.%I guess I'm interested then.
+¿De qué va el trabajo?%What's the job about?
 
 ~character = "Luka%Luka"
 ~sprite = "Phone"
-¡Perfecto, chaval! Nos vemos en media hora en la cárcel.%
+¡Perfecto, chaval! Nos vemos en media hora en la cárcel.%Perfect, kid! See you in half an hour.
 
 ~character = "Narrador%Narrador"
 ~sprite = ""
-Luka cuelga el teléfono bruscamente.%
-Te vistes rápidamente y sales por la puerta con un sándwich en la mano.%
+Luka cuelga el teléfono bruscamente.%Luka hangs up the phone sharply.
+Te vistes rápidamente y sales por la puerta con un sándwich en la mano.%You quickly get dressed and walk out the door with a sandwich in hand.
 
 ->PrisonReception
 
@@ -2577,13 +2576,13 @@ Te vistes rápidamente y sales por la puerta con un sándwich en la mano.%
 ~character = "Narrador%Narrador"
 ~sprite = ""
 ~sfx = "Pasos_1"
-La recepción de la cárcel está completamente vacía.%
-Cada uno de tus pasos resuena por toda la habitación.%
+La recepción de la cárcel está completamente vacía.%The prison reception is completely empty.
+Cada uno de tus pasos resuena por toda la habitación.%Every one of your steps echoes throughout the room.
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-¡Johan! Has llegado pronto y todo. Así me gusta.%
-Sígueme. Vamos a tu nuevo puesto de trabajo.%
+¡Johan! Has llegado pronto y todo. Así me gusta.%Johan! You even arrived early. That's how I like it.
+Sígueme. Vamos a tu nuevo puesto de trabajo.%Follow me. Let's go to your new job.
 
 ->ElectricChairDoor
 
@@ -2592,12 +2591,12 @@ Sígueme. Vamos a tu nuevo puesto de trabajo.%
 ~sfx = "Zumbido"
 ~character = "Narrador%Narrador"
 ~sprite = ""
-Luka se para frente a la puerta de metal.%
-Desbloquea los tres cerrojos y se saca una llave del bolsillo para abrir la cerradura.%
+Luka se para frente a la puerta de metal.%Luka stands in front of the metal door.
+Desbloquea los tres cerrojos y se saca una llave del bolsillo para abrir la cerradura.%He unlocks the three locks and takes a key from his pocket to open the door.
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-bienvenido al matadero.%
+Bienvenido al matadero.%Welcome to the slaughterhouse.
 
 ->ElectricChair
 
@@ -2606,26 +2605,27 @@ bienvenido al matadero.%
 ~sfx = "Zumbido"
 ~character = "Narrador%Narrador"
 ~sprite = ""
-Un olor a polvo y humo subre toda la habitación.%
-Te cuesta respirar, no sabes si por el polvo o la visión de la silla en el centro de la habitación.%
-El zumbido monótono crece a cada paso que das hacia ella.%
+Un olor a polvo y humo cubre toda la habitación.%A smell of dust and smoke covers the entire room.
+Te cuesta respirar.%It's difficult for you to breathe.
+No sabes si por el polvo o la visión de la silla en el centro de la habitación.%You don't know if it's because of the dust or the chair in the middle of the room.
+El zumbido monótono crece a cada paso que das hacia ella.%The monotonous whirring grows with every step you take towards it.
  
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-El trabajo es muy sencillo. Solo tienes que bajar esta palanca cuando yo te lo diga.%
-Cuando empieces a oler a barbacoa la subes.5
-Tampoco hay que ser sádico.%
+El trabajo es muy sencillo. Solo tienes que bajar esta palanca cuando yo te lo diga.%Job's simple. You just have to lower this lever when I tell you to.
+Cuando empieces a oler a barbacoa la subes.%When it starts smelling like barbecue it's time to turn it up.
+Tampoco hay que ser sádico.%You don't have to be sadistic.
 
 ~character = "Johan%Johan"
 ~sprite = "Luka"
-Luka...%
-No puedo hacer esto.%
-No puedo matar a una persona.%
+Luka...%Luka...
+No puedo hacer esto.%I can't do this.
+No puedo matar a una persona.%I can't kill a person.
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-Oye, oye. Tú no estás matando a nadie.%
-Solo estás bajando una palanca, ¿entiendes?%
+Oye, oye. Tú no estás matando a nadie.%Hey, hey. You're not killing anyone.
+Solo estás bajando una palanca, ¿entiendes?%You're just pulling a level, you get it?
 
 ~character = "Johan%Johan"
 ~sprite = "Luka"
@@ -2633,25 +2633,25 @@ Solo estás bajando una palanca, ¿entiendes?%
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-Vamos, chaval. Lo vas a hacer genial.%
-Y piensa en la paga.%
-Necesitarás bastante dinero para grabas más CDs como el que me diste.%
-Es genial, Johan. Tienes talento.%
+Vamos, chaval. Lo vas a hacer genial.%Come on, kid. You'll do great.
+Y piensa en la paga.%And think about the money.
+Necesitarás bastante dinero para grabas más CDs como el que me diste.%You'll need a lot of money to record more CDs like the one you gave me.
+Es genial, Johan. Tienes talento.%It's great Johan. You're something special.
 
 ~character = "Narrador%Narrador"
 ~sprite = ""
-Luka te pone la mano en la espalda y te dirige hacia la cabina de la sala.%
-Arrastras los pies por la habitación levantando nuevas nubes de polvo en el ambiente.%
+Luka te pone la mano en la espalda y te dirige hacia la cabina de la sala.%Luka puts his hand on your back and directs you towards the room booth.
+Arrastras los pies por la habitación levantando nuevas nubes de polvo en el ambiente.%You drag your feet across the room, kicking up new clouds of dust in the air.
 
 ->ExecutionIntro
 
 =ExecutionIntro
-La sala se va llenando de nuevas personas.%
-Toman asiento en banquetas dispuestas frente a la silla eléctrica.%
-Luka les recibe a cada uno en la puerta hasta que las banquetas están llenas.%
-La puerta de metal se abre una última vez hasta golpear la pared.%
-Dos guardias vestidos con chalecos reforzados entran en la sala, arrastrando por los hombros a un preso.%
-Luka cierra la puerta tras ellos antes de sentarse entre el público.%
+La sala se va llenando de nuevas personas.%The room gradually fills up with more people.
+Toman asiento en banquetas dispuestas frente a la silla eléctrica.%They take seat on stools arranged in front of the electric chair.
+Luka les recibe a cada uno en la puerta hasta que las banquetas están llenas.%Luka greets each one of them until the stools are full.
+La puerta de metal se abre una última vez hasta golpear la pared.%The metal door opens one last time, hiting the wall on its way.
+Dos guardias vestidos con chalecos reforzados entran en la sala, arrastrando por los hombros a un preso.%Two guards dressed in reinforced vests enter the room, dragging a prisoner by the shoulders.
+Luka cierra la puerta tras ellos antes de sentarse entre el público.%Luka closes the door behind them before sitting down in the audience.
 
 {Day_Two.HelpKalev} ->ExecutionKalev
 {Day_Two.HelpStanislav} ->ExecutionStanislav
@@ -2659,69 +2659,71 @@ Luka cierra la puerta tras ellos antes de sentarse entre el público.%
 =ExecutionKalev
 ~character = "Narrador%Narrador"
 ~sprite = ""
-Los guardias sientan al preso en la silla y le atan las manos.%
-Revelan un pelo rubio al levantar la bolsa de su cabeza.%
+Los guardias sientan al preso en la silla y le atan las manos.%The guards sit the prisoner in the chair and tie his hands.
+Revelan un pelo rubio al levantar la bolsa de su cabeza.%They reveal blonde hair as they lift the bag off his head.
 
 ~character = "Johan%Johan"
 ~sprite = "Kalev"
-Kalev...
+Kalev...%Kalev...
 
 ~character = "Narrador%Narrador"
 ~sprite = "Kalev"
-Kalev gira la cabeza para mirarte.%
-Sientes un escalofrío al encontrar sus ojos vacíos.%
-Su cara está totalmente pálida, sin vistas de una sonrisa o una lágrima.%
-Los guardias le agarran con fuerza del cuello para forzarle a mirar al público.%
-Luka te levanta un pulgar sentado entre el público, entre dos hombres altos con tatuajes de arañas y estrellas.%
-Los guardias colocan una esponja húmeda sobre la cabeza de Kalev antes de bajar el casco de metal.%
-Los dos guardias te miran y asienten antes de dar un paso atrás al público.%
-Sientes cada uno de los tendones de tus dedos tensarse mientras tu cara se enfría y palidece.%
-Alcanzas hacia la palanca de la pared...
+Kalev gira la cabeza para mirarte.%Kalev turns his head to look at you.
+Sientes un escalofrío al encontrar sus ojos vacíos.%You shiver whilst staring at his empty eyes.
+Su cara está totalmente pálida, sin vistas de una sonrisa o una lágrima.%His face is completely pale. No sign of a smile nor a tear.
+Los guardias le agarran con fuerza del cuello para forzarle a mirar al público.%The guards grab him, forcing him to look at the audience.
+Luka te levanta un pulgar sentado entre el público.%Luka gives you a thumbs up from his place among the audience.
+Esta sentado entre dos hombres altos con tatuajes de arañas y estrellas.%He sits between two tall men with tattoos of spiders and stars.
+Los guardias colocan una esponja húmeda sobre la cabeza de Kalev antes de bajar el casco de metal.%The guards put a wet sponge on Kalev's head before lowering the metal helmet.
+Los dos guardias te miran y asienten antes de dar un paso atrás al público.%The two guards look at you and nod before taking a step back to the audience.
+Sientes cada uno de los tendones de tus dedos tensarse mientras tu cara se enfría y palidece.%You feel every single one of your fingers tighten as your face grows cold and pale.
+Alcanzas hacia la palanca de la pared...%You reach for the lever on the wall...
 
-*[Bajar la palanca%]
+*[Bajar la palanca%Pull the lever]
 ~sfx = "Palanca"
 
 ~character = "Johan%Johan"
 ~sprite = ""
-Lo siento...% #italics
+Lo siento...%I'm so sorry... #italics
 
 -
 ~character = "Narrador%Narrador"
 ~sprite = "Kalev"
 ~sfx = "Muertepreso_4"
-Un olor a carne quemada empieza a invadir la habitación junto al crepitar de la electricidad.%
+Un olor a carne quemada empieza a invadir la habitación junto al crepitar de la electricidad.%A burning smell begins to fill the room along with the crackling of electricity.
 
-*[Subir la palanca]
+*[Subir la palanca%Lift the lever]
 ~sfx = "Zumbido"
 ~character = "Narrador%Narrador"
 ~sprite = ""
-Levantas la palanca y te desplomas en el suelo con la visión nublosa.%
+Levantas la palanca y te desplomas en el suelo con la visión nublosa.%You lift the lever and collapse to the ground with hazy vision.
 
 ->Canteen
 
 =ExecutionStanislav
 ~character = "Narrador%Narrador"
 ~sprite = ""
-Los guardias sientan al preso en la silla y le atan las manos.%
-Revelan un pelo rubio al levantar la bolsa de su cabeza.%
+Los guardias sientan al preso en la silla y le atan las manos.%he guards sit the prisoner in the chair and tie his hands.
+Revelan una calva al levantar la bolsa de su cabeza.%They reveal a bald patch as they lift the bag off his head.
 
 ~character = "Johan%Johan"
 ~sprite = "Stanislav"
-Stanislav...
+Stanislav...%Stanislav...
 
 ~character = "Narrador%Narrador"
 ~sprite = "Stanislav"
-Stanislav gira la cabeza para mirarte.%
-Sientes un escalofrío al encontrar sus ojos vacíos.%
-Su cara está totalmente pálida, sin vistas de una sonrisa o una lágrima.%
-Los guardias le agarran con fuerza del cuello para forzarle a mirar al público.%
-Luka te levanta un pulgar sentado entre el público, junto a un tipo trajeado con un maletín.%
-Los guardias colocan una esponja húmeda sobre la cabeza de Stanislav antes de bajar el casco de metal.%
-Los dos guardias te miran y asienten antes de dar un paso atrás al público.%
-Sientes cada uno de los tendones de tus dedos tensarse mientras tu cara se enfría y palidece.%
-Alcanzas hacia la palanca de la pared...
+Stanislav gira la cabeza para mirarte.%Stanislav turns his head to look at you.
+Sientes un escalofrío al encontrar sus ojos vacíos.%You shiver whilst staring at his empty eyes.
+Su cara está totalmente pálida, sin vistas de una sonrisa o una lágrima.%His face is completely pale. No sign of a smile nor a tear.
+Los guardias le agarran con fuerza del cuello para forzarle a mirar al público.%The guards grab him, forcing him to look at the audience.
+Luka te levanta un pulgar sentado entre el público.%Luka gives you a thumbs up from his place among the audience.
+Está sentado junto a un tipo trajeado con un maletín.%He sits next to a guy in a suit with a briefcase.
+Los guardias colocan una esponja húmeda sobre la cabeza de Stanislav antes de bajar el casco de metal.%The guards put a wet sponge on Stanislav's head before lowering the metal helmet.
+Los dos guardias te miran y asienten antes de dar un paso atrás al público.%The two guards look at you and not before taking a step back to the audience.
+Sientes cada uno de los tendones de tus dedos tensarse mientras tu cara se enfría y palidece.%You feel every single one of your fingers tighten as your face grows cold and pale.
+Alcanzas hacia la palanca de la pared...%You reach for the lever on the wall...
 
-*[Bajar la palanca%]
+*[Bajar la palanca%Pull the lever]
 ~sfx = "Palanca"
 
 ~character = "Johan%Johan"
@@ -2734,11 +2736,11 @@ Lo siento...% #italics
 ~sfx = "Muertepreso_5"
 Un olor a carne quemada empieza a invadir la habitación junto al crepitar de la electricidad.%
 
-*[Subir la palanca]
+*[Subir la palanca%Lift the lever]
 ~sfx = "Zumbido"
 ~character = "Narrador%Narrador"
 ~sprite = ""
-Levantas la palanca y te desplomas en el suelo con la visión nublosa.%
+Levantas la palanca y te desplomas en el suelo con la visión nublosa.%You lift the lever and collapse to the ground with hazy vision.
 
 ->Canteen
 
@@ -2748,13 +2750,13 @@ Levantas la palanca y te desplomas en el suelo con la visión nublosa.%
 ~sfx = "zumbido"
 ~character = "Narrador%Narrador"
 ~sprite = ""
-Te despiertas en la cantina de la cárcel sentado junto a Luka.%
-La cabeza te da vueltras y pulsa de forma intermitente.%
+Te despiertas en la cantina de la cárcel sentado junto a Luka.%You wake up in the prison's canteen sitting next to Luka.
+La cabeza te da vueltras y pulsa de forma intermitente.%Your head spins and pulses intermittently.
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-Al fin has despertado. Pensé que te perdía ahí dentro.%
-Menuda barbacoa has montado. Buen trabajo, chico.%
+Al fin has despertado. Pensé que te perdía ahí dentro.%Finally awake. I thought I was losing you inside there.
+Menuda barbacoa has montado. Buen trabajo, chico.%What a barbecue you made. Good job, kid.
 
 ~character = "Johan%Johan"
 ~sprite = "Luka"
@@ -2762,19 +2764,19 @@ Menuda barbacoa has montado. Buen trabajo, chico.%
 
 ~character = "Narrador%Narrator"
 ~sprite = "Luka"
-Luka abre su bandeja de comida, arrancando el plástico y tirándolo por el aire.%
-Te llega un olor a carne asada.%
-Bajas la cabeza y cubres tus piernas y el suelo de vómito.%
+Luka abre su bandeja de comida, arrancando el plástico y tirándolo por el aire.%Luka opens his food tray, tearing off the plastic and tossing it into the air.
+Te llega un olor a carne asada.%You get a sniff of roast meat.
+Bajas la cabeza y cubres tus piernas y el suelo de vómito.%You lower your head and cover your legs and the floor in vomit.
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-¡Hostia!5
-¿Te encuentras bien, Johan?%
-Será mejor que te lleve a casa.%
+¡Hostia!%Fuck!
+¿Te encuentras bien, Johan?%Are you all right, Johan?
+Será mejor que te lleve a casa.%I'll better get you home.
 
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Luka te pone la mano en el hombro y te lleva en coche hasta tu piso.%
+Luka te pone la mano en el hombro y te lleva en coche hasta tu piso.%Luka puts his hand on your shoulder and drives you to your apartment.
 
 ->FlatDoorstep
 
@@ -2784,33 +2786,33 @@ Luka te pone la mano en el hombro y te lleva en coche hasta tu piso.%
 ~sfx = "Zumbido"
 ~character = "Johan%Johan"
 ~sprite = "Luka"
-Gracias por acompañarme, Luka.%
-No creo que pudiera haber llegado yo solo.%
+Gracias por acompañarme, Luka.%Thanks for driving me, Luka.
+No creo que pudiera haber llegado yo solo.%I don't think I could have made it on my own.
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-No hay de qué, Johan.%
-Lo has hecho genial antes. Mañana te enviarán el cheque.%
-Descansa este fin de semana.%
+No hay de qué, Johan.%You're welcome, Johan.
+Lo has hecho genial antes. Mañana te enviarán el cheque.%You did it great back there. Tomorrow they'll you the paycheck.
+Descansa este fin de semana.%Rest this weekend.
 
 ~character = "Johan%Johan"
 ~sprite = "Luka"
-Igualmente, Luka.%
+Igualmente, Luka.%You too, Luka.
 
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Te tiembla la mano mientras tratas de introducir la llave en la cerradura.%
-Cuando Luka se marcha caes al suelo frente a la puerta y rompes a llorar.%
+Te tiembla la mano mientras tratas de introducir la llave en la cerradura.%Your hand shakes as you try to insert the key into the lock.
+Cuando Luka se marcha caes al suelo frente a la puerta y rompes a llorar.%When Luka leaves you collapse to the ground in front of the door and burst into tears.
 
 ~character = "Fay%Fay"
 ~sprite = "Fay"
-¿Johan? ¿Estás bien?%
+¿Johan? ¿Estás bien?%Johan? Are you all right?
 
 ~character = "Narrador%Narrator"
 ~sprite = "Fay"
-Escuchas la voz de Fay a través de la puerta.%
-Te levantas de un salto y terminas de abrir la puerta.%
-La cabeza te da vueltas.%
+Escuchas la voz de Fay a través de la puerta.%You hear the voice of Fay through the door.
+Te levantas de un salto y terminas de abrir la puerta.%You quickly get up and finish opening the door.
+La cabeza te da vueltas.%Your head spins.
 
 ->Flat
 
@@ -2819,51 +2821,51 @@ La cabeza te da vueltas.%
 ~sfx = "Zumbido"
 ~character = "Fay%Fay"
 ~sprite = "Fay"
-Dios Johan, perdona pero... Uff.%
-Tienes un aspecto horrible.%
+Dios Johan, perdona pero... Uff.%God Johan, excuse me... Oof.
+Tienes un aspecto horrible.%You look horrible.
 
 ~character = "Johan%Johan"
 ~sprite = "Fay"
-Ya...%
-Ha sido un día duro en el trabajo.%
+Ya...%I know...
+Ha sido un día duro en el trabajo.%Rough day at work.
 
 ~character = "Fay%Fay"
 ~sprite = "Fay"
-¿Trabajas en fin de semana también?%
-Vaya faena...%
+¿Trabajas en fin de semana también?%Are you working on weekends too?
+Vaya faena...%What a pain...
 
 ~character = "Johan%Johan"
 ~sprite = "Fay"
-Son horas extras.%
-Las pagan bien.%
-O eso me han dicho.%
+Son horas extras.%Just overtime.
+Las pagan bien.%They pay well.
+O eso me han dicho.%Or so they told me.
 
 ~character = "Fay%Fay"
 ~sprite = "Fay"
-Siéntate, anda. Acabo de prepararme un té. Puedes quedártelo.%
+Siéntate, anda. Acabo de prepararme un té. Puedes quedártelo.%Come on, sit down. I just prepared a cup of tea. You can have it.
 
 ~character = "Johan%Johan"
 ~sprite = "Fay"
-Gracias Fay, pero no creo que pueda tomar nada ahora mismo.%
-Solo quiero terminar este día de una vez.%
+Gracias Fay, pero no creo que pueda tomar nada ahora mismo.%Thanks Fay, but I don't fell like eating or drinking anything right now.
+Solo quiero terminar este día de una vez.%I just want this day to be over.
 
 ~character = "Narrador%Narrator"
 ~sprite = "Fay"
-Fay se te acerca y te rodea con los brazos.%
-Te aprieta con fuerza mientras hundes la cabeza en su hombro, sollozando en silencio.%
+Fay se te acerca y te rodea con los brazos.%Fay walks up to you and puts her arms her arms around you.
+Te aprieta con fuerza mientras hundes la cabeza en su hombro, sollozando en silencio.%She squeezes you tight as you sink your head into her shoulder, sobbing silently.
 
 ~character = "Fay%Fay"
 ~sprite = "Fay"
-Descansa, Johan. Te vendrá bien.%
-Y oye, si te hace falta estoy en mi habitación.%
+Descansa, Johan. Te vendrá bien.%Rest, Johan. It will do you well.
+Y oye, si te hace falta estoy en mi habitación.%And hey, if you need something, I'll be in my room.
 
 ~character = "Johan%Johan"
 ~sprite = "Fay"
-Gracias...%
+Gracias...%Thanks...
 
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Arrastras los pies hasta tu habitación mientras Fay vuelve a la suya%
+Arrastras los pies hasta tu habitación mientras Fay vuelve a la suya%You shuffle your feet up to your room while Fay returns to hers.
 
 {Day_Two.HelpKalev} ->BeedroomKalev
 {Day_Two.HelpStanislav} ->BeedroomStanislav
@@ -2872,20 +2874,20 @@ Arrastras los pies hasta tu habitación mientras Fay vuelve a la suya%
 ~background = "Bedroom"
 ~character = "Narrador%Narrator"
 ~sprite = ""
-La habitación está oscura. Solo entran unos pocos rayos de luz de la luna entre la persiana.%
-Cierras la puerta y te llevas las manos a las sienes, masajeándolas suavemente.%
-Te tumbas sobre la cama con el uniforme sudado aún puesto.%
-Al subir las piernas sobre el colchón golpeas algo blando.%
-Comienza a brillar con una tenue luz azúl.%
+La habitación está oscura. Solo entran unos pocos rayos de luz de la luna entre la persiana.%The room is dark. Only a few rays of moonlight enter through the blind.
+Cierras la puerta y te llevas las manos a las sienes, masajeándolas suavemente.%You close the door and put your hands on your temples, gently massaging them.
+Te tumbas sobre la cama con el uniforme sudado aún puesto.%You lie on bed, sweaty uniform still on.
+Al subir las piernas sobre el colchón golpeas algo blando.%As you raise your legs on the mattress you hit something soft.
+Comienza a brillar con una tenue luz azúl.%It starts glowing in a dim blue light.
 
 ~character = "Kalev%Kalev"
 ~sprite = "Kalev"
-Hola, Johan.%
+Hola, Johan.%Hello, Johan.
 
 ~character = "Narrador%Narrator"
 ~sprite = "Kalev"
-Das un salto al ver a Kalev sentado, brillando, sobre tu caman.%
-Te golpeas la cabeza contra la estantería y caes sobre el suelo mientras toda la habitación da vueltas.%
+Das un salto al ver a Kalev sentado, brillando, sobre tu cama.%You startle as you see Kalev sat down, glowing, on your bed.
+Te golpeas la cabeza contra la estantería y caes sobre el suelo mientras toda la habitación da vueltas.%You hit your head against the shelf and fall to the ground whilst the whole room spins.
 
 ->TO_BE_CONTINUED
 
@@ -2893,20 +2895,20 @@ Te golpeas la cabeza contra la estantería y caes sobre el suelo mientras toda l
 ~background = "Bedroom"
 ~character = "Narrador%Narrator"
 ~sprite = ""
-La habitación está oscura. Solo entran unos pocos rayos de luz de la luna entre la persiana.%
-Cierras la puerta y te llevas las manos a las sienes, masajeándolas suavemente.%
-Te tumbas sobre la cama con el uniforme sudado aún puesto.%
-Al subir las piernas sobre el colchón golpeas algo blando.%
-Comienza a brillar con una tenue luz azúl.%
+La habitación está oscura. Solo entran unos pocos rayos de luz de la luna entre la persiana.%The room is dark. Only a few rays of moonlight enter through the blind.
+Cierras la puerta y te llevas las manos a las sienes, masajeándolas suavemente.%You close the door and put your hands on your temples, gently massaging them.
+Te tumbas sobre la cama con el uniforme sudado aún puesto.%You lie on bed, sweaty uniform still on.
+Al subir las piernas sobre el colchón golpeas algo blando.%As you raise your legs on the mattress you hit something soft.
+Comienza a brillar con una tenue luz azúl.%It starts glowing in a dim blue light.
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-Hola, Johan.%
+Hola, Johan.%Hello, Johan.
 
 ~character = "Narrador%Narrator"
 ~sprite = "Stanislav"
-Das un salto al ver a Stanislav sentado, brillando, sobre tu caman.%
-Te golpeas la cabeza contra la estantería y caes sobre el suelo mientras toda la habitación da vueltas.%
+Das un salto al ver a Stanislav sentado, brillando, sobre tu cama.%You startle as you see Stanislav sat down, glowing, on your bed.
+Te golpeas la cabeza contra la estantería y caes sobre el suelo mientras toda la habitación da vueltas.%You hit your head against the shelf and fall to the ground whilst the whole room spins.
 
 ->TO_BE_CONTINUED
 
