@@ -1929,7 +1929,6 @@ Solo encuentras muelles y plumas.%You only find springs and feathers.
 Metes la mano dentro de la almohada hasta encontrar un marco de madera.%You put your hand inside the pillow until it touches a wooden frame.
 
 ->KalevCellEnd
-TODO Continuar aquí (página 40, 3.7.3)
 =KalevCellEnd
 Sacas una foto enmarcada en madera oscura y con el cristal algo quebrado.%You take out a photograph framed in a dark wood. Its glass is somewhat broken.
 Tienes varias esquinas agarradas con cinta aislante.%It has several corners taped together.
@@ -1940,9 +1939,9 @@ Guardas la foto en tu chaqueta y vuelves al pasillo.%You put the photo in your j
 
 =CellCorridorKalev2
 ~background = "cellcorridor"
-Intentas acercarte a la celda de aislamiento, pero hay tres guardias rondando alrededor.%
-Kalev tendrá que esperar hasta mañana para tu visita.%
-Comienzas a caminar hacia el patio, evitando la puerta extraña.%
+Intentas acercarte a la celda de aislamiento, pero hay tres guardias rondando alrededor.%You try to get closer to the isolation cell. But there are three guards patroling around.
+Kalev tendrá que esperar hasta mañana para tu visita.%Kalev will have to wait until tomorrow for your visit.
+Comienzas a caminar hacia el patio, evitando la puerta extraña.%You start heading to the yard, avoiding walking besides the strange door.
 
 ->Yard
 
@@ -1951,68 +1950,68 @@ Comienzas a caminar hacia el patio, evitando la puerta extraña.%
 ~sfx = "Gente de fondo hablando"
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Un grupo de presos juega en la cancha de baloncesto.5
-Un balón pasa a pocos centímetros de tu cara mientras alguien se disculpa y corre a recogerlo.%
-Los bancos de ejercicio están ocupados por presos sin camiseta que trabajan con las máquinas hasta hacerlas chirriar.%
-En un banco, apartado en una esquina, Stanislav lee un periódico con su librito apoyado en el regazo.%
+Un grupo de presos juega en la cancha de baloncesto.%A group of prisoners plays on the basketball court.
+Un balón pasa a pocos centímetros de tu cara mientras alguien se disculpa y corre a recogerlo.%ball passes a few inches close to your face while someone apologizes and runs to take it back.
+Los bancos de ejercicio están ocupados por presos sin camiseta que trabajan con las máquinas hasta hacerlas chirriar.%The work benches and occupied by shirtless prisoners who work with them until they squeak.
+En un banco, apartado en una esquina, Stanislav lee un periódico con su librito apoyado en el regazo.%On a bench in the corner, Stanislav reads a newspaper with his little book laying on his lap.
 
-*[Acercarte a Stanislav%]
+*[Acercarte a Stanislav%Get closer toStanislav]
 -
-Stanislav rasga el periódico hasta arrancar una parte y guardarla en su libro.%
-Cuando te acercas se lo guarda en el bolsillo y cierra el periódico.%
+Stanislav rasga el periódico hasta arrancar una parte y guardarla en su libro.%Stanislav rips a part of the newspaper and puts it away inside his book.
+Cuando te acercas se lo guarda en el bolsillo y cierra el periódico.%When you get closer he hides it in his pocket and closes the newspaper.
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-¿Qué haces aquí, Johan? ¿Han dejado que te el aire hoy?%
+¿Qué haces aquí, Johan? ¿Han dejado que te el aire hoy?%What are you doing here, Johan? Did they allow you to get a breath of fresh air today?
 
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Stanislav se ríe, aunque arruga la cara al mover la nariz.%
+Stanislav se ríe, aunque arruga la cara al mover la nariz.%Stanislav laughs, although he wrinkles his face as his nose moves.
 
 ~character = "Johan%Johan"
 ~sprite = "Stanislav"
-Me toca turno en el patio.%
-Todo el mundo parece bastante... entretenido.%
-¿Tú no haces nada?%
+Me toca turno en el patio.%It's my turn in the yard.
+Todo el mundo parece bastante... entretenido.%Everyone looks pretty... entertained.
+¿Tú no haces nada?%You ain't doing anything?
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-¿Yo? Esos animales solo me aceptarían para usarme como balón.%
-Prefiero seguir leyendo. Además, tengo que tener cuidado con mi nariz.%
+¿Yo? Esos animales solo me aceptarían para usarme como balón.%Me? Those animals would only accept me as their new ball.
+Prefiero seguir leyendo. Además, tengo que tener cuidado con mi nariz.%I prefer to continue reading. Besides, I have to be careful with my nose.
 
 ~character = "Johan%Johan"
 ~sprite = "Stanislav"
-¿Qué tal la llevas?
+¿Qué tal la llevas?%Is it doing better?
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-Duele. Duele mucho.%
-Creo que es lo más doloroso que he sentido en mi vida.%
-Más doloroso incluso que me dejaras en manos de Luka.%
+Duele. Duele mucho.%It hurts. It hurts a lot.
+Creo que es lo más doloroso que he sentido en mi vida.%It might just be the most painful thing I've ever felt in my life.
+Más doloroso incluso que me dejaras en manos de Luka.%Even more painful that you leaving me in Luka's hands.
 
 ~character = "Johan%Johan"
 ~sprite = "Stanislav"
-Mejor dejarte con Luka que con Kalev, ¿no?%
-¿Te hace un segunndo asalto?%
+Mejor dejarte con Luka que con Kalev, ¿no?%Better leaving you with Luka than with Kalev, don't you think?
+¿Te hace un segunndo asalto?%Do you want a second round?
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-Lo lamento, pero no puedo aceptar la oferta.%
-Creo que prefiero seguir leyendo. Aunque parezca mentira, no tenemos demasiado tiempo libre.%
+Lo lamento, pero no puedo aceptar la oferta.%Sorry, but I can't accept the offer.
+Creo que prefiero seguir leyendo. Aunque parezca mentira, no tenemos demasiado tiempo libre.%I think I'd prefer to keep reading. Oddly enough, we don't have much spare time.
 
 ~character = "Narrador%Narrator"
 ~sprite = "Stanislav"
-Dejas a Stanislav continuar con su lectura, no sin antes echar un vistazo a la portada del periódico.%
-Está repleta de noticias sobre política.%
-No puedes leer mucho de la página arrancada.%
-Stanislav ha marcado las palabras "juicio" y "asesinato" en una de las páginas.%
-Stanislav carraspea y cierra el periódico hasta que te marchas.%
+Dejas a Stanislav continuar con su lectura, no sin antes echar un vistazo a la portada del periódico.%You let Stanislav continue his reading, not before taking a look at the front page of the newspaper.
+Está repleta de noticias sobre política.%It's full of news about politics.
+No puedes leer mucho de la página arrancada.%You can't read too much from the torn page.
+Stanislav ha marcado las palabras "juicio" y "asesinato" en una de las páginas.%Stanislav has marked the words "trial" and "murder" in one of the pages.
+Stanislav carraspea y cierra el periódico hasta que te marchas.%Stanislav clears his throat and refuses to open the newspaper until you leave.
 
 ~character = "Narrador%Narrator"
 ~sprite = ""
-El sol desciende por el horizonte y los muros de cemento van proyectando su sombra sobre el patio.%
-Los guardias comienzan a indicar a  los presos que han de volver a sus celdas.%
-Con el estómago rugiendo, te diriges a la cantina con Luka.%
+El sol desciende por el horizonte y los muros de cemento van proyectando su sombra sobre el patio.%The sun descends over the horizon and the concrete walls start casting their shadows over the yard.
+Los guardias comienzan a indicar a los presos que han de volver a sus celdas.%The guards start indicating the prisoners that they have to return back to their cells.
+Con el estómago rugiendo, te diriges a la cantina con Luka.%With your stomach roaring, you head to the canteen with Luka.
 
 ->Canteen
 
@@ -2020,25 +2019,25 @@ Con el estómago rugiendo, te diriges a la cantina con Luka.%
 ~background = "cellcorridor"
 ~character = "Narrador%Narrator"
 ~sprite = ""
-De camino a la sala de recreo pasas frente a la celda de Kalev.%
-No hay rastro del preso.%
-Su colchón está tirado en el suelo, con una raja en el centro y el relleno desperdigado por toda la celda.%
+De camino a la sala de recreo pasas frente a la celda de Kalev.%In your way to the break room you pass by Kalev's cell.
+No hay rastro del preso.%There's no trace of the inmate.
+Su colchón está tirado en el suelo, con una raja en el centro y el relleno desperdigado por toda la celda.%His matress is lying on the ground, a tear in its center and its filling scattered throughout the cell.
 
-*[Continuar a la sala de recreo%]
+*[Continuar a la sala de recreo%Continue to the break room]
 ~questionId = 43
 ->Breakroom
-*[Ir a la celda de aislamiento%]
+*[Ir a la celda de aislamiento%Go to the isolation cell]
 ~questionId = 44
     ~character = "Narrador%Narrator"
     ~sprite = ""
-    Caminas por el corredor hasta llegar a las celdas de aislamiento en el fondo.%
+    Caminas por el corredor hasta llegar a las celdas de aislamiento en el fondo.%You walk through the corridor until you reach the cells at the end.
     ~background = "heavydoor"
-    Escuchas los susurros de un sollozo escapar entre los tornillos y bisagras de la enorme puerta de acero.%
-    **[Acercarse a ver a Kalev%]
+    Escuchas los susurros de un sollozo escapar entre los tornillos y bisagras de la enorme puerta de acero.%You hear sobbing whispers escape between the bolts and hinges of the huge steel doors.
+    **[Acercarse a ver a Kalev%Get closer to see Kalev]
     --
-    Tratas de acercarte a la celda de aislamiento, pero hay dos guardias apostados a los lados.%
-    Les escuchas hablar acerca de la mafia y su impacto en el desarrollo de Moscú.%
-    Decides dejar la visita a Kalev para más tarde. Te diriges a la sala de recreo.%
+    Tratas de acercarte a la celda de aislamiento, pero hay dos guardias apostados a los lados.%You try to get closer to the isolation cell, but there are two guards posted to the sides.
+    Les escuchas hablar acerca de la mafia y su impacto en el desarrollo de Moscú.%You hear them talk about the mafia and its impact on Moscow.
+    Decides dejar la visita a Kalev para más tarde. Te diriges a la sala de recreo.%You decide to leave the visit to Kalev for later and head to the break room.
     ->Breakroom
 
 =Breakroom
@@ -2046,171 +2045,171 @@ Su colchón está tirado en el suelo, con una raja en el centro y el relleno des
 ~sfx = "Gente de fondo hablando"
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Un olor a sudor mezclado con palomitas te golpea al entrar en la sala de recreo.%
-Varios presos están reunidos en torno a una mesa de billar, planeando su próxima tirada.%
-El sofá de la habitación está cubierto de pelusillas y alguna mancha roja seca.%
+Un olor a sudor mezclado con palomitas te golpea al entrar en la sala de recreo.%A smell of sweat mixed with popcorn hits you as you enter the break room.
+Varios presos están reunidos en torno a una mesa de billar, planeando su próxima tirada.%Several prisoners are gathered around a pool table, planning the next shot.
+El sofá de la habitación está cubierto de pelusillas y alguna mancha roja seca.%The sofa in the room is covered in fluff and some dried red stains.
 ~sfx = "Zumbido"
-La televisión está encendida sin ningún canal puesto, inunando la sala de un ruido de estática.%
-Te apoyas en una de las paredes de la habitación, observando a cada uno de los presos.%
-Stanislav entra en la sala con su librito bajo el brazo.%
-Se sienta en el sofá y se recoloca la barriga antes de alcanzar el mando a distancia.%
+La televisión está encendida sin ningún canal puesto, inunando la sala de un ruido de estática.%The TV is on with no channel on, filling the room with a static noise.
+Te apoyas en una de las paredes de la habitación, observando a cada uno de los presos.%You lean against one of the walls of the room, observing each of the inmates.
+Stanislav entra en la sala con su librito bajo el brazo.%Stanislav enters the room with his little book under his arm.
+Se sienta en el sofá y se recoloca la barriga antes de alcanzar el mando a distancia.%He sits in the sofa and repositions his belly before reaching for the remote.
 
-*[Acercarse a Stanislav%]
+*[Acercarse a Stanislav%Get closer to Stanislav]
 -
-Dejas tu sitio contra la pared para sentarte en el sofá junto a Stanislav.%
+Dejas tu sitio contra la pared para sentarte en el sofá junto a Stanislav.%You leave your place against the wall to sit on the sofa next to Stanislav.
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-¡Johan, muchacho! Veo que te han dejado salir del... ¿Cómo lo llamaba Luka?%
-¿Establo?%
+¡Johan, muchacho! Veo que te han dejado salir del... ¿Cómo lo llamaba Luka?%Johan, boy! I see they let you out of the... How did Luka call it?
+¿Establo?%Barn?
 
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Asientes mientras Stanislav enciende la televisión.%
-Trastea con el mando, cambiando a un canal y a otro hasta pararse en un informativo de noticias.%
+Asientes mientras Stanislav enciende la televisión.%You nod as Stanislav turns the TV on.
+Trastea con el mando, cambiando a un canal y a otro hasta pararse en un informativo de noticias.%He fiddles with the remote, switching from one channel to another until he stops at a news report.
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-Vamos a ver si tu pequeño encargo del otro día ha servido para algo.%
+Vamos a ver si tu pequeño encargo del otro día ha servido para algo.%Let's see if your little gig from the other day has done its work.
 
 ~character = "Narrador%Narrator"
 ~sprite = "TV"
-Un hombre trajeado se acerca a un atril rodeado de cámaras y micrófonos.%
-Los presentadores le introducen como Viktor Barinov mientras saca una pila de papeles de su maletín.%
-Da dos golpecitos al micrófono que tiene delante antes de comenzar a hablar.%
-La televisión emite su mensaje con un deje robótico.%
+Un hombre trajeado se acerca a un atril rodeado de cámaras y micrófonos.%A man in a suit approaches a lectern surrounded by cameras and microphones.
+Los presentadores le introducen como Viktor Barinov mientras saca una pila de papeles de su maletín.%The presenters introduce him as Viktor Barinov as he pulls a stack of papers out of his briefcase.
+Da dos golpecitos al micrófono que tiene delante antes de comenzar a hablar.%He taps the microphone in front of him twice before starting to speak.
+La televisión emite su mensaje con un deje robótico.%The TV begins broadcasting his message with a robotic touch.
 
 ~character = "Viktor%Viktor"
 ~sprite = "TV"
-Queridos ciudadanos. Vengo hoy a hablaros acerca de las nuevas noticias que han surgido sobre el "caso Stanislav".%
-Algunas fuentes hablan de una supuesta carta que ha recibido nuestro partido.%
-En esta ficticia hoja de papel el convicto defiende, como ha hecho ya tantas veces, su condición de inocencia.%
-Quiero recalcar que desde Rusia Renacida continuamos desligados del actual criminal y asesino Stanislav Volkov.%
-Lamentamos que el anterior ministro de economía no sea capaz de reconocer y aceptar sus graves errores.%
-Dada su continuada insistencia en su inocencia durante los años, desde el partido hemos tomado una decisión.%
-No nos queda más remedio que eliminar su nombre de las puertas de nuestro museo de la moneda.%
-El nombre de un asesino no puede coronar un monumento tan importante para Moscú.%
-Eso es todo. Tengan todos ustedes una muy buena tarde.%
+Queridos ciudadanos. Vengo hoy a hablaros acerca de las nuevas noticias que han surgido sobre el "caso Stanislav".%Dear citizens. I come today to tell you about the recent news that has emerged about the "Stanislav case".
+Algunas fuentes hablan de una supuesta carta que ha recibido nuestro partido.%Some sources speak about an alleged letter that our party has received.
+En esta ficticia hoja de papel el convicto defiende, como ha hecho ya tantas veces, su condición de inocencia.%In this fictional sheet of paper the convict defends, as he has done so many times, his condition of innocence.
+Quiero recalcar que desde Rusia Renacida continuamos desligados del actual criminal y asesino Stanislav Volkov.%I want to emphasize that from Russia Reborn we remain separated from the current crminal and murderer Stanislav Volkov.
+Lamentamos que el anterior ministro de economía no sea capaz de reconocer y aceptar sus graves errores.%We are ashamed that the former economy minister is not able to recognize and accept his serious mistakes.
+Dada su continuada insistencia en su inocencia durante los años, desde el partido hemos tomado una decisión.%Given his continued insistence on his innocence over the years, we have made our decision.
+No nos queda más remedio que eliminar su nombre de las puertas de nuestro museo de la moneda.%We have no choice but to remove his name from the doors of our coin museum.
+El nombre de un asesino no puede coronar un monumento tan importante para Moscú.%The name of a murderer cannot decorate such an important monument for Moscow.
+Eso es todo. Tengan todos ustedes una muy buena tarde.%That's everything, may you all a very pleasant afternoon.
 
 ~character = "Narrador%Narrator"
 ~sprite = "tuvimos"
-Viktor se aleja del atril mientras una avalancha de periodistas le asalta con micrófonos.%
-Sus escoltas les cortan el paso hasta que Viktor se pierde en la distancia con su coche.%
+Viktor se aleja del atril mientras una avalancha de periodistas le asalta con micrófonos.%Viktor walks away from the lectern as an avalanche of journalists assaults him with their microphones.
+Sus escoltas les cortan el paso hasta que Viktor se pierde en la distancia con su coche.%His escorts block their path until Viktor is lost in the distance with his car.
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-¡Será malnacido! ¡Buitre!%
-¡Eres un puto buitre Viktor, ¿me oyes?!%
-UN.%
-PUTO.%
-BUITRE.%
+¡Será malnacido! ¡Buitre!%What a bastard! Vulture!
+¡Eres un puto buitre Viktor, ¿me oyes?!%You're a fucking Vulture, Viktor.Can you hear me?!
+UN.%A.
+PUTO.%FUCKING.
+BUITRE.%VULTURE.
 
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Stanislav cierra con fuerza su librito.%
-Varios recortes de periódico salen volando desde las páginas hasta el suelo.%
-Le ayudas a recogerlos mientras continua insultando a Viktor.%
-Los recortes de periódico solo hablan de asesinatos y varios juicios fallidos.%
+Stanislav cierra con fuerza su librito.%Stanislav shuts his little book.
+Varios recortes de periódico salen volando desde las páginas hasta el suelo.%Several newspaper clippings fly from the pages to the ground.
+Le ayudas a recogerlos mientras continua insultando a Viktor.%You help him picking them up while he continues insulting Viktor.
+Los recortes de periódico solo hablan de asesinatos y varios juicios fallidos.%The newspaper clippings only speak about murders and various failed trials.
 
 ~character = "Johan%Johan"
 ~sprite = "Stanislav"
-Ha dicho algo de unos asesinatos.%
-¿Sabes de qué está hablando?
+Ha dicho algo de unos asesinatos.%He said something about some murders.
+¿Sabes de qué está hablando?%Do you know what he was talking about?
 
 ~character = "Narrador%Narrator"
 ~sprite = "Stanislav"
-Stanislav espira profundamente y colca sus manos sobre las tuyas.%
+Stanislav espira profundamente y colca sus manos sobre las tuyas.%Stanislav takes a deep breath and places his hand over yours.
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-Hace un tiempo, como... Uff, ¿dos años ya?%
-Me la jugaron, Johan.%
-Ese capullo de Viktor me cargó a las espaldas el asesinato de Adrik Akilov.%
+Hace un tiempo, como... Uff, ¿dos años ya?%Some time ago. Like... Two years already?
+Me la jugaron, Johan.%They played on me, Johan.
+Ese capullo de Viktor me cargó a las espaldas el asesinato de Adrik Akilov.%That asshole Viktor put the murder of Adrik Avilov on my back.
 
 ~character = "Johan%Johan"
 ~sprite = "Stanislav"
-¿Quién?%
+¿Quién?%Who?
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-Oh, nadie importante. Solo fue el vicepresidente del anterior partido gobernante.%
-No te veo muy puesto en política, chaval.%
-El caso es que, sorpresa sorpresa, con Adrik fuera de escena, Viktor no ha tenido competidor real en estas elecciones.%
-Ese capullo... Con todo lo que he hecho para él y me deja aquí tirado.%
-No sabes la de planes económicos que tenía organizados.%
-Iva a levantar este maldito país, por mucho que a Viktor le costara.%
-Oh, pero no te preocupes.%
-Tengo pruebas. Muchas, sí.%
-Está todo aquí, en este libro. Solo tengo que ordenarlo...
+Oh, nadie importante. Solo fue el vicepresidente del anterior partido gobernante.%Oh, no one important. He was just the vicepresident of the previous ruling party.
+No te veo muy puesto en política, chaval.%I see you're not much into politics, kid.
+El caso es que, sorpresa sorpresa, con Adrik fuera de escena, Viktor no ha tenido competidor real en estas elecciones.%The fact is that, surprise surprise, with Adrik out of the picture, Viktor has had no actual competitor in these elections.
+Ese capullo... Con todo lo que he hecho para él y me deja aquí tirado.%That asshole... With everything I've done for him and he leaves me lying here.
+No sabes la de planes económicos que tenía organizados.%You can't imagine how many economic plans I had organized.
+Iva a levantar este maldito país, por mucho que a Viktor le costara.%I was going to make this damn country great, no matter how much it bothered Viktor.
+Oh, pero no te preocupes.%Oh, but don't you worry.
+Tengo pruebas. Muchas, sí.%I have evidence. A lot, yeah.
+Está todo aquí, en este libro. Solo tengo que ordenarlo...%They are all n this book. I just have to order them...
 
 ~character = "Narrador%Narrador"
 ~sprite = "Stanislav"
-Stanislav comienza a sudar hasta empaparse la espalda.%
-Sus ojos se van enrojeciendo cada vez más por cada página del libro que pasa.%
+Stanislav comienza a sudar hasta empaparse la espalda.%Stanislav starts sweating until his back is soaked.
+Sus ojos se van enrojeciendo cada vez más por cada página del libro que pasa.%His eyes grow redder with each page of the book he passes.
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-Está todo aquí, Johan. Te lo prometo.%
-Solo necesito llamar a Viktor y con esto le tendré cogido por los huevos.%
-Pero nunca me contestan el teléfono en la oficina.%
-Quizás si... ¿Tienes algo que hacer esta noche?%
+Está todo aquí, Johan. Te lo prometo.%It's everything here, Johan. I promise.
+Solo necesito llamar a Viktor y con esto le tendré cogido por los huevos.%I just need to call Viktor and with this I'll have him grabbed by the balls.
+Pero nunca me contestan el teléfono en la oficina.%But they never answer the phone at the office.
+Quizás si... ¿Tienes algo que hacer esta noche?%Maybe if... You have anything to do tonight?
 
 ~character = "Johan%Johan"
 ~sprite = "Stanislav"
-*[Me das miedo, Stanislav%]
-*[¿Qué te traes entre manos?%]
+*[Me das miedo, Stanislav%You scare me, Stanislav]
+*[¿Qué te traes entre manos?%What are you up to?]
 -
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-Estab pensando en que quizás podrías llamar tú.%
+Estab pensando en que quizás podrías llamar tú.%I was thinking that maybe you could call him.
 
 ~character = "Johan%Johan"
 ~sprite = "Stanislav"
-Ni de coña. No puedo hacerlo.%
+Ni de coña. No puedo hacerlo.%No way. I can't do it.
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-Venga, hombre. No seas así. Te dejaré mi libro.%
-Lo tienes todo ahí dentro.%
-Solo es una llamadita de unos minutos y le tendremos temblando.%
+Venga, hombre. No seas así. Te dejaré mi libro.%Come on, man. Don't be like that. I'll lend you my book.
+Lo tienes todo ahí dentro.%You have everything in there.
+Solo es una llamadita de unos minutos y le tendremos temblando.%It's just a little two minutes phone call and we'll have them shivering.
 
 ~character = "Johan%Johan"
 ~sprite = "Stanislav"
-*[No puedo arriesgarme tanto%]
-*[¿Qué saco yo de esto?%]
+*[No puedo arriesgarme tanto%I can't risk that much]
+*[¿Qué saco yo de esto?%What do I get out of this?]
 -
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-Bueno... ¿No merece la pena por hacerte amigo del futuro ministro de economía?%
-A un futuro música como tú le podría hacer falta un préstamo de vez en cuando.%
+Bueno... ¿No merece la pena por hacerte amigo del futuro ministro de economía?%Well... Isn't it worth making friends with the future economy minister?
+A un futuro música como tú le podría hacer falta un préstamo de vez en cuando.%A future musician like you might need a loan from time to time.
 
 ~character = "Johan%Johan"
 ~sprite = "Stanislav"
-Está bien. Pero diré que llamo de tu parte.%
-Y no daré mi nombre.%
-Tampoco haré más llamadas en el futuro.%
-¿Trato?%
+Está bien. Pero diré que llamo de tu parte.%Ok. But I'll say I'm calling on your behalf.
+Y no daré mi nombre.%And I won't give my name.
+Tampoco haré más llamadas en el futuro.%I won't make more calls in the future either.
+¿Trato?%Deal?
 
 ~character = "Narrador%Narrator"
 ~sprite = "Stanislav"
-Stanislav te coge la mano con ambos brazos y sonríe.%
+Stanislav te coge la mano con ambos brazos y sonríe.%Stanislav takes your hand with both arms and smiles.
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-Trato hecho, amigo.%
-No te arrepentirás.%
-Ahora deja que te de un par de consejos para la llamada...%
+Trato hecho, amigo.%It's a deal, friend.
+No te arrepentirás.%You won't regret it.
+Ahora deja que te de un par de consejos para la llamada...%Now let me give you a couple advices for the phone call..
 
 ~character = "Narrador%Narrator"
 ~sprite = "Stanislav"
-Stanislav repasa cada una de las páginas del libro indicando para qué podrías usar cada prueba.%
-Apenas ha llegado a la mitad cuando un par de guardias entran en la sala de recreo y conducen a los presos a sus celdas.%
-Stanislav te deja el libro bajo un cojín antes de marcharse con una sonrisa en la cara.%
+Stanislav repasa cada una de las páginas del libro indicando para qué podrías usar cada prueba.%Stanislav goes over each page of the book, indicating what you could use each evidence for.
+Apenas ha llegado a la mitad cuando un par de guardias entran en la sala de recreo y conducen a los presos a sus celdas.%He's barely halfway there when a couple of guards enter the break room and start leading the prisoners to their cells.
+Stanislav te deja el libro bajo un cojín antes de marcharse con una sonrisa en la cara.%Stanislav leaves the book for you under a cushion before leaving with a smile on his face.
 
 ~character = "Narrador%Narrator"
 ~sprite = "Stanislav"
-Sales de la sala de recreo con el libro oculto bajo la chaqueta hasta dejarlo en tu taquilla.%
-Después, con el estómago rugiendo, te diriges a la cantina con Luka.%
+Sales de la sala de recreo con el libro oculto bajo la chaqueta hasta dejarlo en tu taquilla.%You leave the rec room with the book hidden under your jacket until you leave it in your locker.
+Después, con el estómago rugiendo, te diriges a la cantina con Luka.%Then, with the stomach roaring, you head to the canteen with Luka.
 
 ->Canteen
 
@@ -2220,62 +2219,62 @@ Después, con el estómago rugiendo, te diriges a la cantina con Luka.%
 ~sfx = "Gente de fondo hablando"
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Te sientas junto a Luka en una de las mesas de la cantina.%
-La comida no tiene mejor pinta que el resto de días, pero tu estómago pide a gritos devorarla.%
+Te sientas junto a Luka en una de las mesas de la cantina.%You sit next to Luka in one of the tables in the canteen.
+La comida no tiene mejor pinta que el resto de días, pero tu estómago pide a gritos devorarla.%The food doesn't look any better than the rest of the days, but your stomach is crying out for you to devour it.
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-Entra que no veas después de un día duro de trabajo, ¿eh pipiolo?%
+Entra que no veas después de un día duro de trabajo, ¿eh pipiolo?%It feels so good after a day of hard work, huh, tyro?
 
 ~character = "Johan%Johan"
 ~sprite = "Luka"
-Cuesta admitirlo, pero sí.%
+Cuesta admitirlo, pero sí.%It's hard to admit, but yeah, it does.
 
 ~character = "Narrador%Narrator"
 ~sprite = "Luka"
-Sigues engullendo lo que quiera que sea que te han servido.%
+Sigues engullendo lo que quiera que sea que te han servido.%You keep devouring whatever it is that you have been served.
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-Y... ¿vas a ver el partido hoy?%
+Y... ¿vas a ver el partido hoy?%And... are you watching today's match?
 
 ~character = "Johan%Johan"
 ~sprite = "Luka"
-No. No me va mucho ver deportes por la tele, la verdad.%
-Estaré practicando un rato antes de dormir, casi no he tenido tiempo esta semana.%
+No. No me va mucho ver deportes por la tele, la verdad.%No. I'm not much interested in watching sports on TV, to be honest.
+Estaré practicando un rato antes de dormir, casi no he tenido tiempo esta semana.%I'll be practicing for a while before going to sleep. I've barely had time this week.
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-Anda, ¿practicar el qué?%
+Anda, ¿practicar el qué?%Wow, practicing what?
 
 ~character = "Johan%Johan"
 ~sprite = "Luka"
-Ah, pensé que ya te lo había comentado.%
-Toco el teclado.%
-Quiero dedicarme a la música.%
+Ah, pensé que ya te lo había comentado.%Ah, I thought I already mentioned that to you.
+Toco el teclado.%I play the keyboard.
+Quiero dedicarme a la música.%I want to become a musician.
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-Me cago en la leche, pues sí que sabes cosas, pipiolo.%
-A ver si me tocas algo un día de estos para animar al ganado.%
+Me cago en la leche, pues sí que sabes cosas, pipiolo.%Holy shit, you surely know a lot of things, tyro.
+A ver si me tocas algo un día de estos para animar al ganado.%Let's see if you can play something one of these days to cheer on the cattle.
 
 ~character = "Johan%Johan"
 ~sprite = "Luka"
-Estaría curioso dar mi primer gran concierto aquí, con los presos como público.%
+Estaría curioso dar mi primer gran concierto aquí, con los presos como público.%It'd be curious to have my first great concert here, with the prisoners as public.
 
 ~character = "Johan%Johan"
 ~sprite = "Luka"
-Ahora que lo pienso. Llevo un CD en la mochila.%
-¿Te gustaría llevártelo para escucharlo y me dices qué te parece?%
+Ahora que lo pienso. Llevo un CD en la mochila.%Now that I think about it. I have a CD in my backpack.
+¿Te gustaría llevártelo para escucharlo y me dices qué te parece?%Would you want to take it and tell me what do you think?
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-¡Pero bueno, cadete! ¡Me encantaría!%
+¡Pero bueno, cadete! ¡Me encantaría!%God, boy! I'd love to!
 
 ~character = "Narrador%Narrator"
 ~sprite = "Luka"
-Terminas la comida de la bandeja y te levantas del asiento.%
-Sonríes cunado Luka se guarda tu CD antes de marcharte de vuelta al piso.%
+Terminas la comida de la bandeja y te levantas del asiento.%You finish the food from your tray and get up from your seat.
+Sonríes cunado Luka se guarda tu CD antes de marcharte de vuelta al piso.%You smile as Luka puts away your CD before you go.
 
 ->FlatDoorstep
 
@@ -2292,17 +2291,17 @@ Sonríes cunado Luka se guarda tu CD antes de marcharte de vuelta al piso.%
 ~background = "apartmentkitchen"
 ~character = "Narrador%Narrator"
 ~sprite = ""
-En la puerta de la nevera encuentras un post-it con el logo de los Featherknights en una esquina.%
+En la puerta de la nevera encuentras un post-it con el logo de los Featherknights en una esquina.%On the refrigerator door you find a post-it with the Featherknights logo in one corner.
 ~character = "Fay%Fay"
 ~sprite = ""
-"¡Hola Johan! Espero que haya ido bien el día.% #italics
-Hoy no estaré en casa. Tenemos torneo.% #italics
-PD: Te he dejado unas partituras sobre el teclado.% #italics
-Son de mis favoritas. Fay" #italics
+"¡Hola Johan! Espero que haya ido bien el día.%"Hi Johan! I hope the day went well. #italics
+Hoy no estaré en casa. Tenemos torneo.%I won't be home today. We have a tournament. #italics
+PD: Te he dejado unas partituras sobre el teclado.%PS: I have left you some scores on the keyboard. #italics
+Son de mis favoritas. Fay"%They are some of my favourites. Fay" #italics
 
 ~character = "Johan%Johan"
 ~sprite = ""
-¡Machácalos, Fay! Les echaré un vistazo a esas partituras.% #italics
+¡Machácalos, Fay! Les echaré un vistazo a esas partituras.%Smash them, Fay! I'll check those scores out. #italics
 
 ->Flat
 
@@ -2310,18 +2309,18 @@ Son de mis favoritas. Fay" #italics
 ~background = "apartmententrance"
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Te acercas al teclado en mitad del salón.%
-Está cubierto por un montón de papeles grapados.%
-"Villain", "Warriors", "Rolling Girl", "All Star".%
+Te acercas al teclado en mitad del salón.%You take closer to the keyboard in the middle of the living room.
+Está cubierto por un montón de papeles grapados.%It's covered with a lot of stapled papers.
+"Villain", "Warriors", "Rolling Girl", "All Star".%"Villain", "Warriors", "Rolling Girl", "All Star".
 
 ~character = "Johan%Johan"
 ~sprite = ""
-No conozco ninguna de estas canciones.% #italics
-No parecen demasiado complicadas, me aprenderé alguna para cuando Fay regrese.% #italics
+No conozco ninguna de estas canciones.%I don't know any of these songs. #italics
+No parecen demasiado complicadas, me aprenderé alguna para cuando Fay regrese.%They don't seem too hard. I'll learn some for when Fay returns. #italics
 
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Coges la partitura de "Warriors" y entras en tu cuarto%
+Coges la partitura de "Warriors" y entras en tu cuarto%You take the score for "Warriors" and walk into your room.
 
 {Day_Two.HelpKalev} ->BeedroomKalev
 {Day_Two.HelpStanislav} -> BeedroomStanislav
@@ -2330,16 +2329,16 @@ Coges la partitura de "Warriors" y entras en tu cuarto%
 ~background = "bedroom"
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Dejas las partituras sobre la mesa y te pones a rebuscar en la mochla.%
-Encuentras la foto de Kalev en el fondo, escondida tras tu cuaderno.%
-Echas un último vistazo a la sonrisa de Kalev, que braza por el hombro al otro chico rubio.%
-Dejas la foto sobre el escritorio.%
+Dejas las partituras sobre la mesa y te pones a rebuscar en la mochla.%You leave the score on your desk and begin rummaging in your backpack.
+Encuentras la foto de Kalev en el fondo, escondida tras tu cuaderno.%You find Kalev's photo at the bottom, hidden behind your notebook.
+Echas un último vistazo a la sonrisa de Kalev, que braza por el hombro al otro chico rubio.%You take a last look at Kalev's smile, who is hugging the other blonde boy by the shoulder.
+Dejas la foto sobre el escritorio.%You put the photo on the desk.
 
 ~character = "Johan%Johan"
 ~sprite = ""
-Pensé que nunca llegaría el fin de semana.% #italics
-Estoy deseando salir de fiesta con los chicos.% #italics
-Me pregunto qué me habrán comprado este año...% #italics
+Pensé que nunca llegaría el fin de semana.%I thought the weekend would never come.#italics
+Estoy deseando salir de fiesta con los chicos.%I'm looking forward to partying with the boys. #italics
+Me pregunto qué me habrán comprado este año...%I wonder what they bought me this year... #italics
 
 ->BedroomEnd
 
@@ -2347,53 +2346,55 @@ Me pregunto qué me habrán comprado este año...% #italics
 ~background = "bedroom"
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Dejas la partitura sobre la mesa y te pones a rebuscar en la mochila.%
-Encuentras la librea de Stanislav al fondo, escondida tras una chaqueta.%
-Sacas una nota de papel con un número de teléfono escrito.%
+Dejas la partitura sobre la mesa y te pones a rebuscar en la mochila.%You leave the score on your desk and begin rummaging in your backpack.
+Encuentras la librea de Stanislav al fondo, escondida tras una chaqueta.%You find Stanislav's book at the bottom, hidden behind a jacket.
+Sacas una nota de papel con un número de teléfono escrito.%You take out a note with a phone number written on it.
 
 ~character = "Johan%Johan"
 ~sprite = ""
-Allá vamos...% #italics
+Allá vamos...%Here we go... #italics
 
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Llamas al número de teléfono mientras abres la libreta de Stanislav sobre tu regazo.%
+Llamas al número de teléfono mientras abres la libreta de Stanislav sobre tu regazo.%You call to the phone number as you open Stanislav's notebook on your lap.
 
-~character = "Secretario%Secretario"
+~character = "Secretario%Secretary"
 ~sprite = "Phone"
-Oficina del partido Rusia Renacida, buenas noches.%
-¿Puedo ayudarle?%
+Oficina del partido Rusia Renacida, buenas noches.%Russia Reborn Party Office, good night.
+¿Puedo ayudarle?%How can I help you?
 
 ~character = "Johan%Johan"
 ~sprite = "Phone"
-*[Buenas noches, necesito hablar con Viktor Barinov%]
-*[Póngame con Viktor Barinov. Es urgente%]
+*[Buenas noches%Good night] 
+Buenas noches, necesito hablar con Viktor Barinov%Good night, I need to speak with Viktor Barinov
+*[Póngame con Viktor Barinov%Put me on Viktor Barinov]
+Póngame con Viktor Barinov. Es urgente.%Put me on Viktor Barinov. It's urgent.
 -
-~character = "Secretario%Secretario"
+~character = "Secretario%Secretary"
 ~sprite = "Phone"
-Lo siento mucho. El señor Viktor está muy ocupado.%
-Déjeme su nombre y le concertaré una cita.%
-¿Qué tal le viene el 12 de enero?%
+Lo siento mucho. El señor Viktor está muy ocupado.%I'm so sorry. Mr. Barinov is very busy.
+Déjeme su nombre y le concertaré una cita.%Leave your name and I'll arrange a meeting.
+¿Qué tal le viene el 12 de enero?%How about Januray 12?
 
 ~character = "Johan%Johan"
 ~sprite = "Phone"
-Es acerca de Stanislav.%
-Creo que le interesa coger esta llamada.%
+Es acerca de Stanislav.%It's about Stanislav.
+Creo que le interesa coger esta llamada.%I think he's interested in taking this call.
 
-~character = "Secretario%Secretario"
+~character = "Secretario%Secretary"
 ~sprite = "Phone"
 ...%...
-Deme un segundo. Veré que puedo hacer.%
+Deme un segundo. Veré que puedo hacer.%Give me a second. I'll see what I can do.
 
 ~character = "Narrador%Narrador"
 ~sprite = ""
-Ojeas la libreta de Stanislav varias veces mientras esperas con una música de ascensor de fondo.%
-Varias gotas de sudor caen sobre las páginas dejando una marca.%
+Ojeas la libreta de Stanislav varias veces mientras esperas con una música de ascensor de fondo.%You look through Stanislav's notebook several times while elevator music plays in the background.
+Varias gotas de sudor caen sobre las páginas dejando marcas.%Several drops of sweat fall on the pages leaving marks.
 
-~character = "Secretario%Secretario"
+~character = "Secretario%Secretary"
 ~sprite = "Phone"
-El señor Viktor está dispuesto a aceptar su llamada.%
-¿Podría darme su nombre?
+El señor Viktor está dispuesto a aceptar su llamada.%Mr. Viktor is willing to accept your call.
+¿Podría darme su nombre?%Could you give me a name?
 
 
 ~character = "Johan%Johan"
@@ -2410,62 +2411,62 @@ VAR name = ""
 -
 ~character = "Secretario%Secretario"
 ~sprite = "Phone"
-Muchas gracias, caballero.%
-Le paso con VIktor.%
+Muchas gracias, caballero.%Thank you very much, gentleman.
+Le paso con VIktor.%I'll pass you on with Viktor.
 
 ~character = "Johan%Johan"
 ~sprite = ""
-Llegó el momento de la verdad.% #italics
+Llegó el momento de la verdad.%It comes, the moment of truth. #italics
 
 ~character = "Viktor%Viktor"
 ~sprite = "Phone"
-Buenas noches. Viktor Barinov al habla.%
+Buenas noches. Viktor Barinov al habla.%Good night. Viktor Barinov speaking.
 
 ~character = "Johan%Johan"
 ~sprite = "Phone"
 
-*[Tengo información sobre Stanislav%]
+*[Tengo información sobre Stanislav%I have information regarding Stanislav]
 ~character = "Viktor%Viktor"
 ~sprite = "Phone"
-¿Se refiere a Stanislav Volkov?%
-Yo también tengo información sobre él.%
-Está encerrado en la cárcel de Moscú. Y durante un buen tiempo, espero.%
-*[Sé lo que habéis hecho con Stanislav%]
+¿Se refiere a Stanislav Volkov?%Are you referring to Stanislav Volkov?
+Yo también tengo información sobre él.%I have information about him too.
+Está encerrado en la cárcel de Moscú. Y durante un buen tiempo, espero.%He's locked up in Moscow jail. And for a long time, I hope.
+*[Sé lo que habéis hecho con Stanislav%I know what you did to Stanislav]
 ~character = "Viktor%Viktor"
 ~sprite = "Phone"
-Yo también sé lo que hemos hecho con él.%
-Le hemos encerrado en la prisión de Moscú. Y durante bastante tiempo, espero.%
+Yo también sé lo que hemos hecho con él.%I also know what we have did to him.
+Le hemos encerrado en la prisión de Moscú. Y durante bastante tiempo, espero.%We locked him up in Moscow jail. And for a long time, I hope.
 -
 
 ~character = "Johan%Johan"
 ~sprite = "Phone"
-*[Se la habéis jugado%]
+*[Se la habéis jugado%You played on him]
 ~character = "Viktor%Viktor"
 ~sprite = "Phone"
-Si se refiere a lo del museo, en efecto, se la hemos jugado.%
-No podemos grabar el nombre de un asesino en un monumento público.%
-*[Le habéis utilizado]
+Si se refiere a lo del museo, en efecto, se la hemos jugado.%If you are talking about the museum, in effect, we did play on him.
+No podemos grabar el nombre de un asesino en un monumento público.%We can't engrave a killer's name on a public monument.
+*[Le habéis utilizado%You used him]
 ~character = "Viktor%Viktor"
 ~sprite = "Phone"
-Si se refiere a lo del museo, en efecto, le hemos utilizado.%
-Le hemos utilizado para limpiar la imagen de Moscú.%
-No podemos grabar el nombre de un asesino en un monumento público.%
+Si se refiere a lo del museo, en efecto, le hemos utilizado.%If you are talking about the museum, in effect, we did use him.
+Le hemos utilizado para limpiar la imagen de Moscú.%We used him to clean up Moscow's image.
+No podemos grabar el nombre de un asesino en un monumento público.%We can't engrave a killer's name on a public monument.
 
 -
 ~character = "Johan%Johan"
 ~sprite = "Phone"
-*[Tengo pruebas%]
-Tengo pruebas, Viktor.%
-Sé que le has cargado el asesinato de Adrik Avilov a las espaldas.%
-No pareces muy contento con sus propuestas para la reforma económica.%
+*[Tengo pruebas%I have evidence]
+Tengo pruebas, Viktor.%I have evidence, Viktor.
+Sé que le has cargado el asesinato de Adrik Avilov a las espaldas.%I know you put Adrik Avilov's murder on his back.
+No pareces muy contento con sus propuestas para la reforma económica.%You don't seem to a fan of his proposals for an economical reform.
 -
 ~character = "Viktor%Viktor"
 ~sprite = "Phone"
-Y de qué pruebas se trata, señor {name}.%
+Y de qué pruebas se trata, señor {name}.%And what evidence do you hace, mister {name}.
 
 ~character = "Johan%Johan"
 ~sprite = "Phone"
-*[Fotografías de la coartada%]
+*[Fotografías de la coartada%Photographs of his alibi]
 ~character = "Narrador%Narrator"
 ~sprite = ""
 Pasas las páginas dela libreta de Stanislav con mano temblorosa.%
@@ -2474,7 +2475,8 @@ Pasas las páginas dela libreta de Stanislav con mano temblorosa.%
 ~sprite = "Phone"
 En estas fotografías puede verse a Stanislav salir de un coche con una... bueno, con una amiga.%
 Está tomada la misma noche en la que, según su partido, asesinó a Adrik.
-*[Recortes de periódico%]
+*[Recortes de periódico%Newspaper clippings]
+TODO seguir por aquí
 ~character = "Narrador%Narrator"
 ~sprite = ""
 Pasas las páginas dela libreta de Stanislav con mano temblorosa.%
@@ -2510,7 +2512,7 @@ Me pregunto qué me habrán comprado este año...% #italics
 ~background = "bedroom"
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Te arropas con las ´sábanas hasta el cuello y das un profundo bostezo antes de irte a dormir.%
+Te arropas con las ´sábanas hasta el cuello y das un profundo bostezo antes de irte a dormir.%You wrap the sheets up to your neck and yawn deeply before going to sleep.
 
 ->Day_Four
 
