@@ -43,7 +43,7 @@ public class StoryManager : MonoBehaviour
     void Start()
     {
         if (GameManager.currentSaveFile == null) return;
-
+        characterSpritesDict.Clear();
         foreach (var s in characterSprites) characterSpritesDict.Add(s.name, s);
 
         inkStory = new Story(inkJSON.text);

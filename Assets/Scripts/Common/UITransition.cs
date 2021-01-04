@@ -41,12 +41,15 @@ public class UITransition : MonoBehaviour
     IEnumerator OnPlayInEnd()
     {
         yield return new WaitForSeconds(clipIn.length);
+        
         onPlayInEnd?.Invoke();
     }
 
     IEnumerator OnPlayOutEnd()
     {
         yield return new WaitForSeconds(clipOut.length);
-        onPlayOutEnd?.Invoke();
+        Debug.Log("changing scene");
+        if (onPlayOutEnd != null) onPlayOutEnd();
+        Debug.Log("sceneLoaded scene");
     }
 }

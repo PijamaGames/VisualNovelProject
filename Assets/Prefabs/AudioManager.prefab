@@ -44,6 +44,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allClips:
+  - {fileID: 8300000, guid: 4f4a03d8507f7c54e93059bea050a55b, type: 3}
+  - {fileID: 8300000, guid: 01425fc78112e704f892d85687e5f7c9, type: 3}
+  - {fileID: 8300000, guid: 25bb8c1477e7f8a4d984d53ae47145ce, type: 3}
+  - {fileID: 8300000, guid: ec7bac09099c84540ae584442e1bc792, type: 3}
+  - {fileID: 8300000, guid: 3bbaa49459711b84ca1e6cd07eb43fe6, type: 3}
+  - {fileID: 8300000, guid: 2491568fcd7164347bc52128454bd7d6, type: 3}
+  - {fileID: 8300000, guid: 18e215371c493444e883e47758eca724, type: 3}
+  - {fileID: 8300000, guid: 9cbe7b29033b1ac4299e9b694f721865, type: 3}
+  - {fileID: 8300000, guid: 4796d528f2e4db74eb16645efb963cdb, type: 3}
+  - {fileID: 8300000, guid: adcc7d7681534274e99edee1bd65ad78, type: 3}
   - {fileID: 8300000, guid: c90db97eb59718d4bb490b997a334d84, type: 3}
   - {fileID: 8300000, guid: 04e40125ea94a7440bcf96a00f0ac37b, type: 3}
   - {fileID: 8300000, guid: ce3f8a6d78ab57d418f899d5b5d7f4e1, type: 3}
