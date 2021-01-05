@@ -165,7 +165,7 @@ public class StoryManager : MonoBehaviour
 
     public void ContinueStory()
     {
-        if (!inkStory.canContinue) return;
+        if (!inkStory.canContinue) SceneLoader.LoadEndScene();
         //Debug.Log("CONTINUE STORY");
 
         inkStory.Continue();
