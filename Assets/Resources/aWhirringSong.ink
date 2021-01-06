@@ -115,8 +115,7 @@ Comida fría, libros viejos y gimnasios sudados. Las mejores instalaciones para 
 ~sprite = ""
 Sigues a Luka por los pasillos estrechos.%You follow Luka through the narrow corridors.
 ~sfx = "Risa"
-Sus carcajadas retumban por toda la cárcel mientras señala a un lado y a otro.%His laughter echoes
-throughout all the jail while he points left and right.
+Sus carcajadas retumban por toda la cárcel mientras señala a un lado y a otro.%His laughter echoes throughout all the jail while he points left and right.
 ->Locker
 
 =Locker
