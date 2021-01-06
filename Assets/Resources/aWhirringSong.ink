@@ -109,8 +109,7 @@ Le ruego no pierda de vista al guía y mantenga las manos alejadas de cualquier 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
 Sí. Mi hotel. 5 estrellas de puro cemento, acero y justicia.%Yes. My own hotel. 5 stars of pure concrete, steel and justice.
-Comida fría, libros viejos y gimnasios sudados. Las mejores instalaciones para la peor de la escoria.%Cold
-food, old books and swaty gyms. The best facilites for the worst scum.
+Comida fría, libros viejos y gimnasios sudados. Las mejores instalaciones para la peor de la escoria.%Cold food, old books and swaty gyms. The best facilites for the worst scum.
 
 ~character = "Narrador%Narrator"
 ~sprite = ""
