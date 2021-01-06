@@ -15,6 +15,7 @@ VAR sprite = "" //Nombre sprite del personaje
 
 ->PrisonEntrance
 =PrisonEntrance
+~music = "Touchpoint"
 ~background = "prisonentrance"
 ~character = "Narrador%Narrator"
 ~sprite = ""
@@ -308,6 +309,7 @@ Tanto hablar me está dejando la garganta peor que una noche de partido.%All thi
 ->VendingMachine
 
 =Kalev
+~music = "Somber"
 ~background = "cell"
 ~character = "Narrador%Narrator"
 ~sprite = "Kalev"
@@ -329,9 +331,11 @@ Me han asignado a este corredor, creo que nos vamos a ver bastante por aquí.%I'
 ~sprite = "Kalev"
 En cuanto dejas de hablar vuelve a sacar el papel de debajo de la almohada.%As soon as you stop talking, he takes the paper back from under the pillow.
 Parece agarrar con más fuerza las mangas de su uniforme.%He seems to grip the sleeves of his uniform even tighter.
+~music = "Touchpoint"
 ->CorridorChoice
 
 =Stanislav
+~music = "Quier"
 ~background = "cell"
 ~character = "Narrador%Narrator"
 ~sprite = ""
@@ -376,6 +380,7 @@ Ahora si me disculpas, tengo que continuar con mi, uhm, transacción.%Now, if yo
 ~sprite = "Stanislav"
 Te das la vuelta y escuchas la tapa del váter abrirse de nuevo.%You turn around and hear the toilet seat opening.
 Será mejor continuar hacia otro lugar.%It'll be better to continue to another cell.
+~music = "Touchpoint"
 ->CorridorChoice
 
 =OtherCells
@@ -439,6 +444,7 @@ Vamos, ya casi hemos terminado el tour.%Come on, we've almost finished the tour.
 =ElectricChair
 ~background = "closeddoor"
 ~sfx = "Zumbido"
+~music = "Horror13"
 ~character = "Narrador%Narrator"
 ~sprite = ""
 Siguiendo a Luka te paras frente a una puerta cerrada.% While following Luka you stop and stand in front of a closed door. 
@@ -453,6 +459,8 @@ Oye Luka, ¿y esta puerta?%Hey Luka. What about this room?
 ~sprite = "Luka"
 Oh, no te preocupes por eso. Esa zona está fuera de límites para ti.%Oh, don't worry about it. This zone is off-limits for you.
 Se está haciendo tarde. Déjame enseñarte la cantina y vamos a tomar algo de paso.%It's getting late. Let me show you the canteen and let's eat anything since we are there.
+
+~music = "Touchpoint"
 ->Canteen
 
 =Canteen
@@ -591,6 +599,7 @@ Luka te da un abrazo sorprendentemente reconfortante antes de marcharse en su co
 =FlatDoorstep
 ~background = "apartmentdoor"
 ~character = "Narrador%Narrator"
+~music = "Clouds"
 ~sprite = ""
 Coges el último autobús hasta el centro de la ciudad y llegas a la puerta de tu piso.%You take the last bus to the town center and arrive to your flat's door.
 Cuando rebuscas en tus pantalones no escuchas el esperado tintineo de las llaves.%When looking into your pockets you don't hear the expected jingle of the keys.
@@ -847,6 +856,7 @@ A los pies de la estantería descansa tu guitarra marrón, con algunas zonas de 
 ~sprite = ""
 Continúas mirando fijamente un punto en el techo hasta quedarte dormido.%You continue looking at the point on the ceiling until you fall asleep.
 El sonido de las goteras te arropa como tu canción de cuna favorita.%The sound of the water leaks tucks you as your favourite lullaby.
+
 ->Day_Two
 
 
@@ -871,6 +881,7 @@ Una de las ventajas que tiene vivir con Fay es que ahorras mucho dinero en despe
 Miras el reloj aún tumbado en la cama, con la cabeza medio hundida en la almohada.%You look at the clock while still lying on bed, with your head sunk in the pillow.
 Las 8 en punto.%It's 8 o'clock.
 Te levantas de un salto de la cama y, aún con los vaqueros a medio subir, sales corriendo por la puerta del piso.%You jump out of bed and, still with your jeans half up, you run out the door of the apartment.
+~music = "Touchpoint"
 ->Bus
 
 =Bus
@@ -966,6 +977,7 @@ Kalev está sentado en su celda, mirando a un lado y a otro con la cesta vacía.
 =SeeKalevChoice
 *[Acercarte a Kalev%Get closer to Kalev]
 ~questionId = 34
+~music = "Somber"
 ~background = "cell"
 ~character = "Narrador%Narrator"
 ~sprite = "Kalev"
@@ -987,6 +999,7 @@ Bueno, si necesitas cualquier cosa estaré por aquí.%Well, if you need anything
 ->SeeKalevChoice
 *[Seguir recorriendo el pasillo%Keep going down the hall]
 ~questionId = 35
+~music = "Touchpoint"
 ~background = "cellcorridor"
 ~character = "Narrador%Narrator"
 ~sprite = ""
@@ -1029,6 +1042,7 @@ Te das la vuelta y caminas hasta encontrar la fuente de los gritos.%Yout turn ba
 
 =StanislavVsKalev
 ~background = "cell"
+~music = "TheBigDecision"
 ~character = "Narrador%Narrator"
 ~sprite = ""
 Stanislav se tapa la cara con ambas manos frente a Kalev, que está envuelto con una manta hasta el cuello.%Stanislav covers his face with both hands in front of Kalev, who is wrapped in a blanket up to his neck.
@@ -1059,10 +1073,12 @@ Solo me acaba de partir la nariz un maldito neandertal.%It's just that a damn ne
 ~sprite = ""
 *[Llevar a Stanilav a la enfermería%Take Stanislav to the infirmary]
 ~questionId = 36
+~music = "Quiet"
 ->HelpStanislav
 
 *[Interrogar a Kalev%Question Kalev]
 ~questionId = 37
+~music = "Somber"
 ->HelpKalev
 
 =HelpStanislav
@@ -1422,6 +1438,7 @@ Juntos camináis hasta la cantina.%You walk together to the canteen.
 
 =Canteen
 ~background = "canteen"
+~music = "Touchpoint"
 ~hour = 2
 ~sfx = "Gente de fondo hablando"
 ~character = "Luka%Luka"
@@ -1575,6 +1592,7 @@ Insertas la carta en el primer buzón que encuentras antes de volver a casa.%You
 ->Flat
 
 =Flat
+~music = "Clouds"
 ~background = "apartmententrance"
 ~character = "Narrador%Narrator"
 ~sprite = ""
@@ -1595,9 +1613,9 @@ Comienzas a hacer ajustes con el teclado y, con paso aletargado, empiezas a toca
 
 TODO Añadir las canciones que puedes tocar
 *[Canción 1%]
-~music = ""
+~music = "Clouds"
 *[Canción 2%]
-~music = ""
+~music = "Clouds"
 
 -
 ~character = "Narrador%Narrator"
@@ -1671,7 +1689,7 @@ Te levantas de la cama, con el uniforme ya puesto de anoche.%You get up from bed
 ~background = "apartmententrance"
 Andas despacio por el pasillo, tratando de no despertar Fay, que ronca en su habitación.%You walk slowly through the corridor, trying not to wake up Fay. She's snoring in her room.
 Cages un sándwich antes de salir de casa.%You take a sandwich before leaving home.
-
+~music = "Touchpoint"
 ->PrisonEntrance
 
 =PrisonEntrance
@@ -1688,13 +1706,14 @@ Saludas al recepcionista bajándote la gorra y te drigiges al corredor de los pr
 ~background = "closeddoor"
 ~character = "Narrador%Narrator"
 ~sprite = ""
+~music = "Horror13"
 ~sfx = "Zumbido"
 En tu camino al corredor de los presos te topas otra vez con la puerta cerrada con tres cerrojos y una llave.%On your way of the prisoners' corridor you run again into the closed door with three locks and a key.
 EL mismo zumbido monótono suena al otro lado. Te acercas poco a poco hasta pegar la oreja.%The same monotonous whirring sounds on the other side. You approach slowly until your ear touches the door.
 Un escalofrío recorre tu espalda. Debe de ser cosa del frío metal de la puerta.%A chill runs down your spine. It must be the cold metal of the door.
 Continuas andando hacia el corredor de los presos.You continue walking towards the corridor of the prisoners.
 Miras de vez en cuando a tu espalda, a la puerta cerrada con tres cerrojos y una llave.%You look back at the closed door behind your back from time to time.
-
+~music = "Touchpoint"
 ->CellCorridorMorning
 
 =CellCorridorMorning
@@ -1711,6 +1730,7 @@ El golpe de tus botas hace eco por las paredes de cemento.%The thump of your boo
 =CellCorridorMorningKalev
 ~background = "cell"
 ~character = "Narrador%Narrator"
+~music = "Somber"
 ~sprite = ""
 No hay rastro de Kalev en su celda.%There's no sign of Kalev in his cell.
 EL colchón tiene una raja y el relleno está desperdigado por el suelo.%The mattres has a slit and the padding is scattered on the floor.
@@ -1762,11 +1782,11 @@ Tengo que marcharme a empezar mi ronda. Nos vemos, Kalev.%I gotta go start my sh
 ~sprite = ""
 Kalev vuelve a arrastrar los pies hasta el fondo de la celda.%Kalev drags his feet back to the bottom of the cell.
 Vuelves a escuchar un sollozo escapar por la puerta mientras te alejas.%You hear another sob escape through the door as you walk away.
-
 ->VendingMachine
 
 =CellCorridorMorningStanislav
 ~background = "cell"
+~music = "Quiet"
 ~character = "Narrador%Narrator"
 ~sprite = ""
 Stanislav está sentado sobre su cama leyendo un pequeño libro con la espina desgastada.%Stanislav's sitting in his bed, reading a small book with a worn out spine.
@@ -1795,6 +1815,7 @@ Espera hasta que te marches para volver a abrir su libro.%He waits until you lea
 ->VendingMachine
 
 =VendingMachine
+~music = "Touchpoint"
 ~background = "cellcorridor"
 ~character = "Narrador%Narrator"
 ~sprite = ""
@@ -2279,6 +2300,7 @@ Sonríes cunado Luka se guarda tu CD antes de marcharte de vuelta al piso.%You s
 ->FlatDoorstep
 
 =FlatDoorstep
+~music = "Clouds"
 ~background = "apartmentdoor"
 ~character = "Narrador%Narrator"
 ~sprite = ""
@@ -2512,7 +2534,7 @@ Me pregunto qué me habrán comprado este año...%wonder what they have bought m
 ~character = "Narrador%Narrator"
 ~sprite = ""
 Te arropas con las ´sábanas hasta el cuello y das un profundo bostezo antes de irte a dormir.%You wrap the sheets up to your neck and yawn deeply before going to sleep.
-
+~music = ""
 ->Day_Four
 
 ==Day_Four==
@@ -2589,6 +2611,7 @@ Sígueme. Vamos a tu nuevo puesto de trabajo.%Follow me. Let's go to your new jo
 =ElectricChairDoor
 ~background = "closeddoor"
 ~sfx = "Zumbido"
+~music = "Horror13"
 ~character = "Narrador%Narrador"
 ~sprite = ""
 Luka se para frente a la puerta de metal.%Luka stands in front of the metal door.
@@ -2601,6 +2624,7 @@ Bienvenido al matadero.%Welcome to the slaughterhouse.
 ->ElectricChair
 
 =ElectricChair
+~music = "Beginning"
 ~background = "electricchair"
 ~sfx = "Zumbido"
 ~character = "Narrador%Narrador"
@@ -2748,6 +2772,7 @@ Levantas la palanca y te desplomas en el suelo con la visión nublosa.%You lift 
 ~hour = 1
 ~background = "canteen"
 ~sfx = "zumbido"
+~music = "BeforeDawn"
 ~character = "Narrador%Narrador"
 ~sprite = ""
 Te despiertas en la cantina de la cárcel sentado junto a Luka.%You wake up in the prison's canteen sitting next to Luka.
@@ -2882,6 +2907,7 @@ Comienza a brillar con una tenue luz azúl.%It starts glowing in a dim blue ligh
 
 ~character = "Kalev%Kalev"
 ~sprite = "Kalev"
+~music = "Somber"
 Hola, Johan.%Hello, Johan.
 
 ~character = "Narrador%Narrator"
@@ -2903,6 +2929,7 @@ Comienza a brillar con una tenue luz azúl.%It starts glowing in a dim blue ligh
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
+~music = "Quiet"
 Hola, Johan.%Hello, Johan.
 
 ~character = "Narrador%Narrator"
