@@ -236,8 +236,7 @@ Directo al grano, me gusta.%Straight to the point. I like that.
 ~questionId = 11
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-Da las gracias si no cobras por parte de los presos. La granja es un trabajo de riesgo.%Be thankful if the
-prisoners don't pay you with a kick to your gut. Farming is a risky job.
+Da las gracias si no cobras por parte de los presos. La granja es un trabajo de riesgo.%Be thankful if the prisoners don't pay you with a kick to your gut. Farming is a risky job.
 
 -
 Sigamos por aquí, vamos a ver el establo.%Let's continue. We're headed to the stable now.
@@ -821,7 +820,8 @@ El ambientador que dejaste sobre la mesa lleva días gastado.%The air freshener 
 ->Desktop
 *[Mirar la estantería%Look at the shelf]
 ->Bookshelf
-*{Bookshelf and Desktop} [Meterse en la cama%Get into bed] ->Bed
+*{Bookshelf and Desktop} [Meterse en la cama%Get into bed]
+->Bed
 
 =Desktop
 Pasas el dedo sobre tu sintetizador en el escritorio, tocando suavemente sus notas.%You slip your finger over your synthesizer on the desk, gently tapping one of its notes.
@@ -835,9 +835,9 @@ Está lleno de marcadores en los lados y la espina está algo desgastada.%It is 
 A los pies de la estantería descansa tu guitarra marrón, con algunas zonas de madera desconchada.%At the foot of the shelf lies your brown guitar, which has some areas of chipped wood.
 ->BedroomChoice
 
+=Bed
 ~character = "Johan%Johan"
 ~sprite = ""
-=Bed
 *[Pensar en el trabajo%Think about work]
 ~questionId = 27
     Luka parece muy bueno en su trabajo, aunque me da algo de pena.%Luka seems very good at his job, although I feel a bit sorry for him. #italics
@@ -2938,5 +2938,5 @@ Te golpeas la cabeza contra la estantería y caes sobre el suelo mientras toda l
 ->TO_BE_CONTINUED
 
 ==TO_BE_CONTINUED==
-
+#end
 ->END
