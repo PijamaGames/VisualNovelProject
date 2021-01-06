@@ -29,7 +29,7 @@ Primer día, allá vamos.%First day, here we go. #italics
 
 
 *[Entrar por la puerta principal%Enter through the front door] 
--~sfx = "Celda_Cerrando" 
+~sfx = "Celda_Cerrando" 
 ->Recepction
 
 =Recepction
@@ -54,7 +54,6 @@ Nadie responde.%Nobody answers.
 Desplzas el peso de tu cuerpo de una pierna a otra mirando el reloj.%You shift your body weight from one leg to the other while looking at the clock.
 
 *[Esperar en recepción%Wait at the reception]
--
 ~character = "Narrador%Narrator"
 ~sprite = ""
 Te apoyas en la ventanilla y sacas una revista de tu bolsillo.%You lean on the window and take a magazine out of your pocket.
@@ -63,7 +62,7 @@ Lees una crítica sobre el nuevo teclado Leinsf MK600.%You read a review about a
 Según empiezas a leer suenan pasos en un pasillo a tu espalda, cada vez más rápido, acelerando.%Just as you start to read you hear footsteps in a corridor behind you. 
 Una mano te golpea la espalda con fuerza.%A hand hits hard on your back.
 
-~character = "Luka%Lukar"
+~character = "Luka%Luka"
 ~sprite = "Luka"
 Llegas tarde, novato.%You're late, rookie.
 Soy Luka, tu nuevo compañero de trabajo.%Luka, your new coworker.
@@ -221,6 +220,7 @@ No puedes decir exactamente qué son, pero sabes que hay cosas que es mejor no p
 ~questionId = 8
 *[No, nunca%No, never]
 ~questionId = 9
+-
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
@@ -241,7 +241,8 @@ Directo al grano, me gusta.%Straight to the point. I like that.
 Da las gracias si no cobras por parte de los presos. La granja es un trabajo de riesgo.%Be thankful if the
 prisoners don't pay you with a kick to your gut. Farming is a risky job.
 
--Sigamos por aquí, vamos a ver el establo.%Let's continue. We're headed to the stable now.
+-
+Sigamos por aquí, vamos a ver el establo.%Let's continue. We're headed to the stable now.
 
 ->CellCorridor
 
@@ -822,8 +823,7 @@ El ambientador que dejaste sobre la mesa lleva días gastado.%The air freshener 
 ->Desktop
 *[Mirar la estantería%Look at the shelf]
 ->Bookshelf
-*{Bookshelf and Desktop} [Meterse en la cama%Get into bed]
-->Bed
+*{Bookshelf and Desktop} [Meterse en la cama%Get into bed] ->Bed
 
 =Desktop
 Pasas el dedo sobre tu sintetizador en el escritorio, tocando suavemente sus notas.%You slip your finger over your synthesizer on the desk, gently tapping one of its notes.
@@ -1511,7 +1511,7 @@ Terminas tu bandeja, dejando tan solo unas migajas de puré de patatas.%You fini
 Tengo que irme a casa ya.%I gotta go home now.
 El último autobús está a punto de salir.%The last bus is about to leave.
 
-->CanteenStanislav
+->BusStanislav
 
 =CanteenKalev
 ~character = "Luka%Luka"
