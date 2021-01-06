@@ -540,8 +540,7 @@ No puedo hablar con el estómago vacío. No hemos comido nada en todo el día. �
 ~sprite = ""
 Ningún preso amenazante, zumbido extraño o puerta misteriosa podía prepararte para la visión más horrible que tendrías en tu primer día.%No scary prisoners, weird whirring nor a mysterious door could prepare you for the worst sight you'd have in your first day.
 En un instante, Luka se ha convertido en un borrón de manos moviéndose y trozos de comida saltando por los aires.%In just an instant, Luka became a blurring made up of hands and chunks of food flying through the air.
-Antes siquierea de que empieces tu bandeja la suya ya está vacía y reluciente.%Before you could even start eating, Luka's tray is already empty and gleaming.
-
+Antes siquiera de que empieces tu bandeja la suya ya está vacía y reluciente.%Before you could even start eating, Luka's tray is already empty and gleaming.
 ~character = "Luka%Luka"
 ~sprite = "Luka"
 ¿Todo bien, novato? Estás más pálido que cuando te encontré en la recepción.&Everything all right, rookie? You're paler than when I met you at the reception.
@@ -778,7 +777,7 @@ Mañana entro pronto a trabajar.%I'm going to work early tomorrow.
 ~sprite = "Fay"
 ¡Mierda!%Crap!
 Olvidé preguntarte por el primer día de tabajo.%I forgot to ask you about your first day of work.
-¿Qué tal ha ido? Debe dar miedo trabajar en una cárcel...How it went? It must be scary working in a jail...
+¿Qué tal ha ido? Debe dar miedo trabajar en una cárcel...%How it went? It must be scary working in a jail...
 
 ~character = "Johan%Johan"
 ~sprite = "Fay"
@@ -820,8 +819,8 @@ El ambientador que dejaste sobre la mesa lleva días gastado.%The air freshener 
 ->Desktop
 *[Mirar la estantería%Look at the shelf]
 ->Bookshelf
-*{Bookshelf and Desktop} [Meterse en la cama%Get into bed]
-->Bed
+
+*{Bookshelf and Desktop} ->Bed
 
 =Desktop
 Pasas el dedo sobre tu sintetizador en el escritorio, tocando suavemente sus notas.%You slip your finger over your synthesizer on the desk, gently tapping one of its notes.
