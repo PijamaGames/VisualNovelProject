@@ -60,11 +60,11 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 20066cdd11a127442ab19eee2bfb0310, type: 3}
   - {fileID: 21300000, guid: fa2c4eaf6d4e45f4d9433e7c3b6f91d6, type: 3}
   m_PackedSpriteNamesToIndex:
-  - luka
-  - stainslav
-  - phone
-  - tv
-  - kalev
-  - fay
+  - Luka
+  - Stainslav
+  - Phone
+  - TV
+  - Kalev
+  - Fay
   m_Tag: SpriteAtlas
   m_IsVariant: 0

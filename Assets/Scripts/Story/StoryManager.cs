@@ -165,10 +165,22 @@ public class StoryManager : MonoBehaviour
 
     public void ContinueStory()
     {
-        if (!inkStory.canContinue) SceneLoader.LoadEndScene();
-        //Debug.Log("CONTINUE STORY");
-
+        if (!inkStory.canContinue)
+        {
+            SceneLoader.LoadEndScene();
+            return;
+        }
+        
         inkStory.Continue();
+        while(inkStory.currentText == "\n" || inkStory.currentText == "")
+        {
+            if (!inkStory.canContinue)
+            {
+                SceneLoader.LoadEndScene();
+                return;
+            }
+            else inkStory.Continue();
+        }
         lastState = inkStory.state.ToJson();
         if(!CheckDateChange())
             UpdateUI();

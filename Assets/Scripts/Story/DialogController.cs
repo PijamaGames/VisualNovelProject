@@ -45,6 +45,7 @@ public class DialogController : MonoBehaviour
     public void SetDialog(string _dialog, bool italics = true)
     {
         dialogText.fontStyle = italics ? FontStyles.Italic : FontStyles.Normal;
+        Debug.Log("dialog: " + _dialog);
         string[] dialogs = UsefulFuncs.Split(_dialog, '%');
         spanishDialog = dialogs[0].Trim(' ');
         englishDialog = dialogs[1].Trim(' ');
