@@ -19,6 +19,8 @@ public class AudioRegulator : MonoBehaviour
     public delegate void OnEndFade();
     public OnEndFade onEndFade;
 
+    [SerializeField] bool isPlaying;
+
     private void OnDestroy()
     {
         regulators.Remove(this);
@@ -60,6 +62,7 @@ public class AudioRegulator : MonoBehaviour
             }
             UpdateVolume();
         }
+        isPlaying = audioSource.isPlaying;
     }
 
     public void UpdateVolume()

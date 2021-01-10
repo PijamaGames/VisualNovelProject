@@ -30,8 +30,9 @@ public class PersistentAudioSource : MonoBehaviour
                 obj = new GameObject("AudioSource" + i);
                 obj.transform.parent = pool.transform;
                 audioSources[i] = obj.AddComponent(typeof(AudioSource)) as AudioSource;
+                audioSources[i].playOnAwake = false;
                 obj.AddComponent(typeof(AudioRegulator));
-                audioSources[i].enabled = false;
+                obj.SetActive(false);
                 avaibleAudioSources.Push(audioSources[i]);
             }
             DontDestroyOnLoad(pool);
@@ -46,7 +47,7 @@ public class PersistentAudioSource : MonoBehaviour
         List<AudioSource> audiosToStop = new List<AudioSource>();
         foreach(AudioSource source in inUseAudioSources)
         {
-            if (!source.isPlaying && source.time >= source.clip.length)
+            if (!source.isPlaying/*&& source.time >= source.clip.length*/)
             {
                 audiosToStop.Add(source);
             }
@@ -71,7 +72,7 @@ public class PersistentAudioSource : MonoBehaviour
         } else
         {
             regulator.onEndFade = null;
-            source.enabled = false;
+            source.gameObject.SetActive(false);
             inUseAudioSources.Remove(source);
             avaibleAudioSources.Push(source);
         }
@@ -119,6 +120,7 @@ public class PersistentAudioSource : MonoBehaviour
         AudioRegulator regulator;
         foreach (AudioSource source in inUseAudioSources)
         {
+            if (source == null) continue;
             regulator = source.GetComponent<AudioRegulator>();
             
             if (regulator.isMusic)
@@ -146,7 +148,7 @@ public class PersistentAudioSource : MonoBehaviour
             var source = avaibleAudioSources.Pop();
             if (!source) return;
             inUseAudioSources.Add(source);
-            source.enabled = true;
+            source.gameObject.SetActive(true);
             source.clip = clip;
             source.loop = loop;
             source.Play();

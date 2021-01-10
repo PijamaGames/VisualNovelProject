@@ -44,7 +44,7 @@ public class StoryManager : MonoBehaviour
     {
         if (GameManager.currentSaveFile == null) return;
         characterSpritesDict.Clear();
-        foreach (var s in characterSprites) characterSpritesDict.Add(s.name, s);
+        foreach (var s in characterSprites) characterSpritesDict.Add(s.name.ToLower(), s);
 
         inkStory = new Story(inkJSON.text);
         autoOff.SetActive(!autoMode);
@@ -120,7 +120,7 @@ public class StoryManager : MonoBehaviour
     private void SetCharacterSpriteByName(string name)
     {
         Sprite sprite;
-        bool found = characterSpritesDict.TryGetValue(name, out sprite);
+        bool found = characterSpritesDict.TryGetValue(name.ToLower(), out sprite);
         characterSprite.gameObject.SetActive(found);
         if (found)
         {
