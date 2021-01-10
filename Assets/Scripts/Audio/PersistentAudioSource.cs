@@ -47,7 +47,7 @@ public class PersistentAudioSource : MonoBehaviour
         List<AudioSource> audiosToStop = new List<AudioSource>();
         foreach(AudioSource source in inUseAudioSources)
         {
-            if (!source.isPlaying/*&& source.time >= source.clip.length*/)
+            if (!source.isPlaying && !source.GetComponent<AudioRegulator>().isMusic)
             {
                 audiosToStop.Add(source);
             }

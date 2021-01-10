@@ -24,6 +24,7 @@ public class StoryManager : MonoBehaviour
     [SerializeField] GameObject answersPanel;
     [SerializeField] GameObject continueButton;
     [SerializeField] RawImage background;
+    [SerializeField] Color[] hourFilters;
     [SerializeField] DateController dateController;
     [SerializeField] Bilingual dateText;
     [SerializeField] Image hourImage;
@@ -132,6 +133,7 @@ public class StoryManager : MonoBehaviour
     private void OnDestroy()
     {
         //inkStory = null;
+        background.color = Color.white;
     }
 
     public void SetAutoMode(bool active)
@@ -167,11 +169,16 @@ public class StoryManager : MonoBehaviour
     {
         if (!inkStory.canContinue)
         {
-            SceneLoader.LoadEndScene();
+            //SceneLoader.LoadEndScene();
             return;
         }
         
         inkStory.Continue();
+        if (inkStory.currentTags.Contains("end"))
+        {
+            SceneLoader.LoadEndScene();
+            return;
+        }
         while(inkStory.currentText == "\n" || inkStory.currentText == "")
         {
             if (!inkStory.canContinue)
@@ -360,6 +367,7 @@ public class StoryManager : MonoBehaviour
         if(hour >= 0 && hour <= 2 && hour < hours.Length)
         {
             hourImage.sprite = hours[hour];
+            background.color = hourFilters[hour];
         }
     }
 
