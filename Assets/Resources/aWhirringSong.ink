@@ -273,8 +273,6 @@ No te quiero arruinar la sorpresa.%Don't want to ruin you the surprise.
 Te esperaré junto a la máquina expendedora.%I'll wait for you by the vending machine.
 Tanto hablar me está dejando la garganta peor que una noche de partido.%All this talking's making my throath feel worse than a football night.
 
-~character = "Narrador%Narrator"
-~sprite = ""
 ->CorridorChoice
 
 =CorridorChoice
@@ -305,7 +303,7 @@ Tanto hablar me está dejando la garganta peor que una noche de partido.%All thi
 Un hombre alto y rubio está tras los barrotes.%There's a tall blonde man behind the bars.
 Lee un papel sobre su cama sin siquiera mirarte a los ojos.%He's reading a paper on his bed without even looking into your eyes.
 Golpeas los barrotes con tu porra para llamar su atención.%You softly hit the bars with your club to draw his attention.
-Guarda el papel bajo la almohada y tira de la manga izquierda de su uniforme, hasta cubrirse la muñeca.%He puts away the paper under the pillow and pulls the left sleeve of his uniform, covering his wrist.
+Guarda el papel bajo la almohada y tira de la manga izquierda de su uniforme  hasta cubrirse la muñeca.%He puts away the paper under the pillow and pulls the left sleeve of his uniform, covering his wrist.
 
 ~character = "Johan%Johan"
 ~sprite = "Kalev"
@@ -328,7 +326,7 @@ Parece agarrar con más fuerza las mangas de su uniforme.%He seems to grip the s
 ~background = "cell"
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Lo último que esperabas ver en una celda era la luna, redonde y de un blanco brillante.%The last thing you expected to see in a cell was the moon, round and shiny.
+Lo último que esperabas ver en una celda era la luna, redonda y de un blanco brillante.%The last thing you expected to see in a cell was the moon, round and shiny.
 Un hombre bajito te da la espalda con los pantalones bajados hasta los tobillos.%A short man turns his back on you with his pants down to his ankles.
 Decides darte la vuelta hasta escuchar el sonido de la cisterna.%You decide to turn around until you hear the sound of the cistern.
 
@@ -339,11 +337,11 @@ No es digno de mí que me encuentren con los pantalones bajados.%Not worthy of m
 
 ~character = "Narrador%Narrator"
 ~sprite = "Stanislav"
-El hombre emite una carcajada enctrecortada, quizás más comparable con el gruñido de un cerdo.%The man emits a choked laughter. It feels closer to the snarl of a pig than to a human laugh.
+El hombre emite una carcajada entrecortada, quizás más comparable con el gruñido de un cerdo.%The man emits a choked laughter. It feels closer to the snarl of a pig than to a human laugh.
 
 ~character = "¿?%???"
 ~sprite = "Stanislav"
-Perdoa mis modales, ni siquiera me he presentado.%Pardon my manners, I haven't even introduced myself.
+Perdona mis modales, ni siquiera me he presentado.%Pardon my manners, I haven't even introduced myself.
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
@@ -517,7 +515,7 @@ Stanislav parece un tipo bastante majo. Pensé que no habría gente así en la c
     ~character = "Luka%Luka"
     ~sprite = "Luka"
     ¿No lees el periódico nunca, pipiolo?%Don't you ever read newspaper, tyro?
-    Ese tipo es uno de los mayores enemigos de este país. Un absoluta decepción para el gobierno.%That guy's one of the greatest enemies of this country. An absolute disappointment for the government.
+    Ese tipo es uno de los mayores enemigos de este país. Una absoluta decepción para el gobierno.%That guy's one of the greatest enemies of this country. An absolute disappointment for the government.
     Pero dejemos el tema ya. Hablar de política me cierra el apetito.%But let's talk about anything else. Speaking politics spoils my appetite.
     
 *[Hablar de la comida%Talk about food]
@@ -771,7 +769,7 @@ Mañana entro pronto a trabajar.%I'm going to work early tomorrow.
 ~character = "Fay%Fay"
 ~sprite = "Fay"
 ¡Mierda!%Crap!
-Olvidé preguntarte por el primer día de tabajo.%I forgot to ask you about your first day of work.
+Olvidé preguntarte por el primer día de trabajo.%I forgot to ask you about your first day of work.
 ¿Qué tal ha ido? Debe dar miedo trabajar en una cárcel...%How it went? It must be scary working in a jail...
 
 ~character = "Johan%Johan"
@@ -953,6 +951,7 @@ Jurarías que puedes ver humo salir de su cabeza.%You'd swear you can see smoke 
 ->CellCorridor
 
 =CellCorridor
+~background = "cellcorridor"
 ~hour = 1
 ~character = "Narrador%Narrator"
 ~sprite = ""
@@ -1016,7 +1015,7 @@ Todo bien, de momento solo me he tragado...%Everything all right. For now i've o
 ~sprite = ""
 Un estruendo seco suena a tu espalda. Luka se sobresalta y lanza café y chocolatinas por los aires.%A heavy blow sounds behind your back. Luka startles and throws coffe and chocolates into the air.
 Alguien comienza a gritar entre sonidos de plástico cayendo.%Someone starts yelling between sounds of plastic falling.
-Te asalta un olor metálico mientras el grto hace eco por el pasillo.%You're surrounded by a metallic smell whilst the scream echoes through the corridor.
+Te asalta un olor metálico mientras el grito hace eco por el pasillo.%You're surrounded by a metallic smell whilst the scream echoes through the corridor.
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
@@ -1104,7 +1103,7 @@ Oye, ¿y qué le ha pasado antes?%Hey, what happened back there?
 
 ~character = "Narrador%Narrator"
 ~sprite = "Stanislav"
-Los enfermeros aprietan un pañueño contra la nariz de Stanislav hasta extraer un pequeño coágulo.%The nurses press a handkerchief against Stanislav's nose until a small clot is removed.
+Los enfermeros aprietan un pañuelo contra la nariz de Stanislav hasta extraer un pequeño coágulo.%The nurses press a handkerchief against Stanislav's nose until a small clot is removed.
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
@@ -1114,7 +1113,7 @@ En cuanto vio que le estaba mirando se tapó con una manta y me dio un puñetazo
 
 ~character = "Johan%Johan"
 ~sprite = "Stanislav"
-¿Te ha pegado por verle sin camiseta?Did he hit you for seeing him shirtless?
+¿Te ha pegado por verle sin camiseta?%Did he hit you for seeing him shirtless?
 
 ~character = "Narrador%Narrator"
 ~sprite = "Stanislav"
@@ -1135,11 +1134,11 @@ No entiendo tanto alboroto por unos tatuajes. Ni que fuera el primero por aquí.
 Ojalá, pero no.%I wish, but no.
 Tiene un montón de arañas en el brazo.%He has a lot of spiders on his arm.
 Aléjate de ese tipo. He tenido encuentros con gente de ese... bueno, de ese mundillo.%Stay away from that guy. I've had some encounters with people from that... well, from that world.
-Nunca sale bien. Demasaida sangre.%It never goes well. Too much blood.
+Nunca sale bien. Demasiada sangre.%It never goes well. Too much blood.
 
 ~character = "Narrador%Narrator"
 ~sprite = "Stanislav"
-Stanislav comienza a llorar cuando lso enfermeros le sacan los pañuelos enrojecidos y le insertan unos nuevos.%Stanislav starts crying when the nurses remove the reddened tissues and insert new ones.
+Stanislav comienza a llorar cuando los enfermeros le sacan los pañuelos enrojecidos y le insertan unos nuevos.%Stanislav starts crying when the nurses remove the reddened tissues and insert new ones.
 
 ~character = "Johan%Johan"
 ~sprite = "Stanislav"
@@ -1217,7 +1216,7 @@ Dime, ¿la enviarás entonces?%Tell me, will you send it then?
 Claro, la mandaré en cuanto llegue a casa.%Sure. I'll send it as soon as I get home.
 
 -
-~character = "Stanislav%Stanislav"
+~character = "Narrador%Narrator"
 ~sprite = "Stanislav"
 Stanislav saca un papel de dentro de su pantalón, aunque no quieres saber de dónde en concreto.%Stanislav pulls out a piece of paper from inside his pants, although you don't want to know where it came from.
 Lo restriegas con la manga antes de guardarlo en el bolsillo.%You scrub it with your sleeve before putting it in your pocket.
@@ -1553,7 +1552,7 @@ El último autobús está a punto de salir.%The last bus is about to leave.
 ~character = "Narrador%Narrator"
 ~sprite = ""
 Pasas todo el trayecto con tu mochila posada en las piernas, rodeándola con los brazos.%You spend the whole journey with your backpack perched on your legs, encircling it with your arms.
-No puedes parar de abrirl y cerrarla para asegurarte de que la carta de Stanislav sigue dentro.%You can't stop opening and closing the backpack to check that Stanislav's letter is still in there.
+No puedes parar de abrirla y cerrarla para asegurarte de que la carta de Stanislav sigue dentro.%You can't stop opening and closing the backpack to check that Stanislav's letter is still in there.
 Te bajas en tu parada, sacas la carta de la mochila y compruebas que todo está en orden.%You get off at your stop, take the letter out of your backpack and check everything's in order.
 Terminas de pegar el sello, que lleva impreso el un casco obrero.%You finish gluing the stamp, which has a worker's helmet printed of it.
 Metes la carta en el buzón antes de volver a casa.%You put the letter in the mailbox before heading home.
@@ -1578,7 +1577,7 @@ Insertas la carta en el primer buzón que encuentras antes de volver a casa.%You
 ~character = "Narrador%Narrator"
 ~sprite = ""
 Entras en tu piso y dejas caer el abrigo al suelo junto a la mochila.%You walk into your flat and drop your coat on the floor next to your backpack.
-Te sientras frente al teclado y das un largo suspiro.%You sit in front of the piano and take a long sigh.
+Te sientas frente al teclado y das un largo suspiro.%You sit in front of the piano and take a long sigh.
 
 ~character = "Fay%Fay"
 ~sprite = "Fay"
@@ -1592,10 +1591,9 @@ Va a ser una noche larga...%It will be a long night...#italics
 ~sprite = ""
 Comienzas a hacer ajustes con el teclado y, con paso aletargado, empiezas a tocar.%You start making adjustments on the keyboard and begin to play sluggishly.
 
-TODO Añadir las canciones que puedes tocar
-*[Canción 1%]
+*[Canción 1 TODO%Song 1 TODO]
 ~music = "Clouds"
-*[Canción 2%]
+*[Canción 2 TODO%Song 2 TODO]
 ~music = "Clouds"
 
 -
@@ -1669,7 +1667,7 @@ Te levantas de la cama, con el uniforme ya puesto de anoche.%You get up from bed
 
 ~background = "apartmententrance"
 Andas despacio por el pasillo, tratando de no despertar Fay, que ronca en su habitación.%You walk slowly through the corridor, trying not to wake up Fay. She's snoring in her room.
-Cages un sándwich antes de salir de casa.%You take a sandwich before leaving home.
+Coges un sándwich antes de salir de casa.%You take a sandwich before leaving home.
 ~music = "Touchpoint"
 ->PrisonEntrance
 
@@ -1679,7 +1677,7 @@ Cages un sándwich antes de salir de casa.%You take a sandwich before leaving ho
 ~sprite = ""
 
 Llegas a la cárcel con el sol apenas asomando por el horizonte.%You arrive at the prison with the sun barely peeking over the horizon.
-Saludas al recepcionista bajándote la gorra y te drigiges al corredor de los presos.%You greet the recepcionist by lowering your cap and head to the prisoners' corridor.
+Saludas al recepcionista bajándote la gorra y te diriges al corredor de los presos.%You greet the recepcionist by lowering your cap and head to the prisoners' corridor.
 
 ->ElectricChair
 
@@ -1690,9 +1688,9 @@ Saludas al recepcionista bajándote la gorra y te drigiges al corredor de los pr
 ~music = "Horror13"
 ~sfx = "Zumbido"
 En tu camino al corredor de los presos te topas otra vez con la puerta cerrada con tres cerrojos y una llave.%On your way of the prisoners' corridor you run again into the closed door with three locks and a key.
-EL mismo zumbido monótono suena al otro lado. Te acercas poco a poco hasta pegar la oreja.%The same monotonous whirring sounds on the other side. You approach slowly until your ear touches the door.
+El mismo zumbido monótono suena al otro lado. Te acercas poco a poco hasta pegar la oreja.%The same monotonous whirring sounds on the other side. You approach slowly until your ear touches the door.
 Un escalofrío recorre tu espalda. Debe de ser cosa del frío metal de la puerta.%A chill runs down your spine. It must be the cold metal of the door.
-Continuas andando hacia el corredor de los presos.You continue walking towards the corridor of the prisoners.
+Continuas andando hacia el corredor de los presos.%You continue walking towards the corridor of the prisoners.
 Miras de vez en cuando a tu espalda, a la puerta cerrada con tres cerrojos y una llave.%You look back at the closed door behind your back from time to time.
 ~music = "Touchpoint"
 ->CellCorridorMorning
@@ -1932,7 +1930,7 @@ Metes la mano dentro de la almohada hasta encontrar un marco de madera.%You put 
 =KalevCellEnd
 Sacas una foto enmarcada en madera oscura y con el cristal algo quebrado.%You take out a photograph framed in a dark wood. Its glass is somewhat broken.
 Tienes varias esquinas agarradas con cinta aislante.%It has several corners taped together.
-En la foto se ve a Kalev sonriendo y abraznado a otro chico, un joven bajito y también de pelo rubio.%In the foto you can see Kalev smiling and hugging another boy, a short and blonde one.
+En la foto se ve a Kalev sonriendo y abrazando a otro chico, un joven bajito y también de pelo rubio.%In the foto you can see Kalev smiling and hugging another boy, a short and blonde one.
 Guardas la foto en tu chaqueta y vuelves al pasillo.%You put the photo in your jacket and go back to the corridor.
 
 ->CellCorridorKalev2
@@ -1992,7 +1990,7 @@ Más doloroso incluso que me dejaras en manos de Luka.%Even more painful that yo
 ~character = "Johan%Johan"
 ~sprite = "Stanislav"
 Mejor dejarte con Luka que con Kalev, ¿no?%Better leaving you with Luka than with Kalev, don't you think?
-¿Te hace un segunndo asalto?%Do you want a second round?
+¿Te hace un segundo asalto?%Do you want a second round?
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
@@ -2328,7 +2326,7 @@ Coges la partitura de "Warriors" y entras en tu cuarto%You take the score for "W
 ~sprite = ""
 Dejas las partituras sobre la mesa y te pones a rebuscar en la mochla.%You leave the score on your desk and begin rummaging in your backpack.
 Encuentras la foto de Kalev en el fondo, escondida tras tu cuaderno.%You find Kalev's photo at the bottom, hidden behind your notebook.
-Echas un último vistazo a la sonrisa de Kalev, que braza por el hombro al otro chico rubio.%You take a last look at Kalev's smile, who is hugging the other blonde boy by the shoulder.
+Echas un último vistazo a la sonrisa de Kalev, que abraza por el hombro al otro chico rubio.%You take a last look at Kalev's smile, who is hugging the other blonde boy by the shoulder.
 Dejas la foto sobre el escritorio.%You put the photo on the desk.
 
 ~character = "Johan%Johan"
@@ -2500,7 +2498,7 @@ Me pregunto qué me habrán comprado este año...%wonder what they have bought m
 ~background = "bedroom"
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Te arropas con las ´sábanas hasta el cuello y das un profundo bostezo antes de irte a dormir.%You wrap the sheets up to your neck and yawn deeply before going to sleep.
+Te arropas con las sábanas hasta el cuello y das un profundo bostezo antes de irte a dormir.%You wrap the sheets up to your neck and yawn deeply before going to sleep.
 ~music = ""
 ->Day_Four
 
@@ -2664,7 +2662,7 @@ Sientes un escalofrío al encontrar sus ojos vacíos.%You shiver whilst staring 
 Su cara está totalmente pálida, sin vistas de una sonrisa o una lágrima.%His face is completely pale. No sign of a smile nor a tear.
 Los guardias le agarran con fuerza del cuello para forzarle a mirar al público.%The guards grab him, forcing him to look at the audience.
 Luka te levanta un pulgar sentado entre el público.%Luka gives you a thumbs up from his place among the audience.
-Esta sentado entre dos hombres altos con tatuajes de arañas y estrellas.%He sits between two tall men with tattoos of spiders and stars.
+Está sentado entre dos hombres altos con tatuajes de arañas y estrellas.%He sits between two tall men with tattoos of spiders and stars.
 Los guardias colocan una esponja húmeda sobre la cabeza de Kalev antes de bajar el casco de metal.%The guards put a wet sponge on Kalev's head before lowering the metal helmet.
 Los dos guardias te miran y asienten antes de dar un paso atrás al público.%The two guards look at you and nod before taking a step back to the audience.
 Sientes cada uno de los tendones de tus dedos tensarse mientras tu cara se enfría y palidece.%You feel every single one of your fingers tighten as your face grows cold and pale.
