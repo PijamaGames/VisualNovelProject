@@ -40,12 +40,11 @@ Primer día, allá vamos.%First day, here we go. #italics
 En la ventanilla de recepción solo encuentras un teléfono descolgado, una taza de café a medio tomar y una revista Playboy con páginas arrancadas.%At the reception window you only find a phone off the hook, a half-drunk cup of coffe and a Playboy magazine with some torn pages.
 Quien sea que trabaje aquí parece que tardará un tiempo en volver.%It seems that whoever works here will be gone for a while.
 
-*[Dar un toque en la ventanilla%Tap the window]
 ~questionId = 0
+*[Dar un toque en la ventanilla%Tap the window]
 ~sfx = "Golpear_Ventana"
 *[Tocar el timbre%Ring the bell]
 ~sfx = "Timbre"
-~questionId = 1
 
 -
 ~character = "Narrador%Narrator"
@@ -100,10 +99,9 @@ Ya te darás cuenta de lo que son 2 minutos aquí dentro.%You'll realize what 2 
 Ahora sígueme, comienza el tour guiado por el gran Hotel Delfín Negro.%Now follow me. It's time to begin the guided tour through great Black Dolphin Hotel.
 Le ruego no pierda de vista al guía y mantenga las manos alejadas de cualquier celda o persona con bozal.%Please do not lose sight of the guide and keep your hands away from any cell or person with a muzzle.
 
+~questionId = 1
 *[¿Disculpa?%Excuse me?]
-~questionId = 2
 *[¿Hotel Delfín Negro?%Black Dolphin Hotel?]
-~questionId = 3
 -
 
 ~character = "Luka%Luka"
@@ -131,12 +129,12 @@ Un olor a humanidad, testosterona y un retorcido sentido de la justicia llena la
 Primera parada, nuestro propio camerino. Vitrinas hasta arriba de herramientas y uniformes reforzados.%First stop, our own dressing room. Showcases full of tools and reinforced uniforms.
 Siempre para defensa propia, por supuesto.%Always for self defense, of course.
 
+~questionId = 2
 *[¿Cuál de estas taquillas es la mía?%Which locker is mine?]
-~questionId = 4
 *[¿Y dónde dejo mis cosas?%Where can I leave my stuff?]
-~questionId = 5
 
-- ~character = "Luka%Luka"
+-
+~character = "Luka%Luka"
 ~sprite = "Luka"
 ¡Pilla!%Catch!
 
@@ -184,10 +182,9 @@ No a los peligrosos, oh no. Esos se pasan el día dale que te pego con el gimnas
 Aquí encontrarás a los vagos. Todo el día viendo la televisión o jugando al billar.%Here you'll find the laziest ones. Watching TV and playing pool all day.
 ¡A picar piedras le ponía yo!%If I were in charge they would be digging non-stop!
 
+~questionId = 3
 *[Ya...%Yeah...]
-~questionId = 6
 *[La verdad que...%I guess you're...]
-~questionId = 7
 
 -
 ~character = "Luka%Luka"
@@ -208,10 +205,9 @@ No puedes decir exactamente qué son, pero sabes que hay cosas que es mejor no p
 ~sprite = "Luka"
 ¿Has estado alguna vez en una granja?%Have you ever been to a farm?
 
+~questionId = 4
 *[Lo cierto es que tenía un amigo...%Well, I had a friend that...]
-~questionId = 8
 *[No, nunca%No, never]
-~questionId = 9
 -
 
 ~character = "Luka%Luka"
@@ -219,13 +215,12 @@ No puedes decir exactamente qué son, pero sabes que hay cosas que es mejor no p
 Pregunta retórica, pipiolo. Es importante que tu ganado haga algo de ejercicio. Si no estarán tristes y menos cooperativos.%Rethorical question, tyro. It's important for your cattle to exercise. They'd be unhappy and less cooperative otherwise.
 Pues bueno, cuando vengas al patio tú serás su granjero. Tendrás que evitar problemas y malas leches por aquí.%Well, you'll be an actual farmer when you come to the yard. You'll have to avoid problems and bad tempers around here.
 
+~questionId = 5
 *[Entiendo%Understood]
-~questionId = 10
 ~character = "Luka%Luka"
 ~sprite = "Luka"
 Directo al grano, me gusta.%Straight to the point. I like that.
 *[¿Y cobraré sueldo extra de granjero?%Will I get an extra salary for being a farmer?]
-~questionId = 11
 ~character = "Luka%Luka"
 ~sprite = "Luka"
 Da las gracias si no cobras por parte de los presos. La granja es un trabajo de riesgo.%Be thankful if the prisoners don't pay you with a kick to your gut. Farming is a risky job.
@@ -278,19 +273,15 @@ Tanto hablar me está dejando la garganta peor que una noche de partido.%All thi
 
 =CorridorChoice
 *[Mirar celda a la izquierda%Look at the cell to your left]
-~questionId = 12
 ->Kalev
 
 *[Mirar celda a la derecha%Look at the cell to your right]
-~questionId = 13
 ->Stanislav
 
 *[Mirar celdas al fondo%Look at the cells in the background]
-~questionId = 14
 ->OtherCells
 
 *[Ir al final del pasillo%Go to the end of the corridor]
-~questionId = 15
 ->Isolation
 
 +{Kalev and Stanislav and OtherCells and Isolation}[Volver con Luka%Go back with Luka]
@@ -402,9 +393,8 @@ Luka te espera apoyado contra la pared y dando sorbos de su café.%Luka waits wh
 ~sprite = "Luka"
 Si que has tardado. ¿Qué tal ha ido?%It took you a while. How did it go?
 
-
+~questionId = 6
 *[No ha estado mal%Not bad] 
-~questionId = 16
 ~character = "Johan%Johan"
 ~sprite = "Luka"
     No ha estado mal. Stanislav parece muy agradable.%Not bad, Stanislav seems very nice
@@ -415,7 +405,6 @@ Si que has tardado. ¿Qué tal ha ido?%It took you a while. How did it go?
     Aquí dentro eso puede ser más peligroso que dos biceps de acero.%In here, that can be more dangerous than two biceps of steel.
 
 *[Podría haber ido mejor%Could've been bettter]
-~questionId = 17
 ~character = "Johan%Johan"
 ~sprite = "Luka"
     Podría haber ido mejor. Aquel preso alto y rubio ni siquiera me ha dirigido la palabra.%Could've been bettter. That tall blonde guy didn't even speak to me.
@@ -474,9 +463,8 @@ No te acostumbres a que te acompañe a todos lados. Estoy muy solicitado por aqu
 ~sprite = "Luka"
 Un grupo de guardias de la mesa de al lado apartan la mirada y sueltan una carcajada antes de maarcharse.%A group of guards at the next table look away and laugh before leaving.
 
-
+~questionId = 7
 *[Hablar del preso alto y rubio%Talk about the tall blonde prisoner]
-~questionId = 18
 ~character = "Johan%Johan"
 ~sprite = "Luka"
     Ese preso alto y rubio parece interesante. Me pregunto cómo habrá terminado aquí...%That tall blonde prisoner looks interesting. I wonder how he ended up here...
@@ -499,7 +487,6 @@ Un grupo de guardias de la mesa de al lado apartan la mirada y sueltan una carca
     Ya te digo, es un tipo muy raro.%I said, he's such a weird guy.
     
 *[Hablar de Stanislav%Talk about Stanislav]
-~questionId = 19
 ~character = "Johan%Johan"
 ~sprite = "Luka"
 Stanislav parece un tipo bastante majo. Pensé que no habría gente así en la cárcel.%Stanislav seems a pretty nice guy. I thought there wouldn't be people like that in jail.
@@ -520,7 +507,6 @@ Stanislav parece un tipo bastante majo. Pensé que no habría gente así en la c
     Pero dejemos el tema ya. Hablar de política me cierra el apetito.%But I don't like to speak about politics. It spoils my appetite.
     
 *[Hablar de la comida%Talk about food]
-~questionId = 20
 ~character = "Johan%Johan"
 ~sprite = "Luka"
 No puedo hablar con el estómago vacío. No hemos comido nada en todo el día. ¿Va a ser siempre así?%I can't think with my stomach empty. We haven't eaten anything for all day. Will it always be like this?
@@ -544,15 +530,14 @@ Antes siquiera de que empieces tu bandeja la suya ya está vacía y reluciente.%
 ¿Todo bien, novato? Estás más pálido que cuando te encontré en la recepción.&Everything all right, rookie? You're paler than when I met you at the reception.
 -
 
+~questionId = 8
 *[Veo que tenías hambre%I see you were hungry]
-~questionId = 21
     ~character = "Luka%Luka"
     ~sprite = "Luka"
     Ah, no hay nada mejor que la comida de esta cafetería, chaval.%Oh, there's nothing better than this cafeteria's food, kid.
     Es como una buena cerveza, la apreciarás más con el tiempo.%It's just like a good beer, you'll appreciate it more over time.
     
 *[No, nada. Estoy bien%No, it's nothing. I'm ok]
-~questionId = 22
     ~character = "Luka%Luka"
     ~sprite = "Luka"
     Si tú lo dices...%If you say so...
@@ -600,14 +585,13 @@ Cuando rebuscas en tus pantalones no escuchas el esperado tintineo de las llaves
 
 ->DoorChoice
 =DoorChoice
+~questionId = 9
 *[Llamar al timbre%Call at the doorbell]
-~questionId = 23
     ~character = "Narrador%Narrator"
     ~sprite = ""
     Pulsas el timbre, pero solo te responde un zumbido eléctrico y un pequeño chispazo en el dedo.%You press the doorbel, but the only response you get is an electric buzz and a little spark on your finger.
     ->DoorChoice
 *[Golpear a la puerta%Knock on the door]
-~questionId = 24
     ~character = "Narrador%Narrator"
     ~sprite = ""
     ~sfx = "Golpear_Ventana"
@@ -674,12 +658,10 @@ Caminas hasta la cocina mientras Fay se marcha al salón.%You walk to the kitche
 Escuchas ruidos de latas, crujidos de papel y algo pesado siendo arrastrado.%You hear can noises, paper rustels and something heavy being dragged.
 
 *[¿Todo bien, Fay?%Everything all right, Fay?]
-~questionId = 25
     ~character = "Fay%Fay"
     ~sprite = "Fay"
     Sí sí, no te preocupes. Tú traeme esa cerveza, porfi.%Yeah, don't worry. Just bring me my beer please.
 *[Abrir la nevera%Open the fridge]
-~questionId = 26
 
 -
 ~character = "Narrador%Narrator"
@@ -832,14 +814,13 @@ A los pies de la estantería descansa tu guitarra marrón, con algunas zonas de 
 =Bed
 ~character = "Johan%Johan"
 ~sprite = ""
+~questionId = 10
 *[Pensar en el trabajo%Think about work]
-~questionId = 27
     Luka parece muy bueno en su trabajo, aunque me da algo de pena.%Luka seems very good at his job, although I feel a bit sorry for him. #italics
     ¿Cómo debe de sentirse?%How is he doing?#italics
     Tantos años trabajando en ese sitio...%So many years working on that place... #italics
 
 *[Pensar en Fay%Think about Fay]
-~questionId = 28
     Fay... ¿De dónde habrá sacado tanto dinero para ese teclado?%Fay... Where did she get so much money for that keyboard? #italics
     Espero que le siga yendo bien en el futuro. Especialmente después de todo lo que ha pasado.%I hope she continues doing well in the future. Especially after all that happened. #italics
 
@@ -887,12 +868,11 @@ Sus cuatro torres que parecen querer tocar el cielo.%Its four towers seem to wan
 Doblas una de las esquinas de la revista antes de levantarte.%You fold one of the corners of the magazine before closing it.
 Este sábado hay una audición para teclista en un grupo local.%This Saturday there is an audition for the keyboard player in a local group.
 
+~questionId = 11
 *[Dejar propina al autobusero%Tip the bus driver]
-~questionId = 29
 Dejas un par de monedas sueltas en la ventanilla del conductor.%You drop a couple of loose change in the driver's window.
 El hombre sonríe y te abre la puerta deseándote un buen día.%The man smiles and opens the door while wishing you a good day.
 *[Bajar del autobús%Get off the bus]
-~questionId = 30
 Con la cabeza de nuevo enterrada en tu revista casi tropiezas al bajar de las escaleras del autobús.%With your head sunk again on the magazine you almost stumble while coming down the bus stairs.
 El conductor suelta una risita contenida antes de cerrar la puerta.%The bus driver chuckles before closing the door.
 -
@@ -913,18 +893,16 @@ Lo siento, tengo que coger el autobús para venir. Había mucho tráfico hoy.%I'
 ~sprite = "Luka"
 Dime, ¿a cuántos robos armados equivalen cinco minutos?%Tell me, how many armed robbery does five minute equal?
 
+~questionId = 12
 *[Esto...¿dos?%Well... ¿two?]
-~questionId = 31
 ~character = "Luka%Luka"
 ~sprite = "Luka"
 ¡¿Dos?! Si fuera así me habrían robado hasta los calcetines, chaval.%Two!? If it was like that even my socks would've been stolen, kid.
 *[¿Tres? Eso creo, vaya%Three. I think so.]
-~questionId = 32
 ~character = "Luka%Luka"
 ~sprite = "Luka"
 ¡¿Tres?! Si fuera así me habrían robado hasta los calcetines, chaval.%Three!? If it was like that even my socks would've been stolen, kid.
 *[No demasiado, medio robo quizás%Not too many. Half a robbery maybe.]
-~questionId = 33
 ~character = "Luka%Luka"
 ~sprite = "Luka"
 ¿Medio robo no te parece demasiado?%Half a robbery isn't too much for you?
@@ -966,8 +944,8 @@ Kalev está sentado en su celda, mirando a un lado y a otro con la cesta vacía.
 ->SeeKalevChoice
 
 =SeeKalevChoice
+~questionId = 13
 *[Acercarte a Kalev%Get closer to Kalev]
-~questionId = 34
 ~music = "Somber"
 ~background = "cell"
 ~character = "Narrador%Narrator"
@@ -989,7 +967,6 @@ Bueno, si necesitas cualquier cosa estaré por aquí.%Well, if you need anything
 
 ->SeeKalevChoice
 *[Seguir recorriendo el pasillo%Keep going down the hall]
-~questionId = 35
 ~music = "Touchpoint"
 ~background = "cellcorridor"
 ~character = "Narrador%Narrator"
@@ -1039,6 +1016,7 @@ Te das la vuelta y caminas hasta encontrar la fuente de los gritos.%Yout turn ba
 Stanislav se tapa la cara con ambas manos frente a Kalev, que está envuelto con una manta hasta el cuello.%Stanislav covers his face with both hands in front of Kalev, who is wrapped in a blanket up to his neck.
 Su ropa está tirada en una cesta de plástico en el suelo, cubierta con algunas gotas de sangre.%His clothes are lying in a plastic basket on the floor, covered with a few drops of blood.
 
+~questionId = 14
 *[¡¿Qué está pasando aquí?!%What's happening over here?!]
 ~character = "Kalev%Kalev"
 ~sprite = "Kalev"
@@ -1058,13 +1036,12 @@ Su ropa está tirada en una cesta de plástico en el suelo, cubierta con algunas
 Solo me acaba de partir la nariz un maldito neandertal.%It's just that a damn neanderthal just broke my nose.
 -
 
+~questionId = 15
 *[Llevar a Stanilav a la enfermería%Take Stanislav to the infirmary]
-~questionId = 36
 ~music = "Quiet"
 ->HelpStanislav
 
 *[Interrogar a Kalev%Question Kalev]
-~questionId = 37
 ~music = "Somber"
 ->HelpKalev
 
@@ -1198,8 +1175,8 @@ Necesito mandar una carta a un ex amigo y resulta complicado desde aquí dentro.
 Más aún con la nariz partida.%Even more so with my nose broken.
 ¿Podrías ayudarme?%Could you help me?
 
+~questionId = 16
 *[Claro, la mandaré en cuanto llegue a casa%Sure. I'll send it as soon as I get home.]
-~questionId = 38
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
 Genial Johan.%Great, Johan.
@@ -1207,7 +1184,6 @@ Si todo sale bien, la siguiente carta que mandes será para Yuri.%If everything 
 *[¿Quién es ese amigo?%Who's that friend?]
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-~questionId = 39
 Ex amigo.%Former friend.
 Digamos que es la razón por la que estoy en esta... situación tan curiosa.%Let's say he's the reason why I'm in... such a curious situation.
 Ya te contaré esa historia otro día.%I'll tell you that story another day.
@@ -1473,6 +1449,7 @@ La comida de la bandeja no tiene mejor pinta, pero hundes la cuchara en el puré
 ¿Todo bien, pipiolo?%Everything all right, tyro?
 Nunca había visto a alguien nuevo comerse esta basura tan rápido.%'ve never seen anyone new eat that garbage so fast.
 
+~questionId = 17
 *[Espero que aguanta ahí dentro%I hope he holds himself together in there.]
 *[Debe de ser duro estar ahí solo%It must be tough being there alone.]
 -
@@ -1593,10 +1570,11 @@ Va a ser una noche larga...%It will be a long night...#italics
 ~sprite = ""
 Comienzas a hacer ajustes con el teclado y, con paso aletargado, empiezas a tocar.%You start making adjustments on the keyboard and begin to play sluggishly.
 
-*[Canción 1 TODO%Song 1 TODO]
-~music = "Clouds"
-*[Canción 2 TODO%Song 2 TODO]
-~music = "Clouds"
+~questionId = 18
+*[Claro de luna%Moonlight Sonata]
+~music = "Beethoven Moonlight_ Sonata"
+*[Requiem%Requiem]
+~music = "Mozart Requiem Lacrimosa"
 
 -
 ~character = "Narrador%Narrator"
@@ -1635,11 +1613,10 @@ Un teclado tan caro no merece estos cabezazos.%A keyboard so expensive doesn't d
 
 ~character = "Narrador%Narrator"
 ~sprite = "Fay"
+~questionId = 19
 *[Irte a dormir%Go to sleep]
-~questionId = 40
 Te levantas del teclado y arrastras los pies hasta llegar a tu habitación.%You get up from the keyboard and drag your feet until you reach your room.
 *[Despedirte de Fay%Say goodbye to Fay]
-~questionId = 41
 Apoyas la mano en el hombro de Fay y le vuelves a dar las gracias por el regalo antes de irte a dormir.%You put your hand on Fay's shoulder and thank her again for the gift before going to sleep.
 
 -
@@ -1879,6 +1856,7 @@ Soy yo, Johan. Me toca vigilar el patio hoy, creo que no podré pasarme más tar
 Bueno... Necesito una cosa.%Well... I need something.
 ¿Podrías pasarte por mi celda y traérmela?%Could you stop by my cell and bring it to me?
 
+~questionId = 20
 *[¿Qué necesitas?%What do you need?]
 *[¿De qué se trata?%What is it?]
 
@@ -1919,13 +1897,11 @@ Abres la puerta de la celda de Kalev y te acercas a la cama.%You open Kalev's ce
 
 =CellChoice
 *[Buscar dentro del colchón rajado%Search inside the torn mattress.]
-~questionId = 42
 Metes la mano dentro de la raja del colchón.%You put your hand inside the gap in the matress.
 Solo encuentras muelles y plumas.%You only find springs and feathers.
 
 ->CellChoice
 *[Buscar dentro de la almohada%Search inside the pillow]
-~questionId = 43
 Metes la mano dentro de la almohada hasta encontrar un marco de madera.%You put your hand inside the pillow until it touches a wooden frame.
 
 ->KalevCellEnd
@@ -2024,10 +2000,8 @@ No hay rastro del preso.%There's no trace of the inmate.
 Su colchón está tirado en el suelo, con una raja en el centro y el relleno desperdigado por toda la celda.%His matress is lying on the ground, a tear in its center and its filling scattered throughout the cell.
 
 *[Continuar a la sala de recreo%Continue to the break room]
-~questionId = 43
 ->Breakroom
 *[Ir a la celda de aislamiento%Go to the isolation cell]
-~questionId = 44
     ~character = "Narrador%Narrator"
     ~sprite = ""
     Caminas por el corredor hasta llegar a las celdas de aislamiento en el fondo.%You walk through the corridor until you reach the cells at the end.
@@ -2154,6 +2128,7 @@ Solo necesito llamar a Viktor y con esto le tendré cogido por los huevos.%I jus
 Pero nunca me contestan el teléfono en la oficina.%But they never answer the phone at the office.
 Quizás si... ¿Tienes algo que hacer esta noche?%Maybe if... You have anything to do tonight?
 
+~questionId = 22
 *[Me das miedo, Stanislav%You scare me, Stanislav]
 *[¿Qué te traes entre manos?%What are you up to?]
 -
@@ -2171,6 +2146,7 @@ Venga, hombre. No seas así. Te dejaré mi libro.%Come on, man. Don't be like th
 Lo tienes todo ahí dentro.%You have everything in there.
 Solo es una llamadita de unos minutos y le tendremos temblando.%It's just a little two minutes phone call and we'll have them shivering.
 
+~questionId = 23
 *[No puedo arriesgarme tanto%I can't risk that much]
 *[¿Qué saco yo de esto?%What do I get out of this?]
 -
@@ -2396,11 +2372,10 @@ El señor Viktor está dispuesto a aceptar su llamada.%Mr. Viktor is willing to 
 ~sprite = "Phone"
 VAR name = ""
 
+~questionId = 24
 *[Johan%Johan]
-~questionId = 45
 ~name = "Johan"
 *[Alek%Alek]
-~questionId = 46
 ~name = "Alek"
 
 -
@@ -2417,6 +2392,7 @@ Llegó el momento de la verdad.%It comes, the moment of truth. #italics
 ~sprite = "Phone"
 Buenas noches. Viktor Barinov al habla.%Good night. Viktor Barinov speaking.
 
+~questionId = 25
 *[Tengo información sobre Stanislav%I have information regarding Stanislav]
 ~character = "Viktor%Viktor"
 ~sprite = "Phone"
@@ -2430,6 +2406,7 @@ Yo también sé lo que hemos hecho con él.%I also know what we have did to him.
 Le hemos encerrado en la prisión de Moscú. Y durante bastante tiempo, espero.%We locked him up in Moscow jail. And for a long time, I hope.
 -
 
+~questionId = 26
 *[Se la habéis jugado%You played on him]
 ~character = "Viktor%Viktor"
 ~sprite = "Phone"
@@ -2455,6 +2432,7 @@ No pareces muy contento con sus propuestas para la reforma económica.%You don't
 ~sprite = "Phone"
 Y de qué pruebas se trata, señor {name}.%And what evidence do you hace, mister {name}.
 
+~questionId = 27
 *[Fotografías de la coartada%Photographs of his alibi]
 ~character = "Narrador%Narrator"
 ~sprite = ""
