@@ -6,6 +6,7 @@ VAR sfx = ""    //Nombre sfx
 VAR music = ""  //Nombre canción
 VAR hour = -1   //Hora del día (0, 1, 2; Mañana, tarde y  noche
 VAR sprite = "" //Nombre sprite del personaje
+VAR ghost = false
 
 ->Day_One
 
@@ -2872,6 +2873,7 @@ Al subir las piernas sobre el colchón golpeas algo blando.%As you raise your le
 Comienza a brillar con una tenue luz azúl.%It starts glowing in a dim blue light.
 
 ~character = "Kalev%Kalev"
+~ghost = true
 ~sprite = "Kalev"
 ~music = "Somber"
 Hola, Johan.%Hello, Johan.
@@ -2894,6 +2896,7 @@ Al subir las piernas sobre el colchón golpeas algo blando.%As you raise your le
 Comienza a brillar con una tenue luz azúl.%It starts glowing in a dim blue light.
 
 ~character = "Stanislav%Stanislav"
+~ghost = true
 ~sprite = "Stanislav"
 ~music = "Quiet"
 Hola, Johan.%Hello, Johan.
@@ -2906,5 +2909,6 @@ Te golpeas la cabeza contra la estantería y caes sobre el suelo mientras toda l
 ->TO_BE_CONTINUED
 
 ==TO_BE_CONTINUED==
+~ghost = false
 #end
 ->END
