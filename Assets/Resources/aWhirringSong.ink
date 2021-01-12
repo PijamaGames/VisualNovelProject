@@ -21,7 +21,7 @@ VAR sprite = "" //Nombre sprite del personaje
 ~sprite = ""
 Poca gente espera acabar en la cárcel a los 26 años.%Few people expect to end up in prison at 26.
 Para ti es el gran sueño. O al menos un paso para cumplir tu sueño.%It's a big dream for you. Or at least it's a step to achieve your dream.
-Buscas el camino a tu libertad entre muros de cemento gris y barrotes oxidados.%You seek the path to yourfreedom among dull concrete walls and rusty bars.
+Buscas el camino a tu libertad entre muros de cemento gris y barrotes oxidados.%You seek the path to your freedom among dull concrete walls and rusty bars.
 
 ~character = "Johan%Johan"
 ~sprite = ""
@@ -37,7 +37,7 @@ Primer día, allá vamos.%First day, here we go. #italics
 ~character = "Narrador%Narrator"
 ~sprite = ""
 En la ventanilla de recepción solo encuentras un teléfono descolgado, una taza de café a medio tomar y una revista Playboy con páginas arrancadas.%At the reception window you only find a phone off the hook, a half-drunk cup of coffe and a Playboy magazine with some torn pages.
-Quien sea que trabaje aquí parece que tardará un tiempo en volver.%It seems that whoeverworks here will be left for a while.
+Quien sea que trabaje aquí parece que tardará un tiempo en volver.%It seems that whoever works here will be gone for a while.
 
 *[Dar un toque en la ventanilla%Tap the window]
 ~questionId = 0
@@ -66,7 +66,7 @@ Una mano te golpea la espalda con fuerza.%A hand hits hard on your back.
 ~character = "Luka%Luka"
 ~sprite = "Luka"
 Llegas tarde, novato.%You're late, rookie.
-Soy Luka, tu nuevo compañero de trabajo.%Luka, your new coworker.
+Soy Luka, tu nuevo compañero de trabajo.%I'm Luka, your new coworker.
 
 ~character = "Johan%Johan"
 ~sprite = "Luka"
@@ -76,7 +76,7 @@ Además solo han pasado dos minutos.%Besides, I'm only 2 minutes late.
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-Quieto ahí. Cada 10 minutos sucede un robo a mano armada.%Hold on. Every 10 minutes there occurs an armed robbery.
+Quieto ahí. Cada 10 minutos sucede un robo a mano armada.%Hold on. Every 10 minutes an armed robbery occurs.
 ¿Crees que una quinta parte de un robo no merece tu atención?%Do you think a fifth of a robbery isn't worth your attention?
 
 ~character = "Johan%Johan"
@@ -90,13 +90,13 @@ Bueno, no sabía que...%I... Well, I didn't know...
 
 ~character = "Johan%Johan"
 ~sprite = "Luka"
-Sí, supongo que si lo piensas así 2 minutos es bastante tiempo.%Yeah, I guess that 2 minutes is quite a long time if you put it like that.
+Sí, supongo que si lo piensas así 2 minutos es bastante tiempo.%Well, I guess that 2 minutes is quite a long time if you put it like that.
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
 Así me gusta, pipiolo.%That sounds better, tyro.
 Ya te darás cuenta de lo que son 2 minutos aquí dentro.%You'll realize what 2 minutes mean in here.
-Ahora sígueme, comienza el tour guiado por el gran Hotel Delfín Negro.%Now follow me. Time to begin the guided tour through great Black Dolphin Hotel.
+Ahora sígueme, comienza el tour guiado por el gran Hotel Delfín Negro.%Now follow me. It's time to begin the guided tour through great Black Dolphin Hotel.
 Le ruego no pierda de vista al guía y mantenga las manos alejadas de cualquier celda o persona con bozal.%Please do not lose sight of the guide and keep your hands away from any cell or person with a muzzle.
 
 *[¿Disculpa?%Excuse me?]
@@ -108,13 +108,13 @@ Le ruego no pierda de vista al guía y mantenga las manos alejadas de cualquier 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
 Sí. Mi hotel. 5 estrellas de puro cemento, acero y justicia.%Yes. My own hotel. 5 stars of pure concrete, steel and justice.
-Comida fría, libros viejos y gimnasios sudados. Las mejores instalaciones para la peor de la escoria.%Cold food, old books and swaty gyms. The best facilites for the worst scum.
+Comida fría, libros viejos y gimnasios sudados. Las mejores instalaciones para la peor de la escoria.%Cold food, old books and sweaty gyms. The best facilites for the worst sort of scum.
 
 ~character = "Narrador%Narrator"
 ~sprite = ""
 Sigues a Luka por los pasillos estrechos.%You follow Luka through the narrow corridors.
 ~sfx = "Risa"
-Sus carcajadas retumban por toda la cárcel mientras señala a un lado y a otro.%His laughter echoes throughout all the jail while he points left and right.
+Sus carcajadas retumban por toda la cárcel mientras señala a un lado y a otro.%His laughter echoes throughout all the jail while he points you things left and right.
 ->Locker
 
 =Locker
@@ -137,7 +137,7 @@ Siempre para defensa propia, por supuesto.%Always for self defense, of course.
 
 - ~character = "Luka%Luka"
 ~sprite = "Luka"
-¡Pilla!%Catch it!
+¡Pilla!%Catch!
 
 ~character = "Narrador%Narrator"
 ~sprite = "Luka"
@@ -146,7 +146,7 @@ Taquilla 42.%Locker 42.
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-Mira dentro. Tu regalo de bienvenida te espera.%Look inside. Your welcome gift awaits.
+Mira dentro. Tus regalos de bienvenida te esperan.%Look inside. Your welcome gifts awaits.
 
 ~character = "Narrador%Narrator"
 ~sprite = ""
@@ -181,7 +181,7 @@ Uno de ellos golpea a otro cuando cuela la bola negra en el agujero incorrecto.%
 Aquí es donde encontrarás a la peor escoria.%This is where you'll find the worst scum in this prison.
 No a los peligrosos, oh no. Esos se pasan el día dale que te pego con el gimnasio.%Not the dangerous ones, no. Those spend the whole day in the yard, non-stop exercising.
 Aquí encontrarás a los vagos. Todo el día viendo la televisión o jugando al billar.%Here you'll find the laziest ones. Watching TV and playing pool all day.
-¡A picar piedras le ponía yo!%Non-stop digging, that's what they should do!
+¡A picar piedras le ponía yo!%If I were in charge they would be digging non-stop!
 
 *[Ya...%Yeah...]
 ~questionId = 6
@@ -191,7 +191,7 @@ Aquí encontrarás a los vagos. Todo el día viendo la televisión o jugando al 
 -
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-Me alegra que estemos de acuerdo. Ahora vayámonos de aquí. No aguanto estar con estos tipejos.%I'm glad we agree on this. Now let's get out of hear. I can't stand being with this slags.
+Me alegra que estemos de acuerdo. Ahora vayámonos de aquí. No aguanto estar con estos tipejos.%I'm glad we agree on this. Now let's get out of here. I can't stand being with this lowlifes.
 Sígueme, te enseñaré donde los verdaderos hombres se entretienen.%Follow me, I'll show you where real men get entertained.
 ->Yard
 
@@ -242,8 +242,8 @@ Sigamos por aquí, vamos a ver el establo.%Let's continue. We're headed to the s
 ~sfx = "Gente de fondo hablando"
 Siguiendo a Luka llegas al corredor principal de la prisión.%While following Luka you reach the main corridor of the prison.
 Quién hubiera pensado que un pasillo podría tener tanto poder.%Who could have thought that a hallway could convey so much power.
-Cuatro paredes y un techo pueden decidir la vida de una persona, ponerla en pausa.%Four walls and a ceiling can decide the life of a person, put it on a hiatus.
-Aún así, si cerraras los ojos pensarías que estás en una taberna, llena de gritos ininteligibles, y llantos de borrachos.%Still, if you closed your eyes, you'd think you were in a tavern, full of unintelligible screams and the cries of drunkards who have drank too much.
+Cuatro paredes y un techo pueden decidir la vida de una persona, ponerla en pausa.%Four walls and a ceiling can decide the life of a person, put it on hiatus.
+Aún así, si cerraras los ojos pensarías que estás en una taberna, llena de gritos ininteligibles, y llantos de borrachos.%Still, if you closed your eyes, you'd think you are in a tavern, full of unintelligible screams and the cries of drunkards who have drank too much.
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
@@ -251,7 +251,7 @@ Y esta es nuestra atracción principal. 30 metros cuadrados de pura desolación,
 Tendrías que haber estado aquí hace una década.%You should've been here a decade ago. 
 Este pasillo estaba tan lleno que tuvimos que improvisar nuevas celdas con contenedores de plástico.%This corridor was so full of cattle that we had to improvise new cells with plastic containers.
 
-Ah, qué tiempos aquellos...%Oh, what times were those...
+Ah, qué tiempos aquellos...%Oh, those were good times...
 
 ~character = "Johan%Johan"
 ~sprite = "Luka"
@@ -267,11 +267,11 @@ Y dime, ¿qué ha hecho toda esta gente para acabar aquí?%And tell me, what hav
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-Bueno, tenemos un poco de todo. La variedad es la esencia de la vida.%Well, we got a little bit of everything. Variety is the essence of life.
-No te quiero arruinar la sorpresa.%Don't want to ruin you the surprise.
-¿Por qué no hablas con ellos y se lo preguntas?%Why dont you talk with them and ask them yourself?
-Te esperaré junto a la máquina expendedora.%I'll wait for you by the vending machine.
-Tanto hablar me está dejando la garganta peor que una noche de partido.%All this talking's making my throath feel worse than a football night.
+Bueno, tenemos un poco de todo. La variedad es la esencia de la vida.%Well, we've got a little bit of everything. Variety is the essence of life.
+No te quiero arruinar la sorpresa.%I Don't want to ruin you the surprise.
+¿Por qué no hablas con ellos y se lo preguntas?%Why don't you talk with them and ask them yourself?
+Te esperaré junto a la máquina expendedora.%I'll be waiting by the vending machine.
+Tanto hablar me está dejando la garganta peor que una noche de partido.%All this talking is making my throath feel worse than a football night.
 
 ->CorridorChoice
 
@@ -345,7 +345,7 @@ Perdona mis modales, ni siquiera me he presentado.%Pardon my manners, I haven't 
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-Soy Stanislav. Ten mi tarjeta.%I'm Stanislav.Here, have my card.
+Soy Stanislav. Ten mi tarjeta.%I'm Stanislav. Here, have my card.
 
 ~character = "Narrador%Narrator"
 ~sprite = "Stanislav"
@@ -360,7 +360,7 @@ Soy Johan, me han asignado a este corredor. Creo que nos veremos bastante por aq
 
 ~character = "Stanislav%Stanislav"
 ~sprite = "Stanislav"
-Eso espero. Es raro ver una cara amigable en este lugar.%I hope so. It's weird seeing a friendly face around here.
+Eso espero. Es raro ver una cara amigable en este lugar.%I hope so. It's rare seeing a friendly face around here.
 Ahora si me disculpas, tengo que continuar con mi, uhm, transacción.%Now, if you'll excuse me, I have to continue with my, uhm, transaction.
 
 ~character = "Narrador%Narrator"
@@ -387,7 +387,7 @@ Será mejor dejarles por hoy.%Better leave them for today.
 Al final del corredor esperan dos gruesas puertas de acero.%Two heavy steel doors await at the end of the corridor.
 Incluso la luz de las ventanas parece evitarlas.% Even the light of the windows seem to avoid them.
 Pensar en su interior, un agujero frío y estrecho, te roba el aliento y el equilibio.%Thinking about its interior, a cold and narrow hole, it takes your breath and your balance away.
-Apoyas un brazo sobre la pared para mantenerte en pie.%You lean your hand to the wall to keep your balance.
+Apoyas un brazo sobre la pared para mantenerte en pie.%You lean your hand on the wall to keep your balance.
 Das media vuelta, huyendo de las dos puertas.% You turn around, fleeing from the two doors.
 ->CorridorChoice
 
@@ -395,7 +395,7 @@ Das media vuelta, huyendo de las dos puertas.% You turn around, fleeing from the
 ~background = "vendingmachine"
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Luka te espera apoyado contra la pared y dando sorbos de su café.%Luka waits while leaning against the wall whilst sipping coffee.
+Luka te espera apoyado contra la pared y dando sorbos de su café.%Luka waits while leaning against the wall, sipping coffee.
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
@@ -406,7 +406,7 @@ Si que has tardado. ¿Qué tal ha ido?%It took you a while. How did it go?
 ~questionId = 16
 ~character = "Johan%Johan"
 ~sprite = "Luka"
-    No ha estado mal. Stanislav parece muy agradable.%Not badStanislav seems very nice
+    No ha estado mal. Stanislav parece muy agradable.%Not bad, Stanislav seems very nice
     
     ~character = "Luka%Luka"
     ~sprite = "Luka"
@@ -438,7 +438,7 @@ Vamos, ya casi hemos terminado el tour.%Come on, we've almost finished the tour.
 ~character = "Narrador%Narrator"
 ~sprite = ""
 Siguiendo a Luka te paras frente a una puerta cerrada.% While following Luka you stop and stand in front of a closed door. 
-Un zumbido monótono suena desde el otro lado.%A monotonous whirring sounds on the other side.
+Un zumbido monótono suena desde el otro lado.%A monotonous whirring comes from the other side.
 La puerta tiene tres candados distintos y una cerradura con llave.%The door has three different padlocks and a key lock.
 
 ~character = "Johan%Johan"
@@ -448,7 +448,7 @@ Oye Luka, ¿y esta puerta?%Hey Luka. What about this room?
 ~character = "Luka%Luka"
 ~sprite = "Luka"
 Oh, no te preocupes por eso. Esa zona está fuera de límites para ti.%Oh, don't worry about it. This zone is off-limits for you.
-Se está haciendo tarde. Déjame enseñarte la cantina y vamos a tomar algo de paso.%It's getting late. Let me show you the canteen and let's eat anything since we are there.
+Se está haciendo tarde. Déjame enseñarte la cantina y vamos a tomar algo de paso.%It's getting late. Let me show you the canteen and let's grab something to eat while I show you.
 
 ~music = "Touchpoint"
 ->Canteen
@@ -462,7 +462,7 @@ Se está haciendo tarde. Déjame enseñarte la cantina y vamos a tomar algo de p
 Un olor mediocre, como el de una infusión con demasiada agua, sube desde las ollas de la cantina.%A mediocre smell, like that of an infusion made with too much water, rises from the canteen pots.
 En los platos de los presos solo alcanzas a ver masas informes de color grisáceo.%You can only reach to see shapeless grayish masses on the prisoners' plates.
 Aún así, la mediocridad resulta deliciosa para el estómago del hambriento.%Still, mediocrity looks delicious for the stomach of those who are hungry.
-Esperas con la pierna inquieta y la boca hecha agua a que Luka llegue a la mesa del comedor con vuestras bandejas.%You wait with a restless leg and watering mouth for Luka to to arrive at the table with your trays.
+Esperas con la pierna inquieta y la boca hecha agua a que Luka llegue a la mesa del comedor con vuestras bandejas.%You wait with a restless leg and watering mouth for Luka to arrive at the table with your trays.
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
@@ -482,7 +482,7 @@ Un grupo de guardias de la mesa de al lado apartan la mirada y sueltan una carca
     
     ~character = "Luka%Luka"
     ~sprite = "Luka"
-    Se llama Kalev y entró aquí hace un par de años.%His name's Kalev. He's in here since a couple of years ago.
+    Se llama Kalev y entró aquí hace un par de años.%His name's Kalev. He's been here for a couple of years ago.
     No sé muy bien por qué, pero seguro que por algo terrible.%I don't know why. For doing something terrible, that's for sure.
     Es un tipo raro.%He's a weird guy.
     Nunca se quita el uniforme ni se ducha con el resto de presos.%Never takes off his uniform nor showers with other prisoners.
@@ -516,7 +516,7 @@ Stanislav parece un tipo bastante majo. Pensé que no habría gente así en la c
     ~sprite = "Luka"
     ¿No lees el periódico nunca, pipiolo?%Don't you ever read newspaper, tyro?
     Ese tipo es uno de los mayores enemigos de este país. Una absoluta decepción para el gobierno.%That guy's one of the greatest enemies of this country. An absolute disappointment for the government.
-    Pero dejemos el tema ya. Hablar de política me cierra el apetito.%But let's talk about anything else. Speaking politics spoils my appetite.
+    Pero dejemos el tema ya. Hablar de política me cierra el apetito.%But I don't like to speak about politics. It spoils my appetite.
     
 *[Hablar de la comida%Talk about food]
 ~questionId = 20
@@ -541,6 +541,7 @@ Antes siquiera de que empieces tu bandeja la suya ya está vacía y reluciente.%
 ~character = "Luka%Luka"
 ~sprite = "Luka"
 ¿Todo bien, novato? Estás más pálido que cuando te encontré en la recepción.&Everything all right, rookie? You're paler than when I met you at the reception.
+-
 
 *[Veo que tenías hambre%I see you were hungry]
 ~questionId = 21
@@ -580,12 +581,12 @@ Sigues a Luka hasta salir de la cafetería y la cárcel.%You follow Luka to the 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
 Hasta mañana, cadete.%See you tomorrow, boy.
-Recuerda, no le des muchas vueltas a nada de lo que veas aquí dentro.%And remember, don't give too much tought to anything you see in here.
-Intenta distraerte un rato en casa.%Try to keep yourself distracted for a while at home.
+Recuerda, no le des muchas vueltas a nada de lo que veas aquí dentro.%And remember, don't give too much thought to anything you see in here.
+Intenta distraerte un rato en casa.%Try to keep yourself distracted at home.
 
 ~character = "Narrador%Narrator"
 ~sprite = "Luka"
-Luka te da un abrazo sorprendentemente reconfortante antes de marcharse en su coche.%Luka gives you a surprisingly warming hug before getting into his car.
+Luka te da un abrazo sorprendentemente reconfortante antes de marcharse en su coche.%Luka gives you a surprisingly warm hug before getting into his car.
 ->FlatDoorstep
 
 =FlatDoorstep
@@ -593,7 +594,7 @@ Luka te da un abrazo sorprendentemente reconfortante antes de marcharse en su co
 ~character = "Narrador%Narrator"
 ~music = "Clouds"
 ~sprite = ""
-Coges el último autobús hasta el centro de la ciudad y llegas a la puerta de tu piso.%You take the last bus to the town center and arrive to your flat's door.
+Coges el último autobús hasta el centro de la ciudad y llegas a la puerta de tu piso.%You take the last bus to the town center and arrive at your flat's door.
 Cuando rebuscas en tus pantalones no escuchas el esperado tintineo de las llaves.%When looking into your pockets you don't hear the expected jingle of the keys.
 
 ->DoorChoice
@@ -619,7 +620,7 @@ Cuando rebuscas en tus pantalones no escuchas el esperado tintineo de las llaves
     ~character = "Johan%Johan"
     ~sprite = "Fay"
     Menos mal, Fay.%Thank goodness, Fay.
-    Mira, me he dejado las llaves en...%left my keys on...
+    Mira, me he dejado las llaves en...%I left my keys on...
     Bueno, no sé dónde me las he dejado.%Well, I don't know where I left them.
     ¿Puedes abrir?%Can you open?
     
@@ -639,17 +640,17 @@ Es otro de esos juegos de estrategia que tanto le gustan a Fay.%It's another one
 ~character = "Fay%Fay"
 ~sprite = "Fay"
 Disculpa el desorden. Han venido amigos esta tarde.%Excuse the mess. Some friends came this afternoon.
-No sé si te acordarás, pero hoy había partido de semifinales.%I dont't know if you remember, but today started the semifinals.
+No sé si te acordarás, pero hoy había partido de semifinales.%I dont't know if you remember, but today was the start of the semifinals.
 Mañana lo recojo todo, prometido.%I'll clean tomorrow. I promise.
 
 ~character = "Johan%Johan"
 ~sprite = "Fay"
 Sin problemas.%No problem.
-¿Qué tal fue el partido? ¿Hoy jugábais los Featherknights?%How was the game? Did you Featherknights play today?
+¿Qué tal fue el partido? ¿Hoy jugábais los Featherknights?%How was the game? Did your team Featherknights play today?
 
 ~character = "Fay%Fay"
 ~sprite = "Fay"
-Oh no no. Nos eliminaron en octavos.%Nope. We got eliminated in the round of 16.
+Oh no no. Nos eliminaron en octavos.%Nope. We got eliminated at quarterfinals.
 Ha estado bien, algo aburrido hacia el final.%It was ok. Got a little bit boring towards the end.
 Podrían haber terminado antes si hubieran jugado mejor su rush build, pero bueno...%They could've ended much earlier if they had played their rush build better.
 
@@ -693,7 +694,7 @@ Oh Fay, no tenías por qué molestarte...%Oh Fay, you didn't have to...
 ~character = "Fay%Fay"
 ~sprite = "Fay"
 Shhh.%Shhh.
-Tú tráeme la cerveza al salón, por favor.%You just bring the beer to the living room please.
+Tú tráeme la cerveza al salón, por favor.%Just bring the beer to the living room please.
 
 ~character = "Narrador%Narrator"
 ~sprite = ""
@@ -729,7 +730,7 @@ Además, no creo que pudiera sacarle partido con mias habilidades...%Besides, I 
 ~character = "Fay%Fay"
 ~sprite = "Fay"
 No no, no sigas por ahí, Johan.%No. Stop going through there, Johan.
-¿De verdad voy a tener que devolverlo con lo que me ha costado conseguirlo?%Am I really having to return it after all it took me to get it?
+¿De verdad voy a tener que devolverlo con lo que me ha costado conseguirlo?%Am I really going to have to return it after all it took me to get it?
 
 ~character = "Johan%Johan"
 ~sprite = "Fay"
@@ -748,7 +749,7 @@ Total. Ahora podré competir contigo en hacer ruido a horas intempestivas.%Total
 ~character = "Fay%Fay"
 ~sprite = "Fay"
 Bah, no me llegas ni al tobillo, chaval.%Bah, you're not even fit to tie my shoelaces, kiddo.
-Ahora en serio, mola verte sonreír.%Now seriously. It's cool see you smiling.
+Ahora en serio, mola verte sonreír.%Now seriously. It's cool to see you smiling.
 Deberías hacerlo más.%You should do it more often.
 
 ~character = "Johan%Johan"
@@ -769,13 +770,13 @@ Mañana entro pronto a trabajar.%I'm going to work early tomorrow.
 ~character = "Fay%Fay"
 ~sprite = "Fay"
 ¡Mierda!%Crap!
-Olvidé preguntarte por el primer día de trabajo.%I forgot to ask you about your first day of work.
-¿Qué tal ha ido? Debe dar miedo trabajar en una cárcel...%How it went? It must be scary working in a jail...
+Olvidé preguntarte por el primer día de trabajo.%I forgot to ask you about your first day at work.
+¿Qué tal ha ido? Debe dar miedo trabajar en una cárcel...%How did your day go? It must be scary working in a jail...
 
 ~character = "Johan%Johan"
 ~sprite = "Fay"
 Bastante bien. Supongo que conoces gente... interesante.%Fairly good. I guess you meet... interesting people.
-Es muy agotador. Casi no podemos ni pararnos a comer.%It's very tiring. We can hardly even stop to eat.
+Es muy agotador. Casi no podemos ni pararnos a comer.%It's very tiring. We can hardly stop to eat.
 De hecho, creo que me voy a ir a la cama. Estoy molido.%In fact, I think I'm going to bed now.
 
 ~character = "Fay%Fay"
@@ -785,7 +786,7 @@ Oh claro, sin problema.%Oh sure, no problem.
 
 ~character = "Johan%Johan"
 ~sprite = "Fay"
-Creo que lo dejaré en el salón un tiempo, si no te importa, claro.%I think I'll leave it in the living room for a while. If you're ok with it, of course.
+Creo que lo dejaré en el salón un tiempo, si no te importa, claro.%I think I'll leave it in the living room for a while. If you're ok with that, of course.
 
 ~character = "Fay%Fay"
 ~sprite = "Fay"
@@ -804,7 +805,7 @@ Hasta mañana, Fay.%See you tomorrow, Fay.
 ~character = "Narrador%Narrator"
 ~sprite = ""
 Un fuerte olor a cerrado te golpea al abrir la puerta de tu cuarto.%A strong musty smell hits you hard when opening your room's door.
-El ambientador que dejaste sobre la mesa lleva días gastado.%The air freshener you left has long since worn out.
+El ambientador que dejaste sobre la mesa lleva días gastado.%The air freshener you left has worn out long ago.
 ->BedroomChoice
 
 =BedroomChoice
@@ -821,9 +822,9 @@ Presionas sobre una de sus esquinas hasta terminar de pegar una pegatina de los 
 ->BedroomChoice
 
 =Bookshelf
-Sacas un libro y lo sostienes, pesado, en tus manos.%ou take out a book and hold it in your hands. It feels heavy.
+Sacas un libro y lo sostienes, pesado, en tus manos.%You take out a book and hold it in your hands. It feels heavy.
 Acústica, Armonía y Funciones tonales, por Yuri Pletinov.%Acoustics, Harmony and Tonal functions, by Yuri Pletinov.
-Está lleno de marcadores en los lados y la espina está algo desgastada.%It is full of markers on the sides and the spine os a bit worn.
+Está lleno de marcadores en los lados y la espina está algo desgastada.%It is full of markers on the sides and the spine is a bit worn.
 A los pies de la estantería descansa tu guitarra marrón, con algunas zonas de madera desconchada.%At the foot of the shelf lies your brown guitar, which has some areas of chipped wood.
 ->BedroomChoice
 
@@ -839,12 +840,12 @@ A los pies de la estantería descansa tu guitarra marrón, con algunas zonas de 
 *[Pensar en Fay%Think about Fay]
 ~questionId = 28
     Fay... ¿De dónde habrá sacado tanto dinero para ese teclado?%Fay... Where did she get so much money for that keyboard? #italics
-    Espero que le siga yendo bien en el futuro. Especialmente después de todo lo que ha pasado.%I hope she continues doing well in the future.Especially after all that happened. #italics
+    Espero que le siga yendo bien en el futuro. Especialmente después de todo lo que ha pasado.%I hope she continues doing well in the future. Especially after all that happened. #italics
 
 -
 ~character = "Narrador%Narrator"
 ~sprite = ""
-Continúas mirando fijamente un punto en el techo hasta quedarte dormido.%You continue looking at the point on the ceiling until you fall asleep.
+Continúas mirando fijamente un punto en el techo hasta quedarte dormido.%You continue looking at the ceiling until you fall asleep.
 El sonido de las goteras te arropa como tu canción de cuna favorita.%The sound of the water leaks tucks you as your favourite lullaby.
 
 ->Day_Two
@@ -862,7 +863,7 @@ El sonido de las goteras te arropa como tu canción de cuna favorita.%The sound 
 ~sprite = "Fay"
 ¡¿Qué dices?!%What are you saying?!
 No no. ¡¿Cómo que ha sido mi culpa?!%No, no. How come it was my fault?!
-Por favor, si nos has dejado vendidos ahí atrás.%Please, you left us wide opne back there.
+Por favor, si nos has dejado vendidos ahí atrás.%Please, you left us wide open back there.
 No te estoy echando la culpa, solo te estoy explicando por qué no es MI culpa.%I'm not blaming you. I'm just explaining why it's not MY fault.
 
 ~character = "Narrador%Narrator"
@@ -883,7 +884,7 @@ El autobusero toca el claxon dos veces y te pregunta si no bajas hoy en esta par
 Cuando levantas la cabeza de tu revista encuentras la cárcel parada frente a ti.%When you lift your head from your magazine you find the jail standing in front of you.
 Sus cuatro torres que parecen querer tocar el cielo.%Its four towers seem to want to touch the sky.
 Doblas una de las esquinas de la revista antes de levantarte.%You fold one of the corners of the magazine before closing it.
-Este sábado hay una audición para teclista en un grupo local.%This Saturday there is an audition for keyboard player in a local group.
+Este sábado hay una audición para teclista en un grupo local.%This Saturday there is an audition for the keyboard player in a local group.
 
 *[Dejar propina al autobusero%Tip the bus driver]
 ~questionId = 29
