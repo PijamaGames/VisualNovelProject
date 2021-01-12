@@ -1420,8 +1420,8 @@ Estoy orgulloso de cómo manejaste la situación.%I'm proud of how you handled t
 
 ~stopSound = "Gente de fondo hablando"
 
-{helpedStanislav} ->CanteenStanislav
 {not helpedStanislav} -> CanteenKalev
+{helpedStanislav} ->CanteenStanislav
 
 =CanteenStanislav
 ~character = "Luka%Luka"
