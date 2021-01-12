@@ -8,6 +8,7 @@ VAR stopSound = "" //Nombre efecto a parar
 VAR hour = -1   //Hora del día (0, 1, 2; Mañana, tarde y  noche
 VAR sprite = "" //Nombre sprite del personaje
 VAR ghost = false
+VAR helpedStanislav = false
 
 ->Day_One
 
@@ -1053,6 +1054,7 @@ Solo me acaba de partir la nariz un maldito neandertal.%It's just that a damn ne
 ->HelpKalev
 
 =HelpStanislav
+~helpedStanislav = true
 ~character = "Johan%Johan"
 ~sprite = ""
 ¡Luka! ¡Eh, Luka!%Luka! Hey, Luka!
@@ -1214,6 +1216,7 @@ Cuando termina de sacar nuevas chocolatinas de la máquina expendedora camináis
 ->Canteen
 
 =HelpKalev
+~helpedStanislav = false
 ~background = "cell"
 ~character = "Johan%Johan"
 ~sprite = ""
@@ -1419,8 +1422,8 @@ Estoy orgulloso de cómo manejaste la situación.%I'm proud of how you handled t
 
 ~stopSound = "Gente de fondo hablando"
 
-{HelpStanislav} ->CanteenStanislav
-{HelpKalev} -> CanteenKalev
+{helpedStanislav} ->CanteenStanislav
+{not helpedStanislav} -> CanteenKalev
 
 =CanteenStanislav
 ~character = "Luka%Luka"
@@ -1692,8 +1695,8 @@ Miras de vez en cuando a tu espalda, a la puerta cerrada con tres cerrojos y una
 Las luces del corredor parpadean al ritmo de tus pasos.%The lights in the corridor flicker to the rythm of your steps.
 El golpe de tus botas hace eco por las paredes de cemento.%The thump of your boots echoes off the concrete walls.
 
-{Day_Two.HelpKalev} ->CellCorridorMorningKalev
-{Day_Two.HelpStanislav} ->CellCorridorMorningStanislav
+{not helpedStanislav} ->CellCorridorMorningKalev
+{helpedStanislav} ->CellCorridorMorningStanislav
 
 =CellCorridorMorningKalev
 ~background = "cell"
@@ -1817,8 +1820,8 @@ He llegado al menos dos robos armados pronto.%I must be at least two armed robbe
 ~sprite = "Luka"
 Luka comienza a reírse mientras engulle dos chocolatinas a la vez.%Luka starts laughing as he swallows two chocolates at the same time.
 
-{Day_Two.HelpKalev} ->VendingMachineKalev
-{Day_Two.HelpStanislav} ->VendingMachineStanislav
+{not helpedStanislav} ->VendingMachineKalev
+{helpedStanislav} ->VendingMachineStanislav
 
 =VendingMachineKalev
 ~character = "Luka%Luka"
@@ -1846,8 +1849,8 @@ Luka te da una palmada en la espalda antes de marcharse hacia la sala de guardia
 
 ~hour = 1
 
-{Day_Two.HelpKalev} ->CellCorridorKalev1
-{Day_Two.HelpStanislav} ->CellCorridorStanislav1
+{not helpedStanislav} ->CellCorridorKalev1
+{helpedStanislav} ->CellCorridorStanislav1
 
 =CellCorridorKalev1
 ~background = "heavydoor"
@@ -2307,8 +2310,8 @@ No parecen demasiado complicadas, me aprenderé alguna para cuando Fay regrese.%
 ~sprite = ""
 Coges la partitura de "Warriors" y entras en tu cuarto%You take the score for "Warriors" and walk into your room.
 
-{Day_Two.HelpKalev} ->BeedroomKalev
-{Day_Two.HelpStanislav} -> BeedroomStanislav
+{not helpedStanislav} ->BeedroomKalev
+{helpedStanislav} -> BeedroomStanislav
 
 =BeedroomKalev
 ~background = "bedroom"
