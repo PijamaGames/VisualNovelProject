@@ -29,6 +29,7 @@ public class StoryManager : MonoBehaviour
     [SerializeField] Bilingual dateText;
     [SerializeField] Image hourImage;
     [SerializeField] Image characterSprite;
+    [SerializeField] Color ghostColor;
 
     [HideInInspector] public static Story inkStory;
     DialogController dialogController;
@@ -101,6 +102,8 @@ public class StoryManager : MonoBehaviour
         inkStory.ObserveVariable("sprite", (varName, newValue) =>
         {
             SetCharacterSpriteByName(newValue.ToString());
+            bool isGhost = bool.Parse(inkStory.variablesState["ghost"].ToString());
+            characterSprite.color = isGhost ? ghostColor : Color.white;
         });
     }
 
