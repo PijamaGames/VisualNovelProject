@@ -964,7 +964,7 @@ Kalev te mira fijamente a los ojos e inclina la cabeza hacia un lado sin decir u
 
 ~character = "Narrador%Narrator"
 ~sprite = "Kalev"
-El preso abre los ojos, sorprendido por oirte pronunciar su nombre.%The inmate open his eyes, surprised to hear you pronounce his name.
+El preso abre los ojos, sorprendido por oirte pronunciar su nombre.%The inmate opens his eyes, surprised to hear you pronounce his name.
 Niega con la cabeza, indicando que te marches.%He nods indicating you to leave.
 
 ~character = "Johan%Johan"
@@ -1302,7 +1302,7 @@ Oh vaya...%Oh, wow...
 ~sprite = "Kalev"
 No puedo dejar que nadie lo sepa.%I can't let anyone know.
 Ellos... No saben que me he escapado.%They... don't know i've escaped.
-Tenía que dejarlo, por mi bien, por el de...% I had to quit. For my sake. For the sake of...
+Tenía que dejarlo, por mi bien, por el de...%I had to quit. For my sake. For the sake of...
 
 ~character = "Narrador%Narrator"
 ~sprite = "Kalev"
@@ -1321,7 +1321,7 @@ Los guardias... Bueno, yo te protegeré. Pero no puedes montar estas escenas.%Th
 ~character = "Kalev%Kalev"
 ~sprite = "Kalev"
 Sí. Sí, tienes razón.%Yeah. Yes, You're right.
-No supe como reaccionar.%didn't know how to react.
+No supe como reaccionar.%I didn't know how to react.
 Nadie podía saberlo.%Nobody can know.
 Nadie.%No one.
 
@@ -1335,7 +1335,7 @@ No es a mí a quien quieren hacer daño. ¿Lo entiendes?%It's not me who they wa
 
 ~character = "Johan%Johan"
 ~sprite = "Kalev"
-Ya... Empieza por no volver a hacer esto. Veré en qué más puedo ayudarte.%Yeah... Start by not doing this again. I'll see how else I can help you.
+Ya... Empieza por no volver a hacer esto. Veré en qué más puedo ayudarte.%Yeah... Start by not doing this again. I'll see how I can help you.
 
 ~character = "Kalev%Kalev"
 ~sprite = "Kalev"
@@ -1352,7 +1352,7 @@ Saca un sobre mal cerrado, a punto de romperse.%He takes out a poorly sealed env
 ~character = "Kalev%Kalev"
 ~sprite = "Kalev"
 ¿Podrías... podrías enviar esto a una dirección?%Could you... could you send this to an address?
-Yo no puedo hacerlo desde aquí dentro.%I can't do it from in here.
+Yo no puedo hacerlo desde aquí dentro.%I can't do it from here.
 
 ~character = "Johan%Johan"
 ~sprite = "Kalev"
@@ -1366,7 +1366,7 @@ No puedes contarlo todo, pero hay al menos 20.000 rublos.%You can't count all of
 ~character = "Kalev%Kalev"
 ~sprite = "Kalev"
 Llevo ahorrando esto desde que entré en prisión.%I've been saving this since I entered prison.
-No es demasiado, pero espero que mi... la persona que va a recibir el sobre sepa usarlo bien.%It's not too much, but I hope that my... the person is going to recieves the envelope knows how to use it well.
+No es demasiado, pero espero que mi... la persona que va a recibir el sobre sepa usarlo bien.%It's not too much, but I hope that my... the person who's going to recieve the envelope knows how to use it well.
 
 *[Está bien, dame la dirección%Ok, give me the address]
 -
