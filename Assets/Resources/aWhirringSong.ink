@@ -4,6 +4,7 @@ VAR day = -1        //Día
 VAR questionId = -1 //Id opción (para bdd)
 VAR sfx = ""    //Nombre sfx
 VAR music = ""  //Nombre canción
+VAR stopSound = "" //Nombre efecto a parar
 VAR hour = -1   //Hora del día (0, 1, 2; Mañana, tarde y  noche
 VAR sprite = "" //Nombre sprite del personaje
 VAR ghost = false
@@ -40,6 +41,7 @@ Primer día, allá vamos.%First day, here we go. #italics
 En la ventanilla de recepción solo encuentras un teléfono descolgado, una taza de café a medio tomar y una revista Playboy con páginas arrancadas.%At the reception window you only find a phone off the hook, a half-drunk cup of coffe and a Playboy magazine with some torn pages.
 Quien sea que trabaje aquí parece que tardará un tiempo en volver.%It seems that whoever works here will be gone for a while.
 
+~stopSound = "Celda_Cerrando"
 ~questionId = 0
 *[Dar un toque en la ventanilla%Tap the window]
 ~sfx = "Golpear_Ventana"
@@ -191,6 +193,7 @@ Aquí encontrarás a los vagos. Todo el día viendo la televisión o jugando al 
 ~sprite = "Luka"
 Me alegra que estemos de acuerdo. Ahora vayámonos de aquí. No aguanto estar con estos tipejos.%I'm glad we agree on this. Now let's get out of here. I can't stand being with this lowlifes.
 Sígueme, te enseñaré donde los verdaderos hombres se entretienen.%Follow me, I'll show you where real men get entertained.
+~stopSound = "Zumbido"
 ->Yard
 
 =Yard
@@ -268,7 +271,8 @@ No te quiero arruinar la sorpresa.%I Don't want to ruin you the surprise.
 ¿Por qué no hablas con ellos y se lo preguntas?%Why don't you talk with them and ask them yourself?
 Te esperaré junto a la máquina expendedora.%I'll be waiting by the vending machine.
 Tanto hablar me está dejando la garganta peor que una noche de partido.%All this talking is making my throath feel worse than a football night.
-
+~stopSound = "Gente de fondo hablando"
+-
 ->CorridorChoice
 
 =CorridorChoice
@@ -314,7 +318,7 @@ Parece agarrar con más fuerza las mangas de su uniforme.%He seems to grip the s
 ->CorridorChoice
 
 =Stanislav
-~music = "Quier"
+~music = "Quiet"
 ~background = "cell"
 ~character = "Narrador%Narrator"
 ~sprite = ""
@@ -384,6 +388,7 @@ Das media vuelta, huyendo de las dos puertas.% You turn around, fleeing from the
 ->CorridorChoice
 
 =VendingMachine
+~stopSound = "Gente de fondo hablando"
 ~background = "vendingmachine"
 ~character = "Narrador%Narrator"
 ~sprite = ""
@@ -440,6 +445,7 @@ Oye Luka, ¿y esta puerta?%Hey Luka. What about this room?
 Oh, no te preocupes por eso. Esa zona está fuera de límites para ti.%Oh, don't worry about it. This zone is off-limits for you.
 Se está haciendo tarde. Déjame enseñarte la cantina y vamos a tomar algo de paso.%It's getting late. Let me show you the canteen and let's grab something to eat while I show you.
 
+~stopSound = "Zumbido"
 ~music = "Touchpoint"
 ->Canteen
 
@@ -560,6 +566,7 @@ Vamos chaval, hora de irse a casa.%Let's go kid, time to go home.
 ~character = "Narrador%Narrator"
 ~sprite = "Luka"
 Sigues a Luka hasta salir de la cafetería y la cárcel.%You follow Luka to the exit of the prison.
+~stopSound = "Gente de fondo hablando"
 ->PrisonExit
 
 =PrisonExit
@@ -1410,6 +1417,8 @@ Luka te da una palmada en la espalda que resuena por toda la cantina.%Luka gives
 ~sprite = "Luka"
 Estoy orgulloso de cómo manejaste la situación.%I'm proud of how you handled the situation.
 
+~stopSound = "Gente de fondo hablando"
+
 {HelpStanislav} ->CanteenStanislav
 {HelpKalev} -> CanteenKalev
 
@@ -1671,6 +1680,7 @@ El mismo zumbido monótono suena al otro lado. Te acercas poco a poco hasta pega
 Un escalofrío recorre tu espalda. Debe de ser cosa del frío metal de la puerta.%A chill runs down your spine. It must be the cold metal of the door.
 Continuas andando hacia el corredor de los presos.%You continue walking towards the corridor of the prisoners.
 Miras de vez en cuando a tu espalda, a la puerta cerrada con tres cerrojos y una llave.%You look back at the closed door behind your back from time to time.
+~stopSound = "Zumbido"
 ~music = "Touchpoint"
 ->CellCorridorMorning
 
@@ -1988,13 +1998,14 @@ Stanislav carraspea y cierra el periódico hasta que te marchas.%Stanislav clear
 El sol desciende por el horizonte y los muros de cemento van proyectando su sombra sobre el patio.%The sun descends over the horizon and the concrete walls start casting their shadows over the yard.
 Los guardias comienzan a indicar a los presos que han de volver a sus celdas.%The guards start indicating the prisoners that they have to return back to their cells.
 Con el estómago rugiendo, te diriges a la cantina con Luka.%With your stomach roaring, you head to the canteen with Luka.
-
+~stopSound = "Gente de fondo hablando"
 ->Canteen
 
 =CellCorridorStanislav1
 ~background = "cellcorridor"
 ~character = "Narrador%Narrator"
 ~sprite = ""
+~sfx = "Gente de fondo hablando"
 De camino a la sala de recreo pasas frente a la celda de Kalev.%In your way to the break room you pass by Kalev's cell.
 No hay rastro del preso.%There's no trace of the inmate.
 Su colchón está tirado en el suelo, con una raja en el centro y el relleno desperdigado por toda la celda.%His matress is lying on the ground, a tear in its center and its filling scattered throughout the cell.
@@ -2016,6 +2027,7 @@ Su colchón está tirado en el suelo, con una raja en el centro y el relleno des
 
 =Breakroom
 ~background = "breakroom"
+~stopSound = "Gente de fondo hablando"
 ~sfx = "Gente de fondo hablando"
 ~character = "Narrador%Narrator"
 ~sprite = ""
@@ -2052,7 +2064,7 @@ Un hombre trajeado se acerca a un atril rodeado de cámaras y micrófonos.%A man
 Los presentadores le introducen como Viktor Barinov mientras saca una pila de papeles de su maletín.%The presenters introduce him as Viktor Barinov as he pulls a stack of papers out of his briefcase.
 Da dos golpecitos al micrófono que tiene delante antes de comenzar a hablar.%He taps the microphone in front of him twice before starting to speak.
 La televisión emite su mensaje con un deje robótico.%The TV begins broadcasting his message with a robotic touch.
-
+~stopSound = "Zumbido"
 ~character = "Viktor%Viktor"
 ~sprite = "TV"
 Queridos ciudadanos. Vengo hoy a hablaros acerca de las nuevas noticias que han surgido sobre el "caso Stanislav".%Dear citizens. I come today to tell you about the recent news that has emerged about the "Stanislav case".
@@ -2066,7 +2078,7 @@ El nombre de un asesino no puede coronar un monumento tan importante para Moscú
 Eso es todo. Tengan todos ustedes una muy buena tarde.%That's everything, may you all a very pleasant afternoon.
 
 ~character = "Narrador%Narrator"
-~sprite = "tuvimos"
+~sprite = ""
 Viktor se aleja del atril mientras una avalancha de periodistas le asalta con micrófonos.%Viktor walks away from the lectern as an avalanche of journalists assaults him with their microphones.
 Sus escoltas les cortan el paso hasta que Viktor se pierde en la distancia con su coche.%His escorts block their path until Viktor is lost in the distance with his car.
 
@@ -2247,7 +2259,7 @@ Ahora que lo pienso. Llevo un CD en la mochila.%Now that I think about it. I hav
 ~sprite = "Luka"
 Terminas la comida de la bandeja y te levantas del asiento.%You finish the food from your tray and get up from your seat.
 Sonríes cunado Luka se guarda tu CD antes de marcharte de vuelta al piso.%You smile as Luka puts away your CD before you go.
-
+~stopSound = "Gente de fondo hablando"
 ->FlatDoorstep
 
 =FlatDoorstep
@@ -2571,7 +2583,6 @@ Bienvenido al matadero.%Welcome to the slaughterhouse.
 =ElectricChair
 ~music = "Beginning"
 ~background = "electricchair"
-~sfx = "Zumbido"
 ~character = "Narrador%Narrador"
 ~sprite = ""
 Un olor a polvo y humo cubre toda la habitación.%A smell of dust and smoke covers the entire room.
@@ -2666,7 +2677,7 @@ Un olor a carne quemada empieza a invadir la habitación junto al crepitar de la
 ~character = "Narrador%Narrador"
 ~sprite = ""
 Levantas la palanca y te desplomas en el suelo con la visión nublosa.%You lift the lever and collapse to the ground with hazy vision.
-
+~stopSound = "Zumbido"
 ->Canteen
 
 =ExecutionStanislav
@@ -2710,7 +2721,7 @@ Un olor a carne quemada empieza a invadir la habitación junto al crepitar de la
 ~character = "Narrador%Narrador"
 ~sprite = ""
 Levantas la palanca y te desplomas en el suelo con la visión nublosa.%You lift the lever and collapse to the ground with hazy vision.
-
+~stopSound = "Zumbido"
 ->Canteen
 
 =Canteen
@@ -2747,7 +2758,7 @@ Será mejor que te lleve a casa.%I'll better get you home.
 ~character = "Narrador%Narrator"
 ~sprite = ""
 Luka te pone la mano en el hombro y te lleva en coche hasta tu piso.%Luka puts his hand on your shoulder and drives you to your apartment.
-
+~stopSound = "Zumbido"
 ->FlatDoorstep
 
 =FlatDoorstep
@@ -2783,7 +2794,7 @@ Cuando Luka se marcha caes al suelo frente a la puerta y rompes a llorar.%When L
 Escuchas la voz de Fay a través de la puerta.%You hear the voice of Fay through the door.
 Te levantas de un salto y terminas de abrir la puerta.%You quickly get up and finish opening the door.
 La cabeza te da vueltas.%Your head spins.
-
+~stopSound = "Zumbido"
 ->Flat
 
 =Flat
@@ -2836,7 +2847,7 @@ Gracias...%Thanks...
 ~character = "Narrador%Narrator"
 ~sprite = ""
 Arrastras los pies hasta tu habitación mientras Fay vuelve a la suya%You shuffle your feet up to your room while Fay returns to hers.
-
+~stopSound = "Zumbido"
 {Day_Two.HelpKalev} ->BeedroomKalev
 {Day_Two.HelpStanislav} ->BeedroomStanislav
 
