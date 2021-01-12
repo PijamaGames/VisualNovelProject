@@ -183,7 +183,7 @@ Uno de ellos golpea a otro cuando cuela la bola negra en el agujero incorrecto.%
 Aquí es donde encontrarás a la peor escoria.%This is where you'll find the worst scum in this prison.
 No a los peligrosos, oh no. Esos se pasan el día dale que te pego con el gimnasio.%Not the dangerous ones, no. Those spend the whole day in the yard, non-stop exercising.
 Aquí encontrarás a los vagos. Todo el día viendo la televisión o jugando al billar.%Here you'll find the laziest ones. Watching TV and playing pool all day.
-¡A picar piedras le ponía yo!%If I were in charge they would be digging non-stop!
+¡A picar piedras les ponía yo!%If I were in charge they would be digging non-stop!
 
 ~questionId = 3
 *[Ya...%Yeah...]
@@ -474,56 +474,56 @@ Un grupo de guardias de la mesa de al lado apartan la mirada y sueltan una carca
 *[Hablar del preso alto y rubio%Talk about the tall blonde prisoner]
 ~character = "Johan%Johan"
 ~sprite = "Luka"
-    Ese preso alto y rubio parece interesante. Me pregunto cómo habrá terminado aquí...%That tall blonde prisoner looks interesting. I wonder how he ended up here...
-    
-    ~character = "Luka%Luka"
-    ~sprite = "Luka"
-    Se llama Kalev y entró aquí hace un par de años.%His name's Kalev. He's been here for a couple of years ago.
-    No sé muy bien por qué, pero seguro que por algo terrible.%I don't know why. For doing something terrible, that's for sure.
-    Es un tipo raro.%He's a weird guy.
-    Nunca se quita el uniforme ni se ducha con el resto de presos.%Never takes off his uniform nor showers with other prisoners.
-    
-    ~character = "Johan%Johan"
-    ~sprite = "Luka"
-    ¿Y siempre es tan callado?%Is he always so quiet?
-    
-    ~character = "Luka%Luka"
-    ~sprite = "Luka"
-    No le he escuchado decir ni una sola palabra en estos dos años.%I've never heard a word from him in these two years.
-    Cuando pide comida simplemente señala con la cabeza hacia la olla que quiere.%He simply nods at the pot he wants when ordering food.
-    Ya te digo, es un tipo muy raro.%I said, he's such a weird guy.
+Ese preso alto y rubio parece interesante. Me pregunto cómo habrá terminado aquí...%That tall blonde prisoner looks interesting. I wonder how he ended up here...
+
+~character = "Luka%Luka"
+~sprite = "Luka"
+Se llama Kalev y entró aquí hace un par de años.%His name's Kalev. He's been here for a couple of years ago.
+No sé muy bien por qué, pero seguro que por algo terrible.%I don't know why. For doing something terrible, that's for sure.
+Es un tipo raro.%He's a weird guy.
+Nunca se quita el uniforme ni se ducha con el resto de presos.%Never takes off his uniform nor showers with other prisoners.
+
+~character = "Johan%Johan"
+~sprite = "Luka"
+¿Y siempre es tan callado?%Is he always so quiet?
+
+~character = "Luka%Luka"
+~sprite = "Luka"
+No le he escuchado decir ni una sola palabra en estos dos años.%I've never heard a word from him in these two years.
+Cuando pide comida simplemente señala con la cabeza hacia la olla que quiere.%He simply nods at the pot he wants when ordering food.
+Ya te digo, es un tipo muy raro.%I said, he's such a weird guy.
     
 *[Hablar de Stanislav%Talk about Stanislav]
 ~character = "Johan%Johan"
 ~sprite = "Luka"
 Stanislav parece un tipo bastante majo. Pensé que no habría gente así en la cárcel.%Stanislav seems a pretty nice guy. I thought there wouldn't be people like that in jail.
 
-    ~character = "Luka%Luka"
-    ~sprite = "Luka"
-    Ten cuidado con ese tipo. Su lengua está más afilada que cualquier punzón improvisado con el que te puedan amenazar.%Be careful with that guy. His tongue's sharper than any improvised awl you could get threatened with.
-    Me alegro de que haya terminado entre rejas.%I'm glad he ended up in prison.
-    
-    ~character = "Johan%Johan"
-    ~sprite = "Luka"
-    ¿Ha hecho algo grave?%Did he do something serious?
-    
-    ~character = "Luka%Luka"
-    ~sprite = "Luka"
-    ¿No lees el periódico nunca, pipiolo?%Don't you ever read newspaper, tyro?
-    Ese tipo es uno de los mayores enemigos de este país. Una absoluta decepción para el gobierno.%That guy's one of the greatest enemies of this country. An absolute disappointment for the government.
-    Pero dejemos el tema ya. Hablar de política me cierra el apetito.%But I don't like to speak about politics. It spoils my appetite.
+~character = "Luka%Luka"
+~sprite = "Luka"
+Ten cuidado con ese tipo. Su lengua está más afilada que cualquier punzón improvisado con el que te puedan amenazar.%Be careful with that guy. His tongue's sharper than any improvised awl you could get threatened with.
+Me alegro de que haya terminado entre rejas.%I'm glad he ended up in prison.
+
+~character = "Johan%Johan"
+~sprite = "Luka"
+¿Ha hecho algo grave?%Did he do something serious?
+
+~character = "Luka%Luka"
+~sprite = "Luka"
+¿No lees el periódico nunca, pipiolo?%Don't you ever read newspaper, tyro?
+Ese tipo es uno de los mayores enemigos de este país. Una absoluta decepción para el gobierno.%That guy's one of the greatest enemies of this country. An absolute disappointment for the government.
+Pero dejemos el tema ya. Hablar de política me cierra el apetito.%But I don't like to speak about politics. It spoils my appetite.
     
 *[Hablar de la comida%Talk about food]
 ~character = "Johan%Johan"
 ~sprite = "Luka"
 No puedo hablar con el estómago vacío. No hemos comido nada en todo el día. ¿Va a ser siempre así?%I can't think with my stomach empty. We haven't eaten anything for all day. Will it always be like this?
 
-    ~character = "Luka%Luka"
-    ~sprite = "Luka"
-    Acostúmbrate.%Get used to it.
-    Estamos algo faltos de personal ahora. Solo podemos hacer pausas para cenar.%We're a bit understaffed lately. We can only take dinner breaks.
-    Míralo por el lado bueno.%Look at the good side of it.
-    Entre el ejercicio y esta diéta echarás unos buenos músculos en esos palillos que tienes por brazos.% With this diet and some exercising you'll grow muscles in those toothpick-thin arms of yours.
+~character = "Luka%Luka"
+~sprite = "Luka"
+Acostúmbrate.%Get used to it.
+Estamos algo faltos de personal ahora. Solo podemos hacer pausas para cenar.%We're a bit understaffed lately. We can only take dinner breaks.
+Míralo por el lado bueno.%Look at the good side of it.
+Entre el ejercicio y esta diéta echarás unos buenos músculos en esos palillos que tienes por brazos.% With this diet and some exercising you'll grow muscles in those toothpick-thin arms of yours.
 
 -
 *[Comer de la bandeja%Eat from the tray]
@@ -534,21 +534,19 @@ En un instante, Luka se ha convertido en un borrón de manos moviéndose y trozo
 Antes siquiera de que empieces tu bandeja la suya ya está vacía y reluciente.%Before you could even start eating, Luka's tray is already empty and gleaming.
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-¿Todo bien, novato? Estás más pálido que cuando te encontré en la recepción.&Everything all right, rookie? You're paler than when I met you at the reception.
+¿Todo bien, novato? Estás más pálido que cuando te encontré en la recepción.%Everything all right, rookie? You're paler than when I met you at the reception.
 -
-
 ~questionId = 8
 *[Veo que tenías hambre%I see you were hungry]
-    ~character = "Luka%Luka"
-    ~sprite = "Luka"
-    Ah, no hay nada mejor que la comida de esta cafetería, chaval.%Oh, there's nothing better than this cafeteria's food, kid.
-    Es como una buena cerveza, la apreciarás más con el tiempo.%It's just like a good beer, you'll appreciate it more over time.
+~character = "Luka%Luka"
+~sprite = "Luka"
+Ah, no hay nada mejor que la comida de esta cafetería, chaval.%Oh, there's nothing better than this cafeteria's food, kid.
+Es como una buena cerveza, la apreciarás más con el tiempo.%It's just like a good beer, you'll appreciate it more over time.
     
 *[No, nada. Estoy bien%No, it's nothing. I'm ok]
-    ~character = "Luka%Luka"
-    ~sprite = "Luka"
-    Si tú lo dices...%If you say so...
-
+~character = "Luka%Luka"
+~sprite = "Luka"
+Si tú lo dices...%If you say so...
 -
 ~character = "Luka%Luka"
 ~sprite = "Luka"
@@ -595,32 +593,32 @@ Cuando rebuscas en tus pantalones no escuchas el esperado tintineo de las llaves
 =DoorChoice
 ~questionId = 9
 *[Llamar al timbre%Call at the doorbell]
-    ~character = "Narrador%Narrator"
-    ~sprite = ""
-    Pulsas el timbre, pero solo te responde un zumbido eléctrico y un pequeño chispazo en el dedo.%You press the doorbel, but the only response you get is an electric buzz and a little spark on your finger.
+~character = "Narrador%Narrator"
+~sprite = ""
+Pulsas el timbre, pero solo te responde un zumbido eléctrico y un pequeño chispazo en el dedo.%You press the doorbel, but the only response you get is an electric buzz and a little spark on your finger.
     ->DoorChoice
 *[Golpear a la puerta%Knock on the door]
-    ~character = "Narrador%Narrator"
-    ~sprite = ""
-    ~sfx = "Golpear_Ventana"
-    Golpeas la puerta con los nudillos hasta dejarlos rojos.%You knock on the door with your knuckles until they turn red.
-    Suspiras aliviado al escuchar pasos desde el otro lado.%You sigh in relief when hearing footspets from the other side of the door.
-    
-    ~character = "Fay%Fay"
-    ~sprite = "Fay"
-    ¿Johan? ¿Qué es este alboroto?%Johan? What's all this fuss about?
-    
-    ~character = "Johan%Johan"
-    ~sprite = "Fay"
-    Menos mal, Fay.%Thank goodness, Fay.
-    Mira, me he dejado las llaves en...%I left my keys on...
-    Bueno, no sé dónde me las he dejado.%Well, I don't know where I left them.
-    ¿Puedes abrir?%Can you open?
-    
-    ~character = "Fay%Fay"
-    ~sprite = "Fay"
-    Claro, tonto. Pasa.%Sure, silly boy. Get in.
-    ->Flat
+~character = "Narrador%Narrator"
+~sprite = ""
+~sfx = "Golpear_Ventana"
+Golpeas la puerta con los nudillos hasta dejarlos rojos.%You knock on the door with your knuckles until they turn red.
+Suspiras aliviado al escuchar pasos desde el otro lado.%You sigh in relief when hearing footspets from the other side of the door.
+
+~character = "Fay%Fay"
+~sprite = "Fay"
+¿Johan? ¿Qué es este alboroto?%Johan? What's all this fuss about?
+
+~character = "Johan%Johan"
+~sprite = "Fay"
+Menos mal, Fay.%Thank goodness, Fay.
+Mira, me he dejado las llaves en...%I left my keys on...
+Bueno, no sé dónde me las he dejado.%Well, I don't know where I left them.
+¿Puedes abrir?%Can you open?
+
+~character = "Fay%Fay"
+~sprite = "Fay"
+Claro, tonto. Pasa.%Sure, silly boy. Get in.
+->Flat
 
 =Flat
 ~background = "apartmententrance"
@@ -824,13 +822,13 @@ A los pies de la estantería descansa tu guitarra marrón, con algunas zonas de 
 ~sprite = ""
 ~questionId = 10
 *[Pensar en el trabajo%Think about work]
-    Luka parece muy bueno en su trabajo, aunque me da algo de pena.%Luka seems very good at his job, although I feel a bit sorry for him. #italics
-    ¿Cómo debe de sentirse?%How is he doing?#italics
-    Tantos años trabajando en ese sitio...%So many years working on that place... #italics
+Luka parece muy bueno en su trabajo, aunque me da algo de pena.%Luka seems very good at his job, although I feel a bit sorry for him. #italics
+¿Cómo debe de sentirse?%How is he doing?#italics
+Tantos años trabajando en ese sitio...%So many years working on that place... #italics
 
 *[Pensar en Fay%Think about Fay]
-    Fay... ¿De dónde habrá sacado tanto dinero para ese teclado?%Fay... Where did she get so much money for that keyboard? #italics
-    Espero que le siga yendo bien en el futuro. Especialmente después de todo lo que ha pasado.%I hope she continues doing well in the future. Especially after all that happened. #italics
+Fay... ¿De dónde habrá sacado tanto dinero para ese teclado?%Fay... Where did she get so much money for that keyboard? #italics
+Espero que le siga yendo bien en el futuro. Especialmente después de todo lo que ha pasado.%I hope she continues doing well in the future. Especially after all that happened. #italics
 
 -
 ~character = "Narrador%Narrator"
