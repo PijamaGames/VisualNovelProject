@@ -1420,8 +1420,8 @@ Estoy orgulloso de cómo manejaste la situación.%I'm proud of how you handled t
 
 ~stopSound = "Gente de fondo hablando"
 
-{not helpedStanislav} [Ruta Kalev%Ruta Kalev] -> CanteenKalev
-{helpedStanislav} [Ruta Stanislav%Ruta Stanislav] ->CanteenStanislav
+*{not helpedStanislav} -> CanteenKalev
+*{helpedStanislav} ->CanteenStanislav
 
 =CanteenStanislav
 ~character = "Luka%Luka"
@@ -1693,8 +1693,8 @@ Miras de vez en cuando a tu espalda, a la puerta cerrada con tres cerrojos y una
 Las luces del corredor parpadean al ritmo de tus pasos.%The lights in the corridor flicker to the rythm of your steps.
 El golpe de tus botas hace eco por las paredes de cemento.%The thump of your boots echoes off the concrete walls.
 
-{not helpedStanislav}  [Ruta Kalev%Ruta Kalev]->CellCorridorMorningKalev
-{helpedStanislav}  [Ruta Stanislav%Ruta Stanislav]->CellCorridorMorningStanislav
+*{not helpedStanislav}  ->CellCorridorMorningKalev
+*{helpedStanislav} ->CellCorridorMorningStanislav
 
 =CellCorridorMorningKalev
 ~background = "cell"
@@ -1818,8 +1818,8 @@ He llegado al menos dos robos armados pronto.%I must be at least two armed robbe
 ~sprite = "Luka"
 Luka comienza a reírse mientras engulle dos chocolatinas a la vez.%Luka starts laughing as he swallows two chocolates at the same time.
 
-{not helpedStanislav}  [Ruta Kalev%Ruta Kalev]->VendingMachineKalev
-{helpedStanislav}  [Ruta Stanislav%Ruta Stanislav]->VendingMachineStanislav
+*{not helpedStanislav} ->VendingMachineKalev
+*{helpedStanislav}->VendingMachineStanislav
 
 =VendingMachineKalev
 ~character = "Luka%Luka"
@@ -1847,8 +1847,8 @@ Luka te da una palmada en la espalda antes de marcharse hacia la sala de guardia
 
 ~hour = 1
 
-{not helpedStanislav}  [Ruta Kalev%Ruta Kalev]->CellCorridorKalev1
-{helpedStanislav}  [Ruta Stanislav%Ruta Stanislav]->CellCorridorStanislav1
+*{not helpedStanislav}->CellCorridorKalev1
+*{helpedStanislav}->CellCorridorStanislav1
 
 =CellCorridorKalev1
 ~background = "heavydoor"
@@ -2308,8 +2308,8 @@ No parecen demasiado complicadas, me aprenderé alguna para cuando Fay regrese.%
 ~sprite = ""
 Coges la partitura de "Warriors" y entras en tu cuarto%You take the score for "Warriors" and walk into your room.
 
-{not helpedStanislav}  [Ruta Kalev%Ruta Kalev]->BeedroomKalev
-{helpedStanislav}  [Ruta Kalev%Ruta Kalev]-> BeedroomStanislav
+*{not helpedStanislav}->BeedroomKalev
+*{helpedStanislav}-> BeedroomStanislav
 
 =BeedroomKalev
 ~background = "bedroom"
