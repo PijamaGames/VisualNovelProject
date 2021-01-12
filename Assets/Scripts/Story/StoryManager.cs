@@ -76,7 +76,7 @@ public class StoryManager : MonoBehaviour
         ObserveVars();
 
         string music = inkStory.variablesState["music"].ToString();
-        PersistentAudioSource.StopAllMusic();
+        //PersistentAudioSource.StopAllMusic();
         PlayMusicByName(music);
         string sprite = inkStory.variablesState["sprite"].ToString();
         SetCharacterSpriteByName(sprite);
@@ -89,10 +89,23 @@ public class StoryManager : MonoBehaviour
             AudioClip clip;
             if(PersistentAudioSource.allClipsDict.TryGetValue(newValue.ToString(), out clip))
             {
+                PersistentAudioSource.StopClip(clip);
                 PersistentAudioSource.PlayEffect(clip);
             } else
             {
                 Debug.Log("SFX " + newValue.ToString() + " not found");
+            }
+        });
+        inkStory.ObserveVariable("stopSound", (varName, newValue) =>
+        {
+            AudioClip clip;
+            if (PersistentAudioSource.allClipsDict.TryGetValue(newValue.ToString(), out clip))
+            {
+                PersistentAudioSource.StopClip(clip);
+            }
+            else
+            {
+                Debug.Log("STOP SFX " + newValue.ToString() + " not found");
             }
         });
         inkStory.ObserveVariable("music", (varName, newValue) =>
@@ -102,8 +115,9 @@ public class StoryManager : MonoBehaviour
         inkStory.ObserveVariable("sprite", (varName, newValue) =>
         {
             SetCharacterSpriteByName(newValue.ToString());
-            bool isGhost = bool.Parse(inkStory.variablesState["ghost"].ToString());
-            characterSprite.color = isGhost ? ghostColor : Color.white;
+            string ghostStr = inkStory.variablesState["ghost"].ToString();
+            Debug.Log("ghost: " + ghostStr);
+            bool isGhost = int.Parse(ghostStr) == 1;
         });
     }
 
@@ -112,7 +126,7 @@ public class StoryManager : MonoBehaviour
         AudioClip clip;
         if (PersistentAudioSource.allClipsDict.TryGetValue(name, out clip))
         {
-            PersistentAudioSource.StopAllMusic();
+            //PersistentAudioSource.StopAllMusic();
             PersistentAudioSource.PlayMusic(clip);
         }
         else

@@ -100,16 +100,25 @@ public class PersistentAudioSource : MonoBehaviour
     {
         if (clip == null) return;
         bool alreadyPlaying = false;
+        List<AudioSource> otherMusic = new List<AudioSource>();
+        AudioRegulator regulator;
         foreach(AudioSource source in inUseAudioSources)
         {
             if(source && source.clip == clip)
             {
                 alreadyPlaying = true;
+                break;
+            }
+            regulator = source.GetComponent<AudioRegulator>();
+            if (regulator.isMusic)
+            {
+                otherMusic.Add(source);
             }
         }
 
         if (!alreadyPlaying)
         {
+            foreach (var source in otherMusic) StopSource(source);
             TryPlayClip(clip, true, true);
         }
     }
