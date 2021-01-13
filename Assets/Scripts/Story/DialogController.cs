@@ -48,6 +48,31 @@ public class DialogController : MonoBehaviour
         Debug.Log("dialog: " + _dialog);
         string[] dialogs = UsefulFuncs.Split(_dialog, '%');
         spanishDialog = dialogs[0].Trim(' ');
+
+        string check = "10";
+
+        if(spanishDialog.Length > 1)
+        {
+            if(spanishDialog[1] == ' ')
+            {
+                bool hasError = false;
+                for(int i = 0; i < check.Length; i++)
+                {
+                    hasError = hasError || spanishDialog[0] == check[i];
+                }
+                if (hasError)
+                {
+                    Debug.LogWarning("Criba detectada de: " + spanishDialog[0]);
+                    string aux = "";
+                    for(int i = 2; i<spanishDialog.Length; i++)
+                    {
+                        aux += spanishDialog[i];
+                    }
+                    spanishDialog = aux;
+                }
+            }
+        }
+
         englishDialog = dialogs[1].Trim(' ');
         Debug.Log("es:" + spanishDialog);
         Debug.Log("en:" + englishDialog);
