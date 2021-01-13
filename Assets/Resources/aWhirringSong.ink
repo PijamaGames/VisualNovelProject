@@ -10,6 +10,8 @@ VAR sprite = "" //Nombre sprite del personaje
 VAR ghost = false
 VAR helpedStanislav = false
 
+->Day_Four.BeedroomStanislav
+
 ->Day_One
 
 ==Day_One==
