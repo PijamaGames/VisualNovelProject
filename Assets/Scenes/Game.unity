@@ -4702,4 +4702,4 @@ MonoBehaviour:
   dateText: {fileID: 1834814958}
   hourImage: {fileID: 24364626}
   characterSprite: {fileID: 1765714770}
-  ghostColor: {r: 0.5226415, g: 0.7642822, b: 1, a: 1}
+  ghostColor: {r: 0.61960787, g: 0.83137256, b: 0.972549, a: 1}
