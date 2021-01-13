@@ -116,8 +116,9 @@ public class StoryManager : MonoBehaviour
         {
             SetCharacterSpriteByName(newValue.ToString());
             string ghostStr = inkStory.variablesState["ghost"].ToString();
-            Debug.Log("ghost: " + ghostStr);
             bool isGhost = int.Parse(ghostStr) == 1;
+            Debug.Log("ghost: " + isGhost);
+            characterSprite.color = isGhost ? ghostColor : Color.white;
         });
     }
 
