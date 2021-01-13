@@ -89,6 +89,7 @@ public class GameManager : MonoBehaviour
     public static void DeleteCurrentSaveFile()
     {
         currentSaveFile?.Delete();
+        CheckSaveFiles();
     }
 
     //PRIVATE FUNCTIONS
