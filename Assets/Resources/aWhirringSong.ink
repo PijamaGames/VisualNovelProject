@@ -1553,7 +1553,7 @@ Metes la carta en el buzón antes de volver a casa.%You put the letter in the ma
 ~character = "Narrador%Narrator"
 ~sprite = ""
 Pasas todo el trayecto con tu mochila posada en las piernas, rodeándola con los brazos.%You spend the whole journey with your backpack perched on your legs encircling it with your arms.
-No puedes parar de abrirl y cerrarla para asegurarte de que la carta de Kalev sigue dentro.%You can't stop opening and closing the backpack to check that Stanislav's letter is still in there.
+No puedes parar de abrirla y cerrarla para asegurarte de que la carta de Kalev sigue dentro.%You can't stop opening and closing the backpack to check that Stanislav's letter is still in there.
 Te bajas en tu parada, sacas la carta de la mochila y compruebas que todo está en orden.%You get off at your stop, take the letter out of your backpack and check everything's in order.
 Te llama la atención el sello, que lleva impresa la bandera de Estonia.%The stamp catches your attention. It has Estonia's flag printed on it.
 Insertas la carta en el primer buzón que encuentras antes de volver a casa.%You insert the letter in the first mailbox you find before heading home.
@@ -1702,7 +1702,7 @@ El golpe de tus botas hace eco por las paredes de cemento.%The thump of your boo
 ~music = "Somber"
 ~sprite = ""
 No hay rastro de Kalev en su celda.%There's no sign of Kalev in his cell.
-EL colchón tiene una raja y el relleno está desperdigado por el suelo.%The mattres has a slit and the padding is scattered on the floor.
+El colchón tiene una raja y el relleno está desperdigado por el suelo.%The mattres has a slit and the padding is scattered on the floor.
 
 *[Ir a la celda de aislamiento%Go to the isolation cell.]
 
@@ -2634,8 +2634,8 @@ La puerta de metal se abre una última vez hasta golpear la pared.%The metal doo
 Dos guardias vestidos con chalecos reforzados entran en la sala, arrastrando por los hombros a un preso.%Two guards dressed in reinforced vests enter the room, dragging a prisoner by the shoulders.
 Luka cierra la puerta tras ellos antes de sentarse entre el público.%Luka closes the door behind them before sitting down in the audience.
 
-{Day_Two.HelpKalev} ->ExecutionKalev
-{Day_Two.HelpStanislav} ->ExecutionStanislav
+*{not helpedStanislav} ->ExecutionKalev
+*{helpedStanislav} ->ExecutionStanislav
 
 =ExecutionKalev
 ~character = "Narrador%Narrador"
@@ -2849,8 +2849,8 @@ Gracias...%Thanks...
 ~sprite = ""
 Arrastras los pies hasta tu habitación mientras Fay vuelve a la suya%You shuffle your feet up to your room while Fay returns to hers.
 ~stopSound = "Zumbido"
-{Day_Two.HelpKalev} ->BeedroomKalev
-{Day_Two.HelpStanislav} ->BeedroomStanislav
+*{not helpedStanislav} ->BeedroomKalev
+*{helpedStanislav} ->BeedroomStanislav
 
 =BeedroomKalev
 ~background = "Bedroom"
