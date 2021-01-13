@@ -1004,14 +1004,14 @@ Te asalta un olor metálico mientras el grito hace eco por el pasillo.%You're su
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
-¡Joder!%¡Fuck!
+¡Joder!%Fuck!
 Chaval, mira a ver qué demonios ha pasado por allí, anda.%Kid, go and look what the hell happened over there.
 Yo tengo que recoger todo esto.%I gotta clean up all this mess.
 
 ~character = "Narrador%Narrator"
 ~sprite = ""
 Luka se agacha y comienza a apilar las chocolatinas de vuelta en sus brazos con la verdadera diligencia de un agente de la ley.%Luka reaches down and starts stacking the chocolates back in his arms with the true diligence of a law enforcement officer.
-Te das la vuelta y caminas hasta encontrar la fuente de los gritos.%Yout turn back until you find the source of the screams.
+Te das la vuelta y caminas hasta encontrar la fuente de los gritos.%You turn back until you find the source of the screams.
 ->StanislavVsKalev
 
 =StanislavVsKalev
@@ -1374,7 +1374,7 @@ No es demasiado, pero espero que mi... la persona que va a recibir el sobre sepa
 ~character = "Narrador%Narrator"
 ~sprite = "Kalev"
 Le dejas un boli y una hoja de tu libreta a Kalev.%You lend a pen and a sheet of your notebook to Kalev.
-El preso escribe la dirección con renglones temblorosos.%The prisoner writes the addres with shaky lines.
+El preso escribe la dirección con renglones temblorosos.%The prisoner writes the address with shaky lines.
 
 ~character = "Kalev%Kalev"
 ~sprite = "Kalev"
@@ -1412,7 +1412,7 @@ Juntos camináis hasta la cantina.%You walk together to the canteen.
 
 ~character = "Narrador%Narrator"
 ~sprite = "Luka"
-Luka te da una palmada en la espalda que resuena por toda la cantina.%Luka gives you slap in the back that echoes throughtout the whole canteen.
+Luka te da una palmada en la espalda que resuena por toda la cantina.%Luka slaps you in the back that echoes throughtout the whole canteen.
 
 ~character = "Luka%Luka"
 ~sprite = "Luka"
@@ -1457,7 +1457,7 @@ La comida de la bandeja no tiene mejor pinta, pero hundes la cuchara en el puré
 ~character = "Luka%Luka"
 ~sprite = "Luka"
 ¿Todo bien, pipiolo?%Everything all right, tyro?
-Nunca había visto a alguien nuevo comerse esta basura tan rápido.%'ve never seen anyone new eat that garbage so fast.
+Nunca había visto a alguien nuevo comerse esta basura tan rápido.%I've never seen anyone new eat that garbage so fast.
 
 ~questionId = 17
 *[Espero que aguanta ahí dentro%I hope he holds himself together in there.]
@@ -1553,7 +1553,7 @@ Metes la carta en el buzón antes de volver a casa.%You put the letter in the ma
 ~character = "Narrador%Narrator"
 ~sprite = ""
 Pasas todo el trayecto con tu mochila posada en las piernas, rodeándola con los brazos.%You spend the whole journey with your backpack perched on your legs encircling it with your arms.
-No puedes parar de abrirla y cerrarla para asegurarte de que la carta de Kalev sigue dentro.%You can't stop opening and closing the backpack to check that Stanislav's letter is still in there.
+No puedes parar de abrirla y cerrarla para asegurarte de que la carta de Kalev sigue dentro.%You can't stop opening and closing the backpack to check that Kalev's letter is still in there.
 Te bajas en tu parada, sacas la carta de la mochila y compruebas que todo está en orden.%You get off at your stop, take the letter out of your backpack and check everything's in order.
 Te llama la atención el sello, que lleva impresa la bandera de Estonia.%The stamp catches your attention. It has Estonia's flag printed on it.
 Insertas la carta en el primer buzón que encuentras antes de volver a casa.%You insert the letter in the first mailbox you find before heading home.
